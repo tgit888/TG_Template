@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>RD-SYSTEM | 人員客戶廠商管理 - 角色管理</title>
+<title>RD-SYSTEM | 人員客戶廠商管理 - 客戶資料</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -791,7 +791,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="table_managed.html">
 							Managed Datatables</a>
 						</li> -->
-						<li class="active">
+						<li >
 							<a href="tg_sys_profile.html">
 							人員管理</a>
 						</li>
@@ -803,7 +803,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="tg_sys_function.html">
 							系統功能管理</a>
 						</li>
-						<li >
+						<li class="active">
 							<a href="tg_sys_customer.html">
 							客戶資料</a>
 						</li>
@@ -1178,7 +1178,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>人員管理 <!-- <small>advanced datatables</small> --></h1>
+					<h1>客戶資料 <!-- <small>advanced datatables</small> --></h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -1283,16 +1283,16 @@ License: You must have a valid license purchased only from themeforest(the above
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="#">人員管理</a>
+					<a href="#">客戶資料</a>
 				</li>
 			</ul>
 			<div class="table-toolbar">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-											<button id="sample_editable_1_new" class="btn green">
-											新增人員 <i class="fa fa-plus"></i>
-											</button>
+											<!-- <button id="sample_editable_1_new" class="btn green">
+											新增系統功能 <i class="fa fa-plus"></i>
+											</button> -->
 										</div>
 									</div>
 <!-- 									<div class="col-md-6">
@@ -1319,58 +1319,22 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 
 			<!-- BEGIN VALIDATION STATES-->
-					<div class="portlet box yellow">
+					<!-- <div class="portlet box yellow">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-gift"></i>人員表單
+								<i class="fa fa-gift"></i>系統功能表單
 							</div>
-<!-- 							<div class="tools">
-								<a href="javascript:;" class="collapse">
-								</a>
-								<a href="#portlet-config" data-toggle="modal" class="config">
-								</a>
-								<a href="javascript:;" class="reload">
-								</a>
-								<a href="javascript:;" class="remove">
-								</a>
-							</div> -->
 						</div>
 						<div class="portlet-body form">
-							<!-- BEGIN FORM-->
+							
 							<form action="#" id="form_sample_2" class="form-horizontal">
 								<div class="form-body">
 									<div class="alert alert-danger display-hide">
 										<button class="close" data-close="alert"></button>
 										You have some form errors. Please check below.
 									</div>
-									<div class="alert alert-success display-hide">
-										<button class="close" data-close="alert"></button>
-										Your form validation is successful!
-									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">員工編號 <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<input type="text" class="form-control" name="name"/>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">姓名 <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<input type="text" class="form-control" name="name"/>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Email <span class="required">
+										<label class="control-label col-md-3">系統功能代碼<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
@@ -1380,33 +1344,68 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</div>
 									</div>
+									<div class="alert alert-success display-hide">
+										<button class="close" data-close="alert"></button>
+										Your form validation is successful!
+									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">角色 <span class="required">
+										<label class="control-label col-md-3">系統功能名稱 <span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
-											<!-- <select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">系統管理員</option>
-												<option value="Category 2">副總</option>
-												<option value="Category 2">業務</option>
-												<option value="Category 3">專案負責人</option>
-												<option value="Category 4">工程師</option>
-											</select> -->
-											<div class="checkbox-list" data-error-container="#form_2_services_error">
-												<label>
-												<div class="checker"><span class="checked"><input type="checkbox" value="1" name="service"></span></div> 系統管理員 </label>
-												<label>
-												<div class="checker"><span ><input type="checkbox" value="2" name="service"></span></div>  副總 </label>
-												<label>
-												<div class="checker"><span ><input type="checkbox" value="3" name="service"></span></div> 業務 </label>
-												<div class="checker"><span ><input type="checkbox" value="3" name="service"></span></div> 工程師 </label>
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="name"/>
 											</div>
-
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">是否為模組根目錄<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<select class="form-control" name="select">
+												<option value="">請選擇</option>
+												<option value="Category 1">否</option>
+												<option value="Category 2">是</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">功能網址<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="email"/>
+											</div>
 										</div>
 									</div>
 									
-									
+									<div class="form-group">
+										<label class="control-label col-md-3">是否上架 <span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<select class="form-control" name="select">
+												<option value="">請選擇</option>
+												<option value="Category 1">否</option>
+												<option value="Category 2">是</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">備註 <span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<textarea class="form-control" rows="3"></textarea>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="form-actions">
 									<div class="row">
@@ -1417,9 +1416,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</div>
 							</form>
-							<!-- END FORM-->
+							
 						</div>
-					</div>
+					</div> -->
 					<!-- END VALIDATION STATES-->
 
 
@@ -1432,7 +1431,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="portlet box blue-hoki">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-globe"></i>人員管理列表
+								<i class="fa fa-globe"></i>客戶資料列表
 							</div>
 							<div class="tools">
 							</div>
@@ -1442,136 +1441,68 @@ License: You must have a valid license purchased only from themeforest(the above
 							<thead>
 							<tr>
 								<th>
-									 員工編號
+									 客戶代號
 								</th>
 								<th>
-									 姓名
+									 客戶全名
 								</th>
 								<th>
-									 Email
+									 客戶簡稱
 								</th>
 								<th>
-									 角色
+									 備註
 								</th>
 								<th>
 									 建立日期
 								</th><th>
 									 修改日期
 								</th>
-								<th>
-									 修改/刪除
-								</th>
+								
+								
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
 								<td>
-									 0000
+									 1CU03
 								</td>
 								<td>
-									 陳永鴻
-								</td>
-
-								<td>
-									 tony@topgiga.com.tw
+									 中華映管股份有限公司
 								</td>
 								<td>
-									副總
+									 中華映管股份有限公司
 								</td>
 								<td>
+									 
+								</td>
+							   <td>
 									 2018-09-18 10:00
 								</td>
 								<td>
 									 2018-09-18 10:00
-								</td>
+								</td>	
 								
-								<td>
-									<div class="btn-group btn-group-solid">
-										<button type="button" class="btn yellow">修改</button>
-										<button type="button" class="btn red">刪除</button>
-									</div>
-								</td>
 							</tr>
 							<tr>
 								<td>
-									 0004
+									 1CV01
 								</td>
 								<td>
-									 李泰維
+									 和鑫光電股份有限公司
 								</td>
 								<td>
-									 taiwei.lee@topgiga.com.tw
+									 和鑫光電股份有限公司
 								</td>
 								<td>
-									 專案負責人
+									 
 								</td>
-								<td>
+							   <td>
 									 2018-09-18 10:00
 								</td>
 								<td>
 									 2018-09-18 10:00
-								</td>
-								<td>
-									 <div class="btn-group btn-group-solid">
-										<button type="button" class="btn yellow">修改</button>
-										<button type="button" class="btn red">刪除</button>
-									</div>
-								</td>
+								</td>	
 							</tr>
-							<tr>
-								<td>
-									 0012
-								</td>
-								<td>
-									 吳姝慧
-								</td>
-								<td>
-									 xxxx@topgiga.com.tw
-								</td>
-								<td>
-									 工程師
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									  <div class="btn-group btn-group-solid">
-										<button type="button" class="btn yellow">修改</button>
-										<button type="button" class="btn red">刪除</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									 0057
-								</td>
-								<td>
-									 王育傑
-								</td>
-								<td>
-									 yuchieh@topgiga.com.tw
-								</td>
-								<td>
-									 系統管理員
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 	<div class="btn-group btn-group-solid">
-										<button type="button" class="btn yellow">修改</button>
-										<button type="button" class="btn red">刪除</button>
-									</div>
-								</td>
-							</tr>
-							
-						
 							</tbody>
 							</table>
 						</div>
