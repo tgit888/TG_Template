@@ -840,16 +840,16 @@ License: You must have a valid license purchased only from themeforest(the above
 							專案基本資料</a>
 						</li>
 						<li>
-							<a href="portlet_general3.html">
+							<a href="tg_prj_tasks.html">
 							任務管理</a>
 						</li>
 						<li>
 							<a href="portlet_ajax.html">
-							檢測管理</a>
+							檢測(SOP)管理</a>
 						</li>
 						<li>
 							<a href="portlet_draggable.html">
-							測試報告</a>
+							報告管理</a>
 						</li>
 					</ul>
 				</li> 
@@ -1329,7 +1329,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					 <div class="portlet box yellow">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-gift"></i>基本資料表單
+								<i class="fa fa-gift"></i>產品基本資料表單
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -1346,7 +1346,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										You have some form errors. Please check below.
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">專案代碼<span class="required">
+										<label class="control-label col-md-3">產品代碼<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
@@ -1361,7 +1361,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										Your form validation is successful!
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3"> 專案名稱<span class="required">
+										<label class="control-label col-md-3"> 產品名稱<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
@@ -1371,84 +1371,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案開始時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案預計結束時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案結束時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案負責人<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案協助人<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案提出人<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
+									
 									<div class="form-group">
 										<label class="control-label col-md-3">狀態<span class="required">
 										* </span>
@@ -1456,25 +1379,14 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="col-md-4">
 											<select class="form-control" name="select">
 												<option value="">請選擇</option>
-												<option value="Category 1">PENDING</option>
-												<option value="Category 2">WORKING</option>
-												<option value="Category 2">COMPELETED</option>
+												<option value="Category 1">活存</option>
+												<option value="Category 2">封存</option>
+												
 											</select>
 										</div>
 									</div>
 									
-									<div class="form-group">
-										<label class="control-label col-md-3">廠商客戶<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">中華映管股份有限公司</option>
-												<option value="Category 2">和鑫光電股份有限公司</option>
-											</select>
-										</div>
-									</div>
+									
 									<div class="form-group">
 										<label class="control-label col-md-3">備註 <span class="required">
 										* </span>
@@ -1523,20 +1435,16 @@ License: You must have a valid license purchased only from themeforest(the above
 									 序號
 								</th>
 								<th>
-									 專案代碼
+									 產品代碼
+								</th>
+								
+								<th>
+									 產品名稱
 								</th>
 								<th>
-									 廠商客戶
+									 建立者/修改者
 								</th>
-								<th>
-									 專案名稱
-								</th>
-								<th>
-									 專案負責人/協助人/提出人
-								</th>
-								<th>
-									 專案時間
-								</th>
+								
 								<th>
 									 狀態
 								</th>
@@ -1565,25 +1473,15 @@ License: You must have a valid license purchased only from themeforest(the above
 									 1CU03
 								</td>
 								<td>
-									 中華映管專案
+									 PS
 								</td>
 								<td>
-									 中華映管
+									 建立者:Nick<br>修改者:Jacky
 								</td>
 								
-								<td>
-									 負責人:Tony<br>
-									 協助人:Jacky<br>
-									 提出人:Nick
-								</td>
 								
-								 <td>
-									 開始時間:2018-09-18<br>
-									 預計結束時間:2018-10-18<br>
-									 結束時間:2018-10-30 
-								</td>
 								<td>
-									COMPELETED
+									活存
 								</td>	
 								<td>
 									 
@@ -1597,7 +1495,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									<button type="button" class="btn yellow">修改</button>
 									<button type="button" class="btn red">刪除</button>
-									<button type="button" class="btn blue">編輯SOP</button>
+									<button type="button" class="btn blue">編輯chcklist</button>
 								</td>	
 								
 							</tr>
@@ -1609,24 +1507,15 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 1CV01
 								</td>
+								
 								<td>
-									 和鑫光電專案
+									BM
 								</td>
 								<td>
-									 和鑫光電
+									 建立者:Nick<br>修改者:Jacky
 								</td>
 								<td>
-									 負責人:Tony<br>
-									 協助人:Jacky<br>
-									 提出人:Nick
-								</td>
-								 <td>
-									 開始時間:2018-09-18<br>
-									 預計結束時間:2018-10-18<br>
-									 結束時間:2018-10-30 
-								</td>
-								<td>
-									COMPELETED
+									活存
 								</td>	
 
 								<td>
@@ -1641,7 +1530,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									<button type="button" class="btn yellow">修改</button>
 									<button type="button" class="btn red">刪除</button>
-									<button type="button" class="btn blue">編輯SOP</button>
+									<button type="button" class="btn blue">編輯chcklist</button>
 								</td>
 							</tr>
 							</tbody>
@@ -1655,6 +1544,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 			</div>
 			<!-- END PAGE CONTENT-->
+			
 		</div>
 	</div>
 	<!-- END CONTENT -->
