@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>RD-SYSTEM | 專案管理 - 任務管理-實驗</title>
+<title>RD-SYSTEM | 專案管理 - 專案基本資料</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -827,11 +827,11 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="tg_prj_product.html">
 							產品基本資料</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="tg_prj_project.html">
 							專案基本資料</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="tg_prj_tasks.html">
 							任務管理</a>
 						</li>
@@ -1177,7 +1177,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>任務管理</h1>
+					<h1>專案基本資料<small>編輯產品檢查列表</small></h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -1282,82 +1282,54 @@ License: You must have a valid license purchased only from themeforest(the above
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="tg_prj_tasks.html">任務管理</a>
+					<a href="tg_prj_project.html">專案基本資料</a>
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<label  style="color: #aaa;" >編輯實驗項目</label>
+					<label  style="color: #aaa;" >編輯產品檢查列表</label>
 					
 				</li>
 			</ul>
 			<!-- END PAGE BREADCRUMB -->
 			<!-- END PAGE HEADER-->
 			<!-- BEGIN PAGE CONTENT-->
-			<div class="row">
-				<div class="col-md-12">
-					<!-- BEGIN EXAMPLE TABLE PORTLET-->
-					<div class="portlet box blue">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-edit"></i>和鑫光電專案 -實驗列表
-							</div>
-							<div class="tools">
-								<a href="javascript:;" class="collapse">
-								</a>
-								
-							</div>
-						</div>
-<!-- dialog  新增實驗 start-->
+
+
+
+
+<!-- dialog  新增產品檢查表樣本start-->
 
 <div id="myModal_autocomplete" class="modal fade" role="dialog" aria-hidden="true">
 								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title">新增實驗</h4>
+											<h4 class="modal-title">新增產品檢查表樣本</h4>
 										</div>
 										<div class="modal-body form">
 											<form action="#" class="form-horizontal form-row-seperated">
 												<div class="form-group">
-													<label class="col-sm-4 control-label">實驗名稱</label>
+													<label class="col-sm-4 control-label">產品檢查表樣本</label>
 													<div class="col-sm-8">
 														<div class="input-group">
 															<!-- <span class="input-group-addon">
 															<i class="fa fa-user"></i>
 															</span> -->
-															<input type="text" id="typeahead_example_modal_1" name="typeahead_example_modal_1" class="form-control"/>
+															<!-- <input type="text" id="typeahead_example_modal_1" name="typeahead_example_modal_1" class="form-control"/> -->
+															<select class="form-control" name="select">
+												<option value="">請選擇</option>
+												<option value="Category 1">MVA</option>
+												<option value="Category 2">PS</option>
+												<option value="Category 2">BM</option>
+												<option value="Category 2">正型</option>
+												<option value="Category 2">RGB</option>
+												
+											</select>
 														</div>
 														
 													</div>
 												</div>
-												<div class="form-group">
-													<label class="col-sm-4 control-label">實驗描述</label>
-													<div class="col-sm-8">
-														<div class="input-group">
-															<!-- <span class="input-group-addon">
-															<i class="fa fa-search"></i>
-															</span> -->
-															<!-- <input type="text" id="typeahead_example_modal_2" name="typeahead_example_modal_2" class="form-control"/> -->
-															<textarea class="form-control" rows="3"></textarea>
-														</div>
-														<p class="help-block">
-															
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-sm-4 control-label">備註</label>
-													<div class="col-sm-8">
-														<div class="input-group">
-															<!-- 
-															<input type="text" id="typeahead_example_modal_3" name="typeahead_example_modal_3" class="form-control"/> -->
-															<textarea class="form-control" rows="3"></textarea>
-														</div>
-														<p class="help-block">
-															
-														</p>
-													</div>
-												</div>
+												
 												
 											</form>
 										</div>
@@ -1369,17 +1341,37 @@ License: You must have a valid license purchased only from themeforest(the above
 								</div>
 							</div>
 
-<!-- dialog  新增實驗 end-->
+<!-- dialog  新增檢查表樣本end-->
 
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-edit"></i>和鑫光電專案 -產品檢查列表
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								
+							</div>
+						</div>
 						<div class="portlet-body">
 					 		<div class="table-toolbar">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
 											<a href="#myModal_autocomplete" class="btn green" data-toggle="modal">
-											新增實驗 <i class="fa fa-plus"></i>
+											新增產品檢查表 <i class="fa fa-plus"></i>
 											</a>
 										</div>
+										<div class="btn-group">
+											<button id="" class="btn red">
+											刪除產品檢查表 <i class="fa fa-plus"></i>
+											</button>
+										</div>
+										
 									</div>
 								<!-- 	<div class="col-md-6">
 										<div class="btn-group pull-right">
@@ -1403,7 +1395,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div> -->
 								</div>
 							</div> 
-							<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+							<!-- <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
 							<thead>
 							<tr>
 								<th>
@@ -1460,7 +1452,6 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a  class="btn red" href="">封存</a>
 									<a  class="btn green" href="">複製</a>
 									<a type="button" class="btn blue" href="tg_prj_tasks_exp_tasks.html">編輯工作項目</a>
-									<a type="button" class="btn purple" href="tg_prj_tasks_exp_tasks.html">編輯SOP</a>
 
 									
 								</td>	
@@ -1491,11 +1482,164 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a  class="btn red" href="">封存</a>
 									<a  class="btn green" href="">複製</a>
 									<a type="button" class="btn blue" href="tg_prj_tasks_exp_tasks.html">編輯工作項目</a>
-									<a type="button" class="btn purple" href="tg_prj_tasks_exp_tasks.html">編輯SOP</a>
+									
 								</td>
 							</tr>
 							</tbody>
-							</table>
+							</table> -->
+							<div class="portlet-body">
+							<div class="table-scrollable">
+								<table class="table table-bordered table-hover">
+								<thead>
+								<tr>
+									<th>
+										 重要性
+									</th>
+									<th>
+										 確認項目
+									</th>
+									<th>
+										確認項目內容 
+									</th>
+									
+									<th>
+										 操作
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td rowspan="2">
+										 1 塗佈 - spin type<br>備註:影響solvent選用種類、添加劑種類
+									</td>
+									<td>
+										塗佈種類(spin、slit & spin、TEL、spinless)
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										 基板大小
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="5">
+										 2.曝光製程<br>備註:影響起始劑的選用
+									</td>
+									<td>
+										曝光機廠牌(Deco、Topcon、NSK、Canon)
+									</td>
+									
+									<td>
+										
+									</td>
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										 曝光種類(scanner or proximity)
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										曝光強度
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<r>
+									<td>
+										曝光量範圍
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gap
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2">
+										 3 其他特殊的需求
+									</td>
+									<td>
+										強調附著力
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+
+									</td>
+								</tr>
+								<tr>
+									<td>
+										其他
+									</td>
+									<td>
+										
+									</td>
+									
+									<td>
+										<a href="javascript:;" class="btn default btn-xs purple">
+										<i class="fa fa-edit"></i> 編輯 </a>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+
 						</div>
 					</div>
 					<!-- END EXAMPLE TABLE PORTLET-->
