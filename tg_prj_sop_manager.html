@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>RD-SYSTEM | 專案管理 - 任務管理-實驗</title>
+<title>RD-SYSTEM | 專案管理 - 檢測(SOP)管理</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -35,6 +35,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN PAGE LEVEL STYLES -->
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -64,8 +65,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="index.html">
-			<!-- <img src="assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default"/> -->
-			 <img src="assets/admin/layout4/img/logo-light-rd.png" alt="logo" class="logo-default"/>
+			<img src="assets/admin/layout4/img/logo-light-rd.png" alt="logo" class="logo-default"/>
 			</a>
 			<div class="menu-toggler sidebar-toggler">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -823,7 +823,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
-						<li>
+						<li >
 							<a href="tg_prj_product.html">
 							產品基本資料</a>
 						</li>
@@ -831,11 +831,11 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="tg_prj_project.html">
 							專案基本資料</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="tg_prj_tasks.html">
 							任務管理</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="tg_prj_sop_manager.html">
 							檢測(SOP)管理</a>
 						</li>
@@ -1177,7 +1177,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>任務管理</h1>
+					<h1>檢測(SOP)管理 <!-- <small>product listing</small> --></h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -1277,17 +1277,12 @@ License: You must have a valid license purchased only from themeforest(the above
 					<a href="index.html">Home</a>
 					<i class="fa fa-circle"></i>
 				</li>
-				<li>
-					<a href="#">專案管理</a>
+				<!-- <li>
+					<a href="#">eCommerce</a>
 					<i class="fa fa-circle"></i>
-				</li>
+				</li> -->
 				<li>
-					<a href="tg_prj_tasks.html">任務管理</a>
-					<i class="fa fa-circle"></i>
-				</li>
-				<li>
-					<label  style="color: #aaa;" >編輯實驗項目</label>
-					
+					<Label>檢測(SOP)管理</Label>
 				</li>
 			</ul>
 			<!-- END PAGE BREADCRUMB -->
@@ -1295,231 +1290,802 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- BEGIN PAGE CONTENT-->
 			<div class="row">
 				<div class="col-md-12">
-					<!-- BEGIN EXAMPLE TABLE PORTLET-->
-					<div class="portlet box blue">
+				<!-- 	<div class="note note-danger note-shadow">
+						<p>
+							 NOTE: The below datatable is not connected to a real database so the filter and sorting is just simulated for demo purposes only.
+						</p>
+					</div> -->
+					<!-- Begin: life time stats -->
+					<div class="portlet light">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-edit"></i>和鑫光電專案 -實驗列表
+								<i class="fa fa-gift font-green-sharp"></i>
+								<span class="caption-subject font-green-sharp bold uppercase">專案</span>
+								<span class="caption-helper">專案SOP管理...</span>
 							</div>
-							<div class="tools">
-								<a href="javascript:;" class="collapse">
-								</a>
-								
-							</div>
+				<!-- 			<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-default btn-circle" href="javascript:;" data-toggle="dropdown">
+									<i class="fa fa-share"></i> Tools <i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu pull-right">
+										<li>
+											<a href="javascript:;">
+											Export to Excel </a>
+										</li>
+										<li>
+											<a href="javascript:;">
+											Export to CSV </a>
+										</li>
+										<li>
+											<a href="javascript:;">
+											Export to XML </a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="javascript:;">
+											Print Invoices </a>
+										</li>
+									</ul>
+								</div>
+							</div> -->
 						</div>
-<!-- dialog  新增實驗 start-->
-
-<div id="myModal_autocomplete" class="modal fade" role="dialog" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title">新增實驗</h4>
-										</div>
-										<div class="modal-body form">
-											<form action="#" class="form-horizontal form-row-seperated">
-												<div class="form-group">
-													<label class="col-sm-4 control-label">實驗名稱</label>
-													<div class="col-sm-8">
-														<div class="input-group">
-															<!-- <span class="input-group-addon">
-															<i class="fa fa-user"></i>
-															</span> -->
-															<input type="text" id="typeahead_example_modal_1" name="typeahead_example_modal_1" class="form-control"/>
-														</div>
-														
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-sm-4 control-label">實驗描述</label>
-													<div class="col-sm-8">
-														<div class="input-group">
-															<!-- <span class="input-group-addon">
-															<i class="fa fa-search"></i>
-															</span> -->
-															<!-- <input type="text" id="typeahead_example_modal_2" name="typeahead_example_modal_2" class="form-control"/> -->
-															<textarea class="form-control" rows="3"></textarea>
-														</div>
-														<p class="help-block">
-															
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-sm-4 control-label">備註</label>
-													<div class="col-sm-8">
-														<div class="input-group">
-															<!-- 
-															<input type="text" id="typeahead_example_modal_3" name="typeahead_example_modal_3" class="form-control"/> -->
-															<textarea class="form-control" rows="3"></textarea>
-														</div>
-														<p class="help-block">
-															
-														</p>
-													</div>
-												</div>
-												
-											</form>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-											<button type="button" class="btn btn-primary"><i class="fa fa-check"></i> 確認</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-<!-- dialog  新增實驗 end-->
-
 						<div class="portlet-body">
-					 		<div class="table-toolbar">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="btn-group">
-											<a href="#myModal_autocomplete" class="btn green" data-toggle="modal">
-											新增實驗 <i class="fa fa-plus"></i>
-											</a>
-										</div>
-									</div>
-								<!-- 	<div class="col-md-6">
-										<div class="btn-group pull-right">
-											<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-											</button>
-											<ul class="dropdown-menu pull-right">
-												<li>
-													<a href="javascript:;">
-													Print </a>
-												</li>
-												<li>
-													<a href="javascript:;">
-													Save as PDF </a>
-												</li>
-												<li>
-													<a href="javascript:;">
-													Export to Excel </a>
-												</li>
-											</ul>
-										</div>
-									</div> -->
-								</div>
-							</div> 
-							<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
-							<thead>
-							<tr>
-								<th>
-									 序號
-								</th>
-								<th>
-									 實驗名稱
-								</th>
-								<th>
-									 實驗描述
-								</th>
-								
-								
-								<th>
-									 備註
-								</th>
-								<th>
-									 建立日期
-								</th>
-								<th>
-									 修改日期
-								</th>
-								<th>
-									 操作
-								</th>
-								
-							</tr>
-							</thead>
-							<tbody>
-								
-							<tr>
-								<td>
-									 1
-								</td>
-								<td>
-									 TG1589-SA4 線上VCD26sec出現Pin mura
-								</td>
-								<td>
-									 調整溶劑量改善Mura(改版為TG1589-SA5): 使用一般製程/華星製程比較
-								</td>
-								
+							<div class="table-container">
+							<!-- 	<div class="table-actions-wrapper">
+									<span>
+									</span>
+									<select class="table-group-action-input form-control input-inline input-small input-sm">
+										<option value="">Select...</option>
+										<option value="publish">Publish</option>
+										<option value="unpublished">Un-publish</option>
+										<option value="delete">Delete</option>
+									</select>
+									<button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+								</div> -->
+								<table class="table table-striped table-bordered table-hover" >
+								<thead>
+								<tr role="row" class="heading">
 									
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<a  class="btn yellow" href="">修改</a>
-									<a  class="btn red" href="">封存</a>
-									<a  class="btn green" href="">複製</a>
-									<a type="button" class="btn blue" href="tg_prj_tasks_exp_tasks.html">編輯工作項目</a>
-									<a type="button" class="btn purple" href="tg_prj_tasks_exp_tasks.html">編輯SOP</a>
+									<th width="10%">
+										專案代碼
+									</th>
+									<th width="15%">
+										 專案名稱
+									</th>
+									
+									<th width="15%">
+										 專案建立時間
+									</th>
+									<th width="10%">
+										 狀態
+									</th>
+									<th width="10%">
+										 Actions
+									</th>
+								</tr>
+								<tr >
+									
+									<td>
+										<input type="text" class="form-control form-filter input-sm" name="product_id">
+									</td>
+									<td>
+										<input type="text" class="form-control form-filter input-sm" name="product_name">
+									</td>
+									
+									<td>
+										<div class="input-group date date-picker margin-bottom-5" data-date-format="dd/mm/yyyy">
+											<input type="text" class="form-control form-filter input-sm" readonly name="product_created_from" placeholder="From">
+											<span class="input-group-btn">
+											<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+											</span>
+										</div>
+										<div class="input-group date date-picker" data-date-format="dd/mm/yyyy">
+											<input type="text" class="form-control form-filter input-sm" readonly name="product_created_to " placeholder="To">
+											<span class="input-group-btn">
+											<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+											</span>
+										</div>
+									</td>
+									<td>
+										<select name="product_status" class="form-control form-filter input-sm">
+											<option value="">Select...</option>
+											<option value="published">Published</option>
+											<option value="notpublished">Not Published</option>
+											<option value="deleted">Deleted</option>
+										</select>
+									</td>
+									<td>
+										<div class="margin-bottom-5">
+											<button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-search"></i>搜尋</button>
+										</div>
+										<button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> 取消</button>
+									</td>
+								</tr>
+						<!-- 		<tr role="row" >
+									
+									<td>
+										1CU03
+									</td>
+									<td>
+										中華映管
+									</td>
+									
+									<td>
+										
+											2018-09-18
+										
+									</td>
+									<td>
+										WORKING
+									</td>
+									<td>
+										<button class="btn btn-sm blue"><i class="fa fa-check"></i> 選取</button>
+									</td>
+								</tr> -->
 
+
+								</thead>
+								<tbody>
+								</tbody>
+								</table>
+								<!-- 專案 list start-->
+								<div class="caption">
+								<i class="fa fa-gift font-green-sharp"></i>
+							
+								<span class="caption-helper">搜尋結果</span>
+							</div>
+								<table class="table table-striped table-bordered table-hover" >
+								<thead>
+								<tr role="row" >
 									
-								</td>	
+									<th width="10%">
+										
+									</th>
+									<th width="15%">
+										
+									</th>
+									
+									<th width="15%">
+										 
+									</th>
+									<th width="10%">
+										 
+									</th>
+									<th width="10%">
+										 
+									</th>
+								</tr>
 								
-							</tr>
-						</a>
-							<tr>
-								<td>
-									2 
-								</td>
-								<td>
-									TG1589-SA4 線上VCD26sec出現Pin mura, 調整溶劑量改善Mura(改版為TG1589-SA5)
-								</td>
-								<td>
-									 Mura: double check 180703-12/ 180703-14
-								</td>
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<a  class="btn yellow" href="">修改</a>
-									<a  class="btn red" href="">封存</a>
-									<a  class="btn green" href="">複製</a>
-									<a type="button" class="btn blue" href="tg_prj_tasks_exp_tasks.html">編輯工作項目</a>
-									<a type="button" class="btn purple" href="tg_prj_tasks_exp_tasks.html">編輯SOP</a>
-								</td>
-							</tr>
-							</tbody>
-							</table>
+								<tr role="row" >
+									
+									<td>
+										1CU03
+									</td>
+									<td>
+										中華映管
+									</td>
+									
+									<td>
+										
+											2018-09-18
+										
+									</td>
+									<td>
+										WORKING
+									</td>
+									<td>
+										<button class="btn btn-sm blue"><i class="fa fa-check"></i> 選取</button>
+									</td>
+								</tr> 
+
+
+								</thead>
+								<tbody>
+								</tbody>
+								</table>
+
+								<!-- 專案 list end-->
+							</div>
 						</div>
 					</div>
-					<!-- END EXAMPLE TABLE PORTLET-->
+					<!-- End: life time stats -->
 				</div>
 			</div>
-			<!-- END PAGE CONTENT -->
 
 
+
+<div class="portlet light">
+	<!-- sop list start  -->
+			<div class="col-md-12 col-sm-12">
+												<div class="portlet grey-cascade box">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="fa fa-cogs"></i>中華映管SOP列表
+														</div>
+														<div class="actions">
+															<a href="javascript:;" class="btn btn-default btn-sm">
+															<i class="fa fa-pencil"></i> 新增 </a>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<div class="table-responsive">
+															<table class="table table-hover table-bordered table-striped">
+															<thead>
+															<tr>
+																<th>
+																	 SOP名稱
+																</th>
+																<th>
+																	 型態(file/text)
+																</th>
+																<th>
+																	 操作
+																</th>
+																
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<td>
+																	<a href="javascript:;">
+																	測試手法-BM產品_SOP -中華-固含量 </a>
+																</td>
+																<td>
+																	<!-- <span class="label label-sm label-success">
+																	Available
+																</span> -->
+																pdf
+															</td>
+																<td>
+																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
+										<i class="fa fa-edit"></i> 編輯 </a>
+
+										<a href="javascript:;" class="btn default btn-xs black">
+										<i class="fa fa-trash-o"></i> 刪除 </a>
+										<a href="javascript:;" class="btn btn-xs yellow">
+															檢視 <i class="fa fa-search"></i>
+															</a>
+																</td>
+
+																
+															</tr>
+															<tr>
+																<td>
+																	<a href="javascript:;">
+																	測試手法-BM產品_SOP -中華-表面阻抗 </a>
+																</td>
+																<td>
+																	<!-- <span class="label label-sm label-success">
+																	Available
+																</span> -->
+																text
+																</td>
+																<td>
+																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
+										<i class="fa fa-edit"></i> 編輯 </a>
+										<a href="javascript:;" class="btn default btn-xs black">
+										<i class="fa fa-trash-o"></i> 刪除 </a>
+										<a href="javascript:;" class="btn btn-xs yellow">
+															檢視 <i class="fa fa-search"></i>
+															</a>
+																</td>
+																
+															</tr>
+															
+															</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+			<!--  sop list end -->
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="icon-basket font-green-sharp"></i>
+									<span class="caption-subject font-green-sharp bold uppercase">
+									Edit Product </span>
+									<span class="caption-helper">Man Tops</span>
+								</div>
+								<div class="actions btn-set">
+									<button type="button" name="back" class="btn btn-default btn-circle"><i class="fa fa-angle-left"></i> Back</button>
+									<button class="btn btn-default btn-circle "><i class="fa fa-reply"></i> Reset</button>
+									<button class="btn green-haze btn-circle"><i class="fa fa-check"></i> Save</button>
+									<button class="btn green-haze btn-circle"><i class="fa fa-check-circle"></i> Save &amp; Continue Edit</button>
+									<div class="btn-group">
+										<a class="btn yellow btn-circle" href="javascript:;" data-toggle="dropdown">
+										<i class="fa fa-share"></i> More <i class="fa fa-angle-down"></i>
+										</a>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="javascript:;">
+												Duplicate </a>
+											</li>
+											<li>
+												<a href="javascript:;">
+												Delete </a>
+											</li>
+											<li class="divider">
+											</li>
+											<li>
+												<a href="javascript:;">
+												Print </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#tab_general" data-toggle="tab">
+											General </a>
+										</li>
+										<li>
+											<a href="#tab_meta" data-toggle="tab">
+											Meta </a>
+										</li>
+										<li>
+											<a href="#tab_images" data-toggle="tab">
+											Images </a>
+										</li>
+										<li>
+											<a href="#tab_reviews" data-toggle="tab">
+											Reviews <span class="badge badge-success">
+											3 </span>
+											</a>
+										</li>
+										<li>
+											<a href="#tab_history" data-toggle="tab">
+											History </a>
+										</li>
+									</ul>
+									<div class="tab-content no-space">
+										<div class="tab-pane active" id="tab_general">
+											<div class="form-body">
+												<div class="form-group">
+													<label class="col-md-2 control-label">Name: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<input type="text" class="form-control" name="product[name]" placeholder="">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Description: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<textarea class="form-control" name="product[description]"></textarea>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Short Description: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<textarea class="form-control" name="product[short_description]"></textarea>
+														<span class="help-block">
+														shown in product listing </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Categories: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<div class="form-control height-auto">
+															<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 275px;"><div class="scroller" style="height: 275px; overflow: hidden; width: auto;" data-always-visible="1" data-initialized="1">
+																<ul class="list-unstyled">
+																	<li>
+																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Mens</label>
+																		<ul class="list-unstyled">
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Footwear</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Clothing</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Accessories</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Fashion Outlet</label>
+																			</li>
+																		</ul>
+																	</li>
+																	<li>
+																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Football Shirts</label>
+																		<ul class="list-unstyled">
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Premier League</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Football League</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Serie A</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Bundesliga</label>
+																			</li>
+																		</ul>
+																	</li>
+																	<li>
+																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Brands</label>
+																		<ul class="list-unstyled">
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Adidas</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Nike</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Airwalk</label>
+																			</li>
+																			<li>
+																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Kangol</label>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 196.429px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+														</div>
+														<span class="help-block">
+														select one or more categories </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Available Date: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<div class="input-group input-large date-picker input-daterange" data-date="10/11/2012" data-date-format="mm/dd/yyyy">
+															<input type="text" class="form-control" name="product[available_from]">
+															<span class="input-group-addon">
+															to </span>
+															<input type="text" class="form-control" name="product[available_to]">
+														</div>
+														<span class="help-block">
+														availability daterange. </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">SKU: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<input type="text" class="form-control" name="product[sku]" placeholder="">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Price: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<input type="text" class="form-control" name="product[price]" placeholder="">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Tax Class: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<select class="table-group-action-input form-control input-medium" name="product[tax_class]">
+															<option value="">Select...</option>
+															<option value="1">None</option>
+															<option value="0">Taxable Goods</option>
+															<option value="0">Shipping</option>
+															<option value="0">USA</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Status: <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-10">
+														<select class="table-group-action-input form-control input-medium" name="product[status]">
+															<option value="">Select...</option>
+															<option value="1">Published</option>
+															<option value="0">Not Published</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tab_meta">
+											<div class="form-body">
+												<div class="form-group">
+													<label class="col-md-2 control-label">Meta Title:</label>
+													<div class="col-md-10">
+														<input type="text" class="form-control maxlength-handler" name="product[meta_title]" maxlength="100" placeholder="">
+														<span class="help-block">
+														max 100 chars </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Meta Keywords:</label>
+													<div class="col-md-10">
+														<textarea class="form-control maxlength-handler" rows="8" name="product[meta_keywords]" maxlength="1000"></textarea>
+														<span class="help-block">
+														max 1000 chars </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">Meta Description:</label>
+													<div class="col-md-10">
+														<textarea class="form-control maxlength-handler" rows="8" name="product[meta_description]" maxlength="255"></textarea>
+														<span class="help-block">
+														max 255 chars </span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tab_images">
+											<div class="alert alert-success margin-bottom-10">
+												<button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+												<i class="fa fa-warning fa-lg"></i> Image type and information need to be specified.
+											</div>
+											<div id="tab_images_uploader_container" class="text-align-reverse margin-bottom-10" style="position: relative;">
+												<a id="tab_images_uploader_pickfiles" href="javascript:;" class="btn yellow" style="z-index: 1;">
+												<i class="fa fa-plus"></i> Select Files </a>
+												<a id="tab_images_uploader_uploadfiles" href="javascript:;" class="btn green">
+												<i class="fa fa-share"></i> Upload Files </a>
+											<div id="html5_1cpf0nr8l2dk1acm6ero1ssm63_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;"><input id="html5_1cpf0nr8l2dk1acm6ero1ssm63" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="image/jpeg,image/gif,image/png,application/zip"></div></div>
+											<div class="row">
+												<div id="tab_images_uploader_filelist" class="col-md-6 col-sm-12"></div>
+											</div>
+											<table class="table table-bordered table-hover">
+											<thead>
+											<tr role="row" class="heading">
+												<th width="8%">
+													 Image
+												</th>
+												<th width="25%">
+													 Label
+												</th>
+												<th width="8%">
+													 Sort Order
+												</th>
+												<th width="10%">
+													 Base Image
+												</th>
+												<th width="10%">
+													 Small Image
+												</th>
+												<th width="10%">
+													 Thumbnail
+												</th>
+												<th width="10%">
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<a href="../../assets/admin/pages/media/works/img1.jpg" class="fancybox-button" data-rel="fancybox-button">
+													<img class="img-responsive" src="../../assets/admin/pages/media/works/img1.jpg" alt="">
+													</a>
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][1][label]" value="Thumbnail image">
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][1][sort_order]" value="1">
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][1][image_type]" value="1"></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][1][image_type]" value="2"></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span class="checked"><input type="radio" name="product[images][1][image_type]" value="3" checked=""></span></div>
+													</label>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-sm">
+													<i class="fa fa-times"></i> Remove </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="../../assets/admin/pages/media/works/img2.jpg" class="fancybox-button" data-rel="fancybox-button">
+													<img class="img-responsive" src="../../assets/admin/pages/media/works/img2.jpg" alt="">
+													</a>
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][2][label]" value="Product image #1">
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][2][sort_order]" value="1">
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][2][image_type]" value="1"></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span class="checked"><input type="radio" name="product[images][2][image_type]" value="2" checked=""></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][2][image_type]" value="3"></span></div>
+													</label>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-sm">
+													<i class="fa fa-times"></i> Remove </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="../../assets/admin/pages/media/works/img3.jpg" class="fancybox-button" data-rel="fancybox-button">
+													<img class="img-responsive" src="../../assets/admin/pages/media/works/img3.jpg" alt="">
+													</a>
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][3][label]" value="Product image #2">
+												</td>
+												<td>
+													<input type="text" class="form-control" name="product[images][3][sort_order]" value="1">
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span class="checked"><input type="radio" name="product[images][3][image_type]" value="1" checked=""></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][3][image_type]" value="2"></span></div>
+													</label>
+												</td>
+												<td>
+													<label>
+													<div class="radio"><span><input type="radio" name="product[images][3][image_type]" value="3"></span></div>
+													</label>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-sm">
+													<i class="fa fa-times"></i> Remove </a>
+												</td>
+											</tr>
+											</tbody>
+											</table>
+										</div>
+										<div class="tab-pane" id="tab_reviews">
+											<div class="table-container" style="">
+												<div id="datatable_reviews_wrapper" class="dataTables_wrapper dataTables_extended_wrapper no-footer"><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended" id="datatable_reviews_paginate"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length" id="datatable_reviews_length"><label><span class="seperator">|</span>View <select name="datatable_reviews_length" aria-controls="datatable_reviews" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info" id="datatable_reviews_info" role="status" aria-live="polite"></div></div><div class="col-md-4 col-sm-12"><div class="table-group-actions pull-right"></div></div></div><div class="table-scrollable"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_reviews" aria-describedby="datatable_reviews_info" role="grid">
+												<thead>
+												<tr role="row" class="heading"><th width="5%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Review&nbsp;#
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Review&nbsp;Date
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Customer
+													</th><th width="20%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Review&nbsp;Content
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Status
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
+														 Actions
+													</th></tr>
+												<tr role="row" class="filter"><td rowspan="1" colspan="1">
+														<input type="text" class="form-control form-filter input-sm" name="product_review_no">
+													</td><td rowspan="1" colspan="1">
+														<div class="input-group date date-picker margin-bottom-5" data-date-format="dd/mm/yyyy">
+															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_review_date_from" placeholder="From">
+															<span class="input-group-btn">
+															<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+															</span>
+														</div>
+														<div class="input-group date date-picker" data-date-format="dd/mm/yyyy">
+															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_review_date_to" placeholder="To">
+															<span class="input-group-btn">
+															<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+															</span>
+														</div>
+													</td><td rowspan="1" colspan="1">
+														<input type="text" class="form-control form-filter input-sm" name="product_review_customer">
+													</td><td rowspan="1" colspan="1">
+														<input type="text" class="form-control form-filter input-sm" name="product_review_content">
+													</td><td rowspan="1" colspan="1">
+														<select name="product_review_status" class="form-control form-filter input-sm">
+															<option value="">Select...</option>
+															<option value="pending">Pending</option>
+															<option value="approved">Approved</option>
+															<option value="rejected">Rejected</option>
+														</select>
+													</td><td rowspan="1" colspan="1">
+														<div class="margin-bottom-5">
+															<button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-search"></i> Search</button>
+														</div>
+														<button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> Reset</button>
+													</td></tr>
+												</thead>
+												<tbody>
+												</tbody>
+												</table></div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_reviews_length" aria-controls="datatable_reviews" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info"></div></div><div class="col-md-4 col-sm-12"></div></div></div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tab_history">
+											<div class="table-container" style="">
+												<div id="datatable_history_wrapper" class="dataTables_wrapper dataTables_extended_wrapper dataTables_extended_wrapper no-footer"><div id="prefix_609230778324" class="Metronic-alerts alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button><i class="fa-lg fa fa-warning"></i>  Could not complete request. Please check your internet connection</div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended" id="datatable_history_paginate"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length" id="datatable_history_length"><label><span class="seperator">|</span>View <select name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info" id="datatable_history_info" role="status" aria-live="polite"></div></div><div class="col-md-4 col-sm-12"><div class="table-group-actions pull-right"></div></div></div><div class="table-scrollable"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_history" aria-describedby="datatable_history_info" role="grid">
+												<thead>
+												<tr role="row" class="heading"><th width="25%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
+														 Datetime
+													</th><th width="55%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
+														 Description
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
+														 Notification
+													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
+														 Actions
+													</th></tr>
+												<tr role="row" class="filter"><td rowspan="1" colspan="1">
+														<div class="input-group date datetime-picker margin-bottom-5" data-date-format="dd/mm/yyyy hh:ii">
+															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_history_date_from" placeholder="From">
+															<span class="input-group-btn">
+															<button class="btn btn-sm default date-set" type="button"><i class="fa fa-calendar"></i></button>
+															</span>
+														</div>
+														<div class="input-group date datetime-picker" data-date-format="dd/mm/yyyy hh:ii">
+															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_history_date_to" placeholder="To">
+															<span class="input-group-btn">
+															<button class="btn btn-sm default date-set" type="button"><i class="fa fa-calendar"></i></button>
+															</span>
+														</div>
+													</td><td rowspan="1" colspan="1">
+														<input type="text" class="form-control form-filter input-sm" name="product_history_desc" placeholder="To">
+													</td><td rowspan="1" colspan="1">
+														<select name="product_history_notification" class="form-control form-filter input-sm">
+															<option value="">Select...</option>
+															<option value="pending">Pending</option>
+															<option value="notified">Notified</option>
+															<option value="failed">Failed</option>
+														</select>
+													</td><td rowspan="1" colspan="1">
+														<div class="margin-bottom-5">
+															<button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-search"></i> Search</button>
+														</div>
+														<button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> Reset</button>
+													</td></tr>
+												</thead>
+												<tbody>
+												</tbody>
+												</table></div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info"></div></div><div class="col-md-4 col-sm-12"></div></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+			<!-- END PAGE CONTENT-->
 		</div>
-
 	</div>
 	<!-- END CONTENT -->
 </div>
 <!-- END CONTAINER -->
-
-
-
-
-
-
-
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
-	
+	<div class="page-footer-inner">
+		 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
+	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
 	</div>
@@ -1547,20 +2113,24 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
 <script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/table-editable.js"></script>
+<script src="assets/global/scripts/datatable.js"></script>
+<script src="assets/admin/pages/scripts/ecommerce-products.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
 <script>
-jQuery(document).ready(function() {       
-   Metronic.init(); // init metronic core components
+        jQuery(document).ready(function() {    
+           Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 Demo.init(); // init demo features
-   TableEditable.init();
-});
-</script>
+           EcommerceProducts.init();
+        });
+    </script>
+<!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 </html>
