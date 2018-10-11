@@ -36,6 +36,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-summernote/summernote.css">
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -1498,6 +1501,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <div class="portlet light">
 	<!-- sop list start  -->
+	<div class="row">
 			<div class="col-md-12 col-sm-12">
 												<div class="portlet grey-cascade box">
 													<div class="portlet-title">
@@ -1517,9 +1521,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																<th>
 																	 SOP名稱
 																</th>
-																<th>
-																	 型態(file/text)
-																</th>
+																
 																<th>
 																	 操作
 																</th>
@@ -1532,21 +1534,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<a href="javascript:;">
 																	測試手法-BM產品_SOP -中華-固含量 </a>
 																</td>
-																<td>
-																	<!-- <span class="label label-sm label-success">
-																	Available
-																</span> -->
-																pdf
-															</td>
+															
 																<td>
 																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
-										<i class="fa fa-edit"></i> 編輯 </a>
-
-										<a href="javascript:;" class="btn default btn-xs black">
-										<i class="fa fa-trash-o"></i> 刪除 </a>
-										<a href="javascript:;" class="btn btn-xs yellow">
-															檢視 <i class="fa fa-search"></i>
-															</a>
+																	<i class="fa fa-edit"></i> 編輯 </a>
+																	<a href="javascript:;" class="btn btn-xs yellow">
+																		檢視 <i class="fa fa-search"></i>
+																	</a>
+																	<a href="javascript:;" class="btn default btn-xs black">
+																	<i class="fa fa-trash-o"></i> 封存 </a>
 																</td>
 
 																
@@ -1556,20 +1552,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<a href="javascript:;">
 																	測試手法-BM產品_SOP -中華-表面阻抗 </a>
 																</td>
-																<td>
-																	<!-- <span class="label label-sm label-success">
-																	Available
-																</span> -->
-																text
-																</td>
+																
 																<td>
 																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
-										<i class="fa fa-edit"></i> 編輯 </a>
-										<a href="javascript:;" class="btn default btn-xs black">
-										<i class="fa fa-trash-o"></i> 刪除 </a>
-										<a href="javascript:;" class="btn btn-xs yellow">
-															檢視 <i class="fa fa-search"></i>
-															</a>
+																	<i class="fa fa-edit"></i> 編輯 </a>
+																	<a href="javascript:;" class="btn btn-xs yellow">
+																		檢視 <i class="fa fa-search"></i>
+																	</a>
+																	<a href="javascript:;" class="btn default btn-xs black">
+																	<i class="fa fa-trash-o"></i> 封存 </a>
 																</td>
 																
 															</tr>
@@ -1579,497 +1570,80 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 													</div>
 												</div>
-											</div>
+				</div>
 
-
+</div>
 			<!--  sop list end -->
-							<div class="portlet-title">
-								<div class="caption">
-									<i class="icon-basket font-green-sharp"></i>
-									<span class="caption-subject font-green-sharp bold uppercase">
-									Edit Product </span>
-									<span class="caption-helper">Man Tops</span>
-								</div>
-								<div class="actions btn-set">
-									<button type="button" name="back" class="btn btn-default btn-circle"><i class="fa fa-angle-left"></i> Back</button>
-									<button class="btn btn-default btn-circle "><i class="fa fa-reply"></i> Reset</button>
-									<button class="btn green-haze btn-circle"><i class="fa fa-check"></i> Save</button>
-									<button class="btn green-haze btn-circle"><i class="fa fa-check-circle"></i> Save &amp; Continue Edit</button>
-									<div class="btn-group">
-										<a class="btn yellow btn-circle" href="javascript:;" data-toggle="dropdown">
-										<i class="fa fa-share"></i> More <i class="fa fa-angle-down"></i>
-										</a>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="javascript:;">
-												Duplicate </a>
-											</li>
-											<li>
-												<a href="javascript:;">
-												Delete </a>
-											</li>
-											<li class="divider">
-											</li>
-											<li>
-												<a href="javascript:;">
-												Print </a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="portlet-body">
-								<div class="tabbable">
-									<ul class="nav nav-tabs">
-										<li class="active">
-											<a href="#tab_general" data-toggle="tab">
-											General </a>
-										</li>
-										<li>
-											<a href="#tab_meta" data-toggle="tab">
-											Meta </a>
-										</li>
-										<li>
-											<a href="#tab_images" data-toggle="tab">
-											Images </a>
-										</li>
-										<li>
-											<a href="#tab_reviews" data-toggle="tab">
-											Reviews <span class="badge badge-success">
-											3 </span>
+
+			<!-- edit sop start -->
+			<div class="row">
+							<div class="col-md-12">
+								<!-- BEGIN EXTRAS PORTLET-->
+								<div class="portlet box blue-hoki">
+									<div class="portlet-title">
+										<div class="caption">
+											<i class="fa fa-gift"></i>編輯SOP內容
+										</div>
+<!-- 										<div class="tools">
+											<a href="javascript:;" class="collapse">
 											</a>
-										</li>
-										<li>
-											<a href="#tab_history" data-toggle="tab">
-											History </a>
-										</li>
-									</ul>
-									<div class="tab-content no-space">
-										<div class="tab-pane active" id="tab_general">
+											<a href="#portlet-config" data-toggle="modal" class="config">
+											</a>
+											<a href="javascript:;" class="reload">
+											</a>
+											<a href="javascript:;" class="remove">
+											</a>
+										</div> -->
+									</div>
+									<div class="portlet-body form">
+										<form class="form-horizontal form-bordered">
 											<div class="form-body">
 												<div class="form-group">
-													<label class="col-md-2 control-label">Name: <span class="required">
+													<label class="control-label col-md-1">檔案
+													<span class="required">
 													* </span>
 													</label>
-													<div class="col-md-10">
-														<input type="text" class="form-control" name="product[name]" placeholder="">
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Description: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<textarea class="form-control" name="product[description]"></textarea>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Short Description: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<textarea class="form-control" name="product[short_description]"></textarea>
-														<span class="help-block">
-														shown in product listing </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Categories: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<div class="form-control height-auto">
-															<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 275px;"><div class="scroller" style="height: 275px; overflow: hidden; width: auto;" data-always-visible="1" data-initialized="1">
-																<ul class="list-unstyled">
-																	<li>
-																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Mens</label>
-																		<ul class="list-unstyled">
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Footwear</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Clothing</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Accessories</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Fashion Outlet</label>
-																			</li>
-																		</ul>
-																	</li>
-																	<li>
-																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Football Shirts</label>
-																		<ul class="list-unstyled">
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Premier League</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Football League</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Serie A</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Bundesliga</label>
-																			</li>
-																		</ul>
-																	</li>
-																	<li>
-																		<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Brands</label>
-																		<ul class="list-unstyled">
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Adidas</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Nike</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Airwalk</label>
-																			</li>
-																			<li>
-																				<label><div class="checker"><span><input type="checkbox" name="product[categories][]" value="1"></span></div>Kangol</label>
-																			</li>
-																		</ul>
-																	</li>
-																</ul>
-															</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 196.429px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
-														</div>
-														<span class="help-block">
-														select one or more categories </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Available Date: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<div class="input-group input-large date-picker input-daterange" data-date="10/11/2012" data-date-format="mm/dd/yyyy">
-															<input type="text" class="form-control" name="product[available_from]">
-															<span class="input-group-addon">
-															to </span>
-															<input type="text" class="form-control" name="product[available_to]">
-														</div>
-														<span class="help-block">
-														availability daterange. </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">SKU: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<input type="text" class="form-control" name="product[sku]" placeholder="">
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Price: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<input type="text" class="form-control" name="product[price]" placeholder="">
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Tax Class: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<select class="table-group-action-input form-control input-medium" name="product[tax_class]">
-															<option value="">Select...</option>
-															<option value="1">None</option>
-															<option value="0">Taxable Goods</option>
-															<option value="0">Shipping</option>
-															<option value="0">USA</option>
-														</select>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Status: <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-10">
-														<select class="table-group-action-input form-control input-medium" name="product[status]">
-															<option value="">Select...</option>
-															<option value="1">Published</option>
-															<option value="0">Not Published</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane" id="tab_meta">
-											<div class="form-body">
-												<div class="form-group">
-													<label class="col-md-2 control-label">Meta Title:</label>
-													<div class="col-md-10">
-														<input type="text" class="form-control maxlength-handler" name="product[meta_title]" maxlength="100" placeholder="">
-														<span class="help-block">
-														max 100 chars </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Meta Keywords:</label>
-													<div class="col-md-10">
-														<textarea class="form-control maxlength-handler" rows="8" name="product[meta_keywords]" maxlength="1000"></textarea>
-														<span class="help-block">
-														max 1000 chars </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="col-md-2 control-label">Meta Description:</label>
-													<div class="col-md-10">
-														<textarea class="form-control maxlength-handler" rows="8" name="product[meta_description]" maxlength="255"></textarea>
-														<span class="help-block">
-														max 255 chars </span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane" id="tab_images">
-											<div class="alert alert-success margin-bottom-10">
-												<button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-												<i class="fa fa-warning fa-lg"></i> Image type and information need to be specified.
-											</div>
-											<div id="tab_images_uploader_container" class="text-align-reverse margin-bottom-10" style="position: relative;">
-												<a id="tab_images_uploader_pickfiles" href="javascript:;" class="btn yellow" style="z-index: 1;">
-												<i class="fa fa-plus"></i> Select Files </a>
-												<a id="tab_images_uploader_uploadfiles" href="javascript:;" class="btn green">
-												<i class="fa fa-share"></i> Upload Files </a>
-											<div id="html5_1cpf0nr8l2dk1acm6ero1ssm63_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;"><input id="html5_1cpf0nr8l2dk1acm6ero1ssm63" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="image/jpeg,image/gif,image/png,application/zip"></div></div>
-											<div class="row">
-												<div id="tab_images_uploader_filelist" class="col-md-6 col-sm-12"></div>
-											</div>
-											<table class="table table-bordered table-hover">
-											<thead>
-											<tr role="row" class="heading">
-												<th width="8%">
-													 Image
-												</th>
-												<th width="25%">
-													 Label
-												</th>
-												<th width="8%">
-													 Sort Order
-												</th>
-												<th width="10%">
-													 Base Image
-												</th>
-												<th width="10%">
-													 Small Image
-												</th>
-												<th width="10%">
-													 Thumbnail
-												</th>
-												<th width="10%">
-												</th>
-											</tr>
-											</thead>
-											<tbody>
-											<tr>
-												<td>
-													<a href="../../assets/admin/pages/media/works/img1.jpg" class="fancybox-button" data-rel="fancybox-button">
-													<img class="img-responsive" src="../../assets/admin/pages/media/works/img1.jpg" alt="">
-													</a>
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][1][label]" value="Thumbnail image">
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][1][sort_order]" value="1">
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][1][image_type]" value="1"></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][1][image_type]" value="2"></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span class="checked"><input type="radio" name="product[images][1][image_type]" value="3" checked=""></span></div>
-													</label>
-												</td>
-												<td>
-													<a href="javascript:;" class="btn default btn-sm">
-													<i class="fa fa-times"></i> Remove </a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="../../assets/admin/pages/media/works/img2.jpg" class="fancybox-button" data-rel="fancybox-button">
-													<img class="img-responsive" src="../../assets/admin/pages/media/works/img2.jpg" alt="">
-													</a>
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][2][label]" value="Product image #1">
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][2][sort_order]" value="1">
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][2][image_type]" value="1"></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span class="checked"><input type="radio" name="product[images][2][image_type]" value="2" checked=""></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][2][image_type]" value="3"></span></div>
-													</label>
-												</td>
-												<td>
-													<a href="javascript:;" class="btn default btn-sm">
-													<i class="fa fa-times"></i> Remove </a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="../../assets/admin/pages/media/works/img3.jpg" class="fancybox-button" data-rel="fancybox-button">
-													<img class="img-responsive" src="../../assets/admin/pages/media/works/img3.jpg" alt="">
-													</a>
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][3][label]" value="Product image #2">
-												</td>
-												<td>
-													<input type="text" class="form-control" name="product[images][3][sort_order]" value="1">
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span class="checked"><input type="radio" name="product[images][3][image_type]" value="1" checked=""></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][3][image_type]" value="2"></span></div>
-													</label>
-												</td>
-												<td>
-													<label>
-													<div class="radio"><span><input type="radio" name="product[images][3][image_type]" value="3"></span></div>
-													</label>
-												</td>
-												<td>
-													<a href="javascript:;" class="btn default btn-sm">
-													<i class="fa fa-times"></i> Remove </a>
-												</td>
-											</tr>
-											</tbody>
-											</table>
-										</div>
-										<div class="tab-pane" id="tab_reviews">
-											<div class="table-container" style="">
-												<div id="datatable_reviews_wrapper" class="dataTables_wrapper dataTables_extended_wrapper no-footer"><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended" id="datatable_reviews_paginate"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length" id="datatable_reviews_length"><label><span class="seperator">|</span>View <select name="datatable_reviews_length" aria-controls="datatable_reviews" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info" id="datatable_reviews_info" role="status" aria-live="polite"></div></div><div class="col-md-4 col-sm-12"><div class="table-group-actions pull-right"></div></div></div><div class="table-scrollable"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_reviews" aria-describedby="datatable_reviews_info" role="grid">
-												<thead>
-												<tr role="row" class="heading"><th width="5%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Review&nbsp;#
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Review&nbsp;Date
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Customer
-													</th><th width="20%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Review&nbsp;Content
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Status
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_reviews" rowspan="1" colspan="1">
-														 Actions
-													</th></tr>
-												<tr role="row" class="filter"><td rowspan="1" colspan="1">
-														<input type="text" class="form-control form-filter input-sm" name="product_review_no">
-													</td><td rowspan="1" colspan="1">
-														<div class="input-group date date-picker margin-bottom-5" data-date-format="dd/mm/yyyy">
-															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_review_date_from" placeholder="From">
+													<div class="col-md-11">
+														<!-- <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+															<input type="text" class="form-control" readonly>
 															<span class="input-group-btn">
-															<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+															<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 															</span>
+														</div> -->
+												<!-- 	<a id="tab_images_uploader_pickfiles" href="javascript:;" class="btn yellow">
+												<i class="fa fa-plus"></i> 選擇檔案 </a> -->
+												<input type="file" name="files[]" multiple="" class="btn yellow">
+												<!-- <a id="tab_images_uploader_uploadfiles" href="javascript:;" class="btn green">
+												<i class="fa fa-share"></i> 上傳檔案 </a> -->
+													</div>
+												</div> 
+												<div class="form-group">
+													<label class="control-label col-md-1">編輯內容</label>
+													<div class="col-md-11">
+														<div name="summernote" id="summernote_1">
 														</div>
-														<div class="input-group date date-picker" data-date-format="dd/mm/yyyy">
-															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_review_date_to" placeholder="To">
-															<span class="input-group-btn">
-															<button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
-															</span>
-														</div>
-													</td><td rowspan="1" colspan="1">
-														<input type="text" class="form-control form-filter input-sm" name="product_review_customer">
-													</td><td rowspan="1" colspan="1">
-														<input type="text" class="form-control form-filter input-sm" name="product_review_content">
-													</td><td rowspan="1" colspan="1">
-														<select name="product_review_status" class="form-control form-filter input-sm">
-															<option value="">Select...</option>
-															<option value="pending">Pending</option>
-															<option value="approved">Approved</option>
-															<option value="rejected">Rejected</option>
-														</select>
-													</td><td rowspan="1" colspan="1">
-														<div class="margin-bottom-5">
-															<button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-search"></i> Search</button>
-														</div>
-														<button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> Reset</button>
-													</td></tr>
-												</thead>
-												<tbody>
-												</tbody>
-												</table></div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_reviews_length" aria-controls="datatable_reviews" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info"></div></div><div class="col-md-4 col-sm-12"></div></div></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="tab-pane" id="tab_history">
-											<div class="table-container" style="">
-												<div id="datatable_history_wrapper" class="dataTables_wrapper dataTables_extended_wrapper dataTables_extended_wrapper no-footer"><div id="prefix_609230778324" class="Metronic-alerts alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button><i class="fa-lg fa fa-warning"></i>  Could not complete request. Please check your internet connection</div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended" id="datatable_history_paginate"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length" id="datatable_history_length"><label><span class="seperator">|</span>View <select name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info" id="datatable_history_info" role="status" aria-live="polite"></div></div><div class="col-md-4 col-sm-12"><div class="table-group-actions pull-right"></div></div></div><div class="table-scrollable"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_history" aria-describedby="datatable_history_info" role="grid">
-												<thead>
-												<tr role="row" class="heading"><th width="25%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
-														 Datetime
-													</th><th width="55%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
-														 Description
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
-														 Notification
-													</th><th width="10%" class="sorting" tabindex="0" aria-controls="datatable_history" rowspan="1" colspan="1">
-														 Actions
-													</th></tr>
-												<tr role="row" class="filter"><td rowspan="1" colspan="1">
-														<div class="input-group date datetime-picker margin-bottom-5" data-date-format="dd/mm/yyyy hh:ii">
-															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_history_date_from" placeholder="From">
-															<span class="input-group-btn">
-															<button class="btn btn-sm default date-set" type="button"><i class="fa fa-calendar"></i></button>
-															</span>
-														</div>
-														<div class="input-group date datetime-picker" data-date-format="dd/mm/yyyy hh:ii">
-															<input type="text" class="form-control form-filter input-sm" readonly="" name="product_history_date_to" placeholder="To">
-															<span class="input-group-btn">
-															<button class="btn btn-sm default date-set" type="button"><i class="fa fa-calendar"></i></button>
-															</span>
-														</div>
-													</td><td rowspan="1" colspan="1">
-														<input type="text" class="form-control form-filter input-sm" name="product_history_desc" placeholder="To">
-													</td><td rowspan="1" colspan="1">
-														<select name="product_history_notification" class="form-control form-filter input-sm">
-															<option value="">Select...</option>
-															<option value="pending">Pending</option>
-															<option value="notified">Notified</option>
-															<option value="failed">Failed</option>
-														</select>
-													</td><td rowspan="1" colspan="1">
-														<div class="margin-bottom-5">
-															<button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-search"></i> Search</button>
-														</div>
-														<button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> Reset</button>
-													</td></tr>
-												</thead>
-												<tbody>
-												</tbody>
-												</table></div><div class="row"><div class="col-md-8 col-sm-12"><div class="dataTables_paginate paging_bootstrap_extended"><div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div></div><div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline"><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="-1">All</option></select> records</label></div><div class="dataTables_info"></div></div><div class="col-md-4 col-sm-12"></div></div></div>
-											</div>
+											<div class="form-actions">
+									<div class="row">
+										<div class="col-md-offset-3 col-md-9">
+											<button type="submit" class="btn green">確認</button>
+											<button type="button" class="btn default">取消</button>
 										</div>
 									</div>
 								</div>
+										</form>
+									</div>
+								</div>
 							</div>
+						</div>
+
+
+		</div>
+			<!-- edit sop end -->
+							
+							
 						</div>
 
 
@@ -2114,6 +1688,16 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
 <script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script src="assets/global/plugins/bootstrap-markdown/lib/markdown.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-summernote/summernote.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
@@ -2121,6 +1705,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/global/scripts/datatable.js"></script>
 <script src="assets/admin/pages/scripts/ecommerce-products.js"></script>
+<script src="assets/admin/pages/scripts/components-editors.js"></script>
+<script src="assets/admin/pages/scripts/form-wizard.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
         jQuery(document).ready(function() {    
@@ -2128,6 +1714,9 @@ License: You must have a valid license purchased only from themeforest(the above
 Layout.init(); // init current layout
 Demo.init(); // init demo features
            EcommerceProducts.init();
+           ComponentsEditors.init();
+           FormWizard.init();
+
         });
     </script>
 <!-- END JAVASCRIPTS -->
