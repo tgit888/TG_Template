@@ -1362,7 +1362,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										 專案建立時間
 									</th>
 									<th width="10%">
-										 狀態
+										 專案狀態
 									</th>
 									<th width="10%">
 										 Actions
@@ -1393,10 +1393,10 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									<td>
 										<select name="product_status" class="form-control form-filter input-sm">
-											<option value="">Select...</option>
-											<option value="published">Published</option>
-											<option value="notpublished">Not Published</option>
-											<option value="deleted">Deleted</option>
+											<option value="">請選擇...</option>
+											<option value="published">pending</option>
+											<option value="notpublished">working</option>
+											<option value="deleted">compeleted</option>
 										</select>
 									</td>
 									<td>
@@ -1508,10 +1508,10 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="caption">
 															<i class="fa fa-cogs"></i>中華映管SOP列表
 														</div>
-														<div class="actions">
+													<!-- 	<div class="actions">
 															<a href="javascript:;" class="btn btn-default btn-sm">
 															<i class="fa fa-pencil"></i> 新增 </a>
-														</div>
+														</div> -->
 													</div>
 													<div class="portlet-body">
 														<div class="table-responsive">
@@ -1521,7 +1521,18 @@ License: You must have a valid license purchased only from themeforest(the above
 																<th>
 																	 SOP名稱
 																</th>
-																
+																<th>
+																	 建立者
+																</th>
+																<th>
+																	 修改者
+																</th>
+																<th>
+																	 建立時間
+																</th>
+																<th>
+																	 修改時間
+																</th>
 																<th>
 																	 操作
 																</th>
@@ -1534,7 +1545,19 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<a href="javascript:;">
 																	測試手法-BM產品_SOP -中華-固含量 </a>
 																</td>
-															
+																<td>
+																	jacky
+																</td>
+																<td>
+																	nick
+																</td>
+																<td>
+																	2018-09-10
+																</td>
+
+																<td>
+																	2018-09-13
+																</td>	
 																<td>
 																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
 																	<i class="fa fa-edit"></i> 編輯 </a>
@@ -1552,6 +1575,19 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<a href="javascript:;">
 																	測試手法-BM產品_SOP -中華-表面阻抗 </a>
 																</td>
+																<td>
+																	jacky
+																</td>
+																<td>
+																	nick
+																</td>
+																<td>
+																	2018-09-10
+																</td>
+
+																<td>
+																	2018-09-13
+																</td>	
 																
 																<td>
 																	<a href="javascript:;" class="btn default btn-xs purple"><span class="md-click-circle md-click-animate" style="height: 65px; width: 65px; top: -16.5px; left: 15.5px;"></span>
@@ -1576,7 +1612,16 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!--  sop list end -->
 
 			<!-- edit sop start -->
+
 			<div class="row">
+				<div class="col-md-6">
+										<div class="btn-group">
+											<a href="#myModal_autocomplete" class="btn green" data-toggle="modal">
+											新增SOP <i class="fa fa-plus"></i>
+											</a>
+										</div>
+									</div>
+
 							<div class="col-md-12">
 								<!-- BEGIN EXTRAS PORTLET-->
 								<div class="portlet box blue-hoki">
@@ -1598,6 +1643,12 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="portlet-body form">
 										<form class="form-horizontal form-bordered">
 											<div class="form-body">
+												<div class="form-group">
+													<label class="control-label col-md-1">SOP名稱</label>
+													<div class="col-md-8">
+														<input type="text" class="form-control" name="name"/>
+													</div>
+												</div>
 												<div class="form-group">
 													<label class="control-label col-md-1">檔案
 													<span class="required">
