@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>RD-SYSTEM | 專案管理 - 任務管理-實驗</title>
+<title>RD-SYSTEM | 專案管理 - 報告管理</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -35,6 +35,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN PAGE LEVEL STYLES -->
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/jstree/dist/themes/default/style.min.css"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -831,16 +832,16 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="tg_prj_project.html">
 							專案基本資料</a>
 						</li>
-						<li class="active">
+						<li >
 							<a href="tg_prj_tasks.html">
 							任務管理</a>
 						</li>
 						<li>
-							<a href="tg_sop_manager.html">
+							<a href="tg_prj_sop_manager.html">
 							檢測(SOP)管理</a>
 						</li>
-						<li>
-							<a href="">
+						<li class="active">
+							<a href="tg_report_manage.html">
 							報告管理</a>
 						</li>
 					</ul>
@@ -1177,7 +1178,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>任務管理</h1>
+					<h1>報表管理 <!-- <small>編輯SOP</small> --></h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -1278,183 +1279,179 @@ License: You must have a valid license purchased only from themeforest(the above
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="#">專案管理</a>
-					<i class="fa fa-circle"></i>
-				</li>
-				<li>
-					<a href="tg_prj_tasks.html">任務管理</a>
-					<i class="fa fa-circle"></i>
-				</li>
-				<li>
-					<a href="tg_prj_tasks_exp.html">實驗項目</a>
-					<i class="fa fa-circle"></i>
-				</li>
-				
-				<li>
-					<label  style="color: #aaa;" >編輯工作項目</label>
+					<a href="#">報表管理</a>
 					
 				</li>
+				
 			</ul>
+<!-- 			<div class="note note-success">
+								<h4 class="block">實驗名稱:TG1589-SA4 線上VCD26sec出現Pin mura</h4>
+								
+							</div> -->
 			<!-- END PAGE BREADCRUMB -->
 			<!-- END PAGE HEADER-->
 
 
-	<!-- BEGIN VALIDATION STATES-->
-					<div class="portlet box yellow">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-gift"></i>專案任務資訊
-							</div>
+<!-- dialog  新增俵表 start-->
 
-						</div>
-						<div class="portlet-body form">
-							<!-- BEGIN FORM-->
-							<form action="#" id="form_sample_2" class="form-horizontal">
-								<div class="form-body">
-									<div class="alert alert-danger display-hide">
-										<button class="close" data-close="alert"></button>
-										You have some form errors. Please check below.
-									</div>
-									<div class="alert alert-success display-hide">
-										<button class="close" data-close="alert"></button>
-										Your form validation is successful!
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案名稱 
-										</label>
-										<div class="col-md-6">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<!-- <input type="text" class="form-control" name="name" value="和鑫光電專案"  readonly="true"/> -->
-												<!-- <label  class="btn gray" >和鑫光電專案</label> -->
-												<a  class="btn gray" href="tg_prj_tasks_exp.html">和鑫光電專案</a>
-											</div>
+<div id="reportModal_new" class="modal fade" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">新增報表</h4>
 										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">實驗名稱 
-										</label>
-										<div class="col-md-6">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<!--  <input type="text" class="form-control" name="name"  value="TG1589-SA4 線上VCD26sec出現Pin mura" readonly="true"/>  -->
-												<label  class="btn gray" >TG1589-SA4 線上VCD26sec出現Pin mura</label>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">實驗描述 
-										</label>
-										<div class="col-md-6">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<textarea class="form-control" rows="3" readonly="true">調整溶劑量改善Mura(改版為TG1589-SA5): 使用一般製程/華星製程比較</textarea>
-											</div>
-										</div>
-									</div>
 
-									<div class="form-group">
-										<label class="control-label col-md-3">備註 
-										</label>
-										<div class="col-md-6">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<textarea class="form-control" rows="3" readonly="true"></textarea>
-											</div>
-										</div>
-									</div>
-									
-								</div>
-								
-							</form>
-							<!-- END FORM-->
-							<div class="row">
-			<div class="col-md-12 col-sm-12">
-												<div class="portlet grey-cascade box">
-													
-													<div class="portlet-body">
-														<div class="table-responsive">
-															<table class="table table-hover table-bordered table-striped">
-															<thead>
-															<tr>
-																<th>
-																	 SOP名稱
-																</th>
-																<th>
-																	 建立者
-																</th>
-																<th>
-																	 修改者
-																</th>
-																<th>
-																	 建立時間
-																</th>
-																<th>
-																	 修改時間
-																</th>
-																
-																
-															</tr>
-															</thead>
-															<tbody>
-															<tr>
-																<td>
-																	<a href="javascript:;">
-																	測試手法-BM產品_SOP -中華-固含量 </a>
-																</td>
-																<td>
-																	jacky
-																</td>
-																<td>
-																	nick
-																</td>
-																<td>
-																	2018-09-10
-																</td>
+										<p>
+										 <h4>您即將創建一個新報告。請選擇您要專案創建報告的項目。</h4>
+										</p>	
 
-																<td>
-																	2018-09-13
-																</td>	
-																
-
-																
-															</tr>
-															<tr>
-																<td>
-																	<a href="javascript:;">
-																	測試手法-BM產品_SOP -中華-表面阻抗 </a>
-																</td>
-																<td>
-																	jacky
-																</td>
-																<td>
-																	nick
-																</td>
-																<td>
-																	2018-09-10
-																</td>
-
-																<td>
-																	2018-09-13
-																</td>	
-																
-																
-															</tr>
-															
-															</tbody>
-															</table>
+										<div class="modal-body form">
+											<form action="#" class="form-horizontal form-row-seperated">
+												<div class="form-group">
+													<label class="col-sm-4 control-label">專案名稱</label>
+													<div class="col-sm-8">
+														<div class="input-group">
+															<!-- <span class="input-group-addon">
+															<i class="fa fa-user"></i>
+															</span> -->
+															<select class="form-control" name="select">
+															<option value="">請選擇</option>
+															<option value="Category 1">中華映管專案</option>
+															<option value="Category 2">和鑫光電專案</option>
+															</select>
 														</div>
+														
 													</div>
 												</div>
-				</div>
+												
+												
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											<button type="button" class="btn btn-primary"><i class="fa fa-check"></i> 確認</button>
+										</div>
+									</div>
+								</div>
+							</div>
 
-</div>
+<!-- dialog  新增報表 end-->
 
+
+<!-- dialog  新增俵表 start-->
+
+<div id="reportModal_detail" class="modal fade" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">新增內文到報表</h4>
+										</div>
+
+										<p>
+										 <h4>請選擇您要專案創建報告的實驗項目工作項目。</h4>
+										</p>	
+
+
+										<div class="portlet-body">
+							<div id="tree_2" class="tree-demo jstree jstree-2 jstree-default jstree-checkbox-selection" role="tree" aria-activedescendant="j2_7">
+								<ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots">
+									<li role="treeitem" aria-expanded="true" id="j2_1" class="jstree-node  jstree-open" aria-selected="false">
+										<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+									<i class="jstree-icon jstree-ocl"></i>
+									<a class="jstree-anchor" href="#">
+										<i class="jstree-icon jstree-checkbox jstree-undetermined"></i>
+										<i class="jstree-icon jstree-themeicon fa fa-folder icon-state-warning icon-lg jstree-themeicon-custom">
+										</i>
+										Same but with checkboxes
+									</a>
+									<ul role="group" class="jstree-children">
+										<li role="treeitem" id="j2_2" class="jstree-node  jstree-leaf" aria-selected="false">
+											<div unselectable="on" class="jstree-wholerow jstree-wholerow-clicked">&nbsp;</div>
+											<i class="jstree-icon jstree-ocl"></i>
+											<a class="jstree-anchor  jstree-clicked" href="#">
+												<i class="jstree-icon jstree-checkbox"></i>
+												<i class="jstree-icon jstree-themeicon fa fa-folder icon-state-warning icon-lg jstree-themeicon-custom">
+												</i>initially selected
+											</a>
+										</li>
+											<li role="treeitem" id="j2_3" class="jstree-node  jstree-leaf" aria-selected="false">
+												<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+												<i class="jstree-icon jstree-ocl"></i>
+											<!-- 	<a class="jstree-anchor" href="#">
+													<i class="jstree-icon jstree-checkbox"></i>
+													<i class="jstree-icon jstree-themeicon fa fa-warning icon-state-danger jstree-themeicon-custom"></i>custom icon
+												</a> -->
+											</li>
+												<li role="treeitem" aria-expanded="true" id="j2_4" class="jstree-node  jstree-open">
+													<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+													<i class="jstree-icon jstree-ocl"></i>
+													<a class="jstree-anchor" href="#">
+														<i class="jstree-icon jstree-checkbox"></i>
+														<i class="jstree-icon jstree-themeicon fa fa-folder icon-state-default jstree-themeicon-custom"></i>initially open
+													</a>
+													<ul role="group" class="jstree-children">
+														<li role="treeitem" id="j2_5" class="jstree-node  jstree-leaf jstree-last" aria-selected="false"><div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+															<i class="jstree-icon jstree-ocl"></i>
+															<a class="jstree-anchor" href="#">
+																<i class="jstree-icon jstree-checkbox"></i>
+																<i class="jstree-icon jstree-themeicon fa fa-folder icon-state-warning icon-lg jstree-themeicon-custom">
+																</i>Another node
+															</a>
+														</li>
+														</ul>
+													</li>
+													<li role="treeitem" id="j2_6" class="jstree-node  jstree-leaf">
+														<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+														<i class="jstree-icon jstree-ocl">
+														</i>
+														<a class="jstree-anchor" href="#">
+															<i class="jstree-icon jstree-checkbox">
+															</i>
+															<i class="jstree-icon jstree-themeicon fa fa-warning icon-state-warning jstree-themeicon-custom">
+															</i>custom icon
+														</a>
+													</li>
+													<li role="treeitem" id="j2_7" class="jstree-node  jstree-leaf jstree-last" aria-selected="true">
+														<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+														<i class="jstree-icon jstree-ocl">
+														</i>
+														<a class="jstree-anchor  jstree-disabled" href="#">
+															<i class="jstree-icon jstree-checkbox"></i>
+															<i class="jstree-icon jstree-themeicon fa fa-check icon-state-success jstree-themeicon-custom">
+															</i>disabled node
+														</a>
+													</li>
+												</ul>
+											</li>
+										<!-- 	<li role="treeitem" id="j2_8" class="jstree-node  jstree-leaf jstree-last">
+												<div unselectable="on" class="jstree-wholerow">&nbsp;</div>
+												<i class="jstree-icon jstree-ocl">
+												</i>
+												<a class="jstree-anchor" href="#"><i class="jstree-icon jstree-checkbox">
+												</i>
+												<i class="jstree-icon jstree-themeicon fa fa-folder icon-state-warning icon-lg jstree-themeicon-custom">
+												</i>And wholerow selection
+											</a>
+											</li> -->
+									</ul>
+								</div>
 						</div>
-				
 
-					</div>
-					<!-- END VALIDATION STATES-->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											<button type="button" class="btn btn-primary"><i class="fa fa-check"></i> 確認</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+<!-- dialog  新增報表 end-->
+
+
+
+
 
 
 			<!-- BEGIN PAGE CONTENT-->
@@ -1462,28 +1459,67 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet box blue">
-						<div class="portlet-title">
+						<!-- <div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-edit"></i>工作項目列表
+								<i class="fa fa-edit"></i>TG1589-SA4 線上VCD26sec出現Pin mura, 調整溶劑量改善Mura(改版為TG1589-SA5) -SOP列表
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
 								</a>
 								
 							</div>
+						</div> -->
+
+
+					<!-- check list start -->
+					<div class="portlet box grey-cascade">
+
+						<div class="portlet-title">
+
+							<div class="caption">
+								<i class="fa fa-globe"></i>報表清單
+							</div>
+<!-- 							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div> -->
 						</div>
 						<div class="portlet-body">
-					 		<div class="table-toolbar">
+							<div class="table-toolbar">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-											<button id="" class="btn green">
-											新增工作項目 <i class="fa fa-plus"></i>
-											</button>
+											<a id="sample_editable_1_new" class="btn green" href="#reportModal_new"  data-toggle="modal">
+											新增 <i class="fa fa-plus"></i>
+											</a>
+
+											
+											<a id="sample_editable_1_new" class="btn green" href="#reportModal_detail"  data-toggle="modal">
+											新增 item<i class="fa fa-plus"></i>
+											</a>
+
 										</div>
-									</div>
-								<!-- 	<div class="col-md-6">
-										<div class="btn-group pull-right">
+										<div class="btn-group">
+											<button id="sample_editable_1_new" class="btn gray" disabled="disabled">
+											修改 <i class="fa fa-edit"></i>
+											</button>
+											
+										</div>
+										<div class="btn-group">
+											<button id="sample_editable_1_new" class="btn gray" disabled="disabled">
+											刪除 <i class="fa fa-trash"></i>
+											</button>
+											
+										</div>
+									</div> 
+ 									<div class="col-md-6">
+<!-- 										<div class="btn-group pull-right">
 											<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
 											</button>
 											<ul class="dropdown-menu pull-right">
@@ -1500,101 +1536,145 @@ License: You must have a valid license purchased only from themeforest(the above
 													Export to Excel </a>
 												</li>
 											</ul>
-										</div>
-									</div> -->
+										</div> -->
+									</div> -
 								</div>
-							</div> 
-							<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+							</div>
+							
+							<div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
+<!-- 								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<div class="dataTables_length" id="sample_1_length"><label>  
+											<select name="sample_1_length" aria-controls="sample_1" class="form-control input-xsmall input-inline">
+												<option value="5">5</option><option value="15">15</option><option value="20">20</option><option value="-1">All</option></select> records</label>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div id="sample_1_filter" class="dataTables_filter"><label>
+											My search: <input type="search" class="form-control input-small input-inline" placeholder="" aria-controls="sample_1"></label>
+										</div>
+									</div>
+								</div>  -->
+								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<div class="dataTables_length" id="sample_1_length"><label>  
+											<label>  <select name="sample_1_length" aria-controls="sample_1" class="form-control input-xsmall input-inline"><option value="5">5</option><option value="15">15</option><option value="20">20</option><option value="-1">All</option></select> records</label>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div id="sample_1_filter" class="dataTables_filter"><label>search: <input type="search" class="form-control input-small input-inline" placeholder="" aria-controls="sample_1"></label></div>
+									</div>
+								</div> 
+
+							<div class="table-scrollable">
+								<table class="table table-striped table-bordered table-hover dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
 							<thead>
-							<tr>
-								<th>
-									 序號
+							<tr role="row"><th class="table-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="
+									
+								" style="width: 24px;">
+									<div class="checker"><span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span></div>
 								</th>
-								<th>
-									 工作名稱
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 專案名稱
 								</th>
-								<th>
-									 狀態
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 報表名稱
 								</th>
-								
-								
-								<th>
-									 完成日期
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 建立者
 								</th>
-								<th>
-									 建立日期
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 修改立者
 								</th>
-								<th>
-									 修改日期
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 建立時間
 								</th>
-								<th>
-									 操作
+								<th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+									 Username
+								: activate to sort column ascending" style="width: 180px;">
+									 修改時間
 								</th>
-								
-							</tr>
+								</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="
+									 Status
+								" style="width: 216px;">
+									 Status
+								</th></tr>
 							</thead>
 							<tbody>
-								
-							<tr>
+							
+							
+							
+							
+							<tr class="gradeX " role="row">
 								<td>
-									 1
+									<div class="checker"><span class=""><input type="checkbox" class="checkboxes" value="0"></span></div>
+								</td>
+								<td class="sorting_1">
+									中華映管專案
+								</td>
+								<td class="sorting_1">
+									中華映管專案報表產出
+								</td>
+								<td class="sorting_1">
+									kimi
+								</td>
+								<td class="sorting_1">
+									nick
+								</td>
+								<td class="sorting_1">
+									2018-09-18
+								</td>
+								<td class="sorting_1">
+									2018-09-18
 								</td>
 								<td>
-									 TG1589-SA4 線上VCD26sec出現Pin mura
+									<span class="label label-sm label-success">
+									活存 </span>
 								</td>
-								<td>
-									 In progress
-								</td>
-								
-									
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<a  class="btn yellow" href="">修改</a>
-									<a  class="btn red" href="">封存</a>
-									<a  class="btn green" href="">複製</a>
-									<a  class="btn blue" href="tg_prj_tasks_exp_tcontent.html">編輯工作內容</a>
-								</td>	
 							</tr>
-						</a>
-							<tr>
+							<tr class="gradeX " role="row">
 								<td>
-									 2
+									<div class="checker"><span class="checked"><input type="checkbox" class="checkboxes" value="1"></span></div>
+								</td>
+								<td class="sorting_1">
+									中華映管專案
+								</td>
+								<td class="sorting_1">
+									中華映管專案報表產出
+								</td>
+								<td class="sorting_1">
+									kimi
+								</td>
+								<td class="sorting_1">
+									nick
+								</td>
+								<td class="sorting_1">
+									2018-09-18
+								</td>
+								<td class="sorting_1">
+									2018-09-18
 								</td>
 								<td>
-									 TG1589-SA4 線上VCD26sec出現Pin mura
+									<span class="label label-sm label-success">
+									活存 </span>
 								</td>
-								<td>
-									 In progress
-								</td>
-								
-									
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<a  class="btn yellow" href="">修改</a>
-									<a  class="btn red" href="">封存</a>
-									<a  class="btn green" href="">複製</a>
-									<a  class="btn blue" href="tg_prj_tasks_exp_tcontent.html">編輯工作內容</a>
-								</td>	
 							</tr>
-							</tbody>
-							</table>
+						  </tbody>
+							</table></div><div class="row"><div class="col-md-5 col-sm-12"><div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">Showing 1 to 5 of 25 entries</div></div><div class="col-md-7 col-sm-12"><div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_paginate"><ul class="pagination" style="visibility: visible;"><li class="prev disabled"><a href="#" title="First"><i class="fa fa-angle-double-left"></i></a></li><li class="prev disabled"><a href="#" title="Prev"><i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#" title="Next"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#" title="Last"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
 						</div>
+					</div>
+
+					<!--  check list end -->
 					</div>
 					<!-- END EXAMPLE TABLE PORTLET-->
 				</div>
@@ -1651,12 +1731,15 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/table-editable.js"></script>
+<script src="assets/global/plugins/jstree/dist/jstree.min.js"></script>
+<script src="assets/admin/pages/scripts/tg_ui-tree.js"></script>
 <script>
 jQuery(document).ready(function() {       
    Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 Demo.init(); // init demo features
    TableEditable.init();
+    UITree.init();
 });
 </script>
 </body>
