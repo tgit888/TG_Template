@@ -832,13 +832,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							專案基本資料</a>
 						</li>
 						<li>
-							<a href="tg_prj_tasks.html">
-							任務管理</a>
-						</li>
-						<li>
 							<a href="tg_prj_sop_manager.html">
 							檢測(SOP)管理</a>
 						</li>
+						<li>
+							<a href="tg_prj_tasks.html">
+							任務管理</a>
+						</li>
+
 						<li>
 							<a href="tg_report_manage.html">
 							報告管理</a>
@@ -1368,7 +1369,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 										<div class="btn-group">
 											<button id="" class="btn red">
-											刪除產品檢查表 <i class="fa fa-plus"></i>
+											刪除產品檢查表 <i class="fa fa-trash"></i>
 											</button>
 										</div>
 										
@@ -1520,7 +1521,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
+
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1533,7 +1535,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1549,7 +1551,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										
 									</td>
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1562,7 +1564,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1575,7 +1577,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1588,7 +1590,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1601,7 +1603,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</td>
 									
 									<td>
-										<a href="javascript:;" class="btn default btn-xs purple">
+										<a href="#editModal_autocomplete"  data-toggle="modal" class="btn default btn-xs purple">
 										<i class="fa fa-edit"></i> 編輯 </a>
 									</td>
 								</tr>
@@ -1656,6 +1658,46 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END CONTAINER -->
 
 
+
+
+
+<!-- dialog  編輯確認內文start-->
+
+<div id="editModal_autocomplete" class="modal fade" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">編輯確認項目</h4>
+										</div>
+										<div class="modal-body form">
+											<form action="#" class="form-horizontal form-row-seperated">
+												<div class="form-group">
+													<label class="col-sm-4 control-label">確認項目內容</label>
+													<div class="col-sm-8">
+														<div class="input-group">
+															<!-- <span class="input-group-addon">
+															<i class="fa fa-user"></i>
+															</span> -->
+															<!-- <input type="text" id="typeahead_example_modal_1" name="typeahead_example_modal_1" class="form-control"/> -->
+												<input type="text" class="form-control" name="name">
+														</div>
+														
+													</div>
+												</div>
+												
+												
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											<button type="button" class="btn btn-primary"><i class="fa fa-check"></i> 確認</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+<!-- dialog  編輯確認內文end-->
 
 
 
