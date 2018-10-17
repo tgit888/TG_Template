@@ -63,7 +63,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="index.html">
-			<img src="assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default"/>
+				<img src="assets/admin/layout4/img/logo-light-rd.png" alt="logo" class="logo-default"/>
 			</a>
 			<div class="menu-toggler sidebar-toggler">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -1351,17 +1351,17 @@ License: You must have a valid license purchased only from themeforest(the above
 												<span class="number">
 												4 </span>
 												<span class="desc">
-												<i class="fa fa-check"></i> 線上測試結果 </span>
+												<i class="fa fa-check"></i> 線上測試結果(結果分析改善) </span>
 												</a>
 											</li>
-											<li>
+											<!-- <li>
 												<a href="#tab5" data-toggle="tab" class="step">
 												<span class="number">
 												5 </span>
 												<span class="desc">
 												<i class="fa fa-check"></i> 結果分析改善 </span>
 												</a>
-											</li>
+											</li> -->
 										</ul>
 										<div id="bar" class="progress progress-striped" role="progressbar">
 											<div class="progress-bar progress-bar-success">
@@ -1378,6 +1378,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 											<div class="tab-pane active" id="tab1">
 												<h3 class="block">建立專案簽核</h3>
+												<small>簽核人:副總或專案負責人(依據專案等級)</small>
 												<div class="form-group">
 													<label class="control-label col-md-3"> 簽核狀態<span class="required" aria-required="true">
 													* </span>
@@ -1425,6 +1426,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 											<div class="tab-pane" id="tab2">
 												<h3 class="block">開發(送樣)審查簽核</h3>
+												<small>簽核人:副總或專案負責人(依據專案等級)</small>
 											<!-- 	<div class="form-group">
 													<label class="control-label col-md-3">Fullname <span class="required">
 													* </span>
@@ -1483,7 +1485,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 											<div class="tab-pane" id="tab3">
 												<h3 class="block">品質檢測簽核</h3>
-													
+													<small>簽核人:專案負責人</small>
 												<div class="form-group">
 													<label class="control-label col-md-3">簽核狀態 <span class="required" aria-required="true">
 													* </span>
@@ -1528,7 +1530,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 											<div class="tab-pane" id="tab4">
 												<h3 class="block">線上測試簽核</h3>
-													
+													<small>簽核人:專案負責人</small>
 												<div class="form-group">
 													<label class="control-label col-md-3">簽核狀態 <span class="required" aria-required="true">
 													* </span>
@@ -1558,6 +1560,17 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="file" name="files[]" multiple="">
 													</div>
 												</div>
+													<div class="form-group">
+													<label class="control-label col-md-3"> 結果分析改善說明
+													</label>
+												
+														<div class="col-md-4">
+															<div class="input-icon right">
+																<i class="fa"></i>
+																<textarea class="form-control" rows="3" ></textarea>
+															</div>
+														</div>
+												</div>
 												<div class="form-group">
 													<label class="control-label col-md-3"> 備註
 													</label>
@@ -1570,7 +1583,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 												</div>
 											</div>
-											<div class="tab-pane" id="tab5">
+										<!-- 	<div class="tab-pane" id="tab5">
 												<h3 class="block">結果分析簽核</h3>
 													
 												<div class="form-group">
@@ -1578,16 +1591,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													* </span>
 													</label>
 													<div class="col-md-4">
-													<!-- 	<div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div> -->
+													
 														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
 														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
 														</div>
@@ -1613,7 +1617,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															</div>
 														</div>
 												</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
 									<div class="form-actions">
