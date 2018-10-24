@@ -1305,7 +1305,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-gift"></i>專案簽核- <span class="step-title">
-								Step 1 of 5 </span>
+								Step 1 of 4 </span>
 							</div>
 							<div class="tools hidden-xs">
 								<a href="javascript:;" class="collapse">
@@ -1355,14 +1355,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<i class="fa fa-check"></i> 線上測試結果(結果分析改善) </span>
 												</a>
 											</li>
-											<!-- <li>
-												<a href="#tab5" data-toggle="tab" class="step">
-												<span class="number">
-												5 </span>
-												<span class="desc">
-												<i class="fa fa-check"></i> 結果分析改善 </span>
-												</a>
-											</li> -->
+											
 										</ul>
 										<div id="bar" class="progress progress-striped" role="progressbar">
 											<div class="progress-bar progress-bar-success">
@@ -1395,27 +1388,20 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div id="form_2_membership_error">
 														</div> -->
-														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
+														<!-- <div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
 														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
-														</div>
+														</div> -->
+														<select id="step1_status" class="form-control input-medium">
+															<option value="">請選擇</option>
+															<option value="1">准許</option>
+															<option value="0">不准許</option>
+														</select>
 													</div>
 												</div>
-												<div class="form-group">
+												<div class="form-group" style="display:none" id="step1_comment">
 													<label class="control-label col-md-3"> 審查結果<span class="required" aria-required="true">
 													* </span>
 													</label>
-												<!-- 	<div class="col-md-4">
-														<div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div>
-													</div> -->
 														<div class="col-md-4">
 															<div class="input-icon right">
 																<i class="fa"></i>
@@ -1424,57 +1410,28 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 												</div>
 											</div>
+											
 
 											<div class="tab-pane" id="tab2">
 												<h3 class="block">開發(送樣)審查簽核</h3>
 												<small>簽核人:副總或專案負責人(依據專案等級)</small>
-											<!-- 	<div class="form-group">
-													<label class="control-label col-md-3">Fullname <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<input type="text" class="form-control" name="fullname"/>
-														<span class="help-block">
-														Provide your fullname </span>
-													</div>
-												</div> -->
 													<div class="form-group">
 													<label class="control-label col-md-3">簽核狀態 <span class="required" aria-required="true">
 													* </span>
 													</label>
 													<div class="col-md-4">
-													<!-- 	<div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div> -->
-														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
-														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
-														</div>
+														<select id="step2_status" class="form-control input-medium">
+															<option value="">請選擇</option>
+															<option value="1">准許</option>
+															<option value="0">不准許</option>
+														</select>
 													</div>
 												</div>
-												<div class="form-group">
+												<div class="form-group" style="display:none" id="step2_comment">
 													<label class="control-label col-md-3">審查結果 <span class="required" aria-required="true">
 													* </span>
 													</label>
-												<!-- 	<div class="col-md-4">
-														<div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div>
-													</div> -->
-														<div class="col-md-4">
+														<div class="col-md-4" >
 															<div class="input-icon right">
 																<i class="fa"></i>
 																<textarea class="form-control" rows="3" ></textarea>
@@ -1492,22 +1449,14 @@ License: You must have a valid license purchased only from themeforest(the above
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<!-- <div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div> -->
-														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
-														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
-														</div>
+														<select id="step3_status" class="form-control input-medium">
+															<option value="">請選擇</option>
+															<option value="1">准許</option>
+															<option value="0">不准許</option>
+														</select>
 													</div>
 												</div>
-												<div class="form-group">
+												<div class="form-group" style="display:none" id="step3_uploadfile">
 													<label class="control-label col-md-3">品質檢測(COA附件) <span class="required" aria-required="true">
 													* </span>
 													</label>
@@ -1516,7 +1465,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="file" name="files[]" multiple="">
 													</div>
 												</div>
-												<div class="form-group">
+												<div class="form-group" style="display:none" id="step3_comment">
 													<label class="control-label col-md-3"> 備註
 													</label>
 												
@@ -1537,22 +1486,18 @@ License: You must have a valid license purchased only from themeforest(the above
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<!-- <div class="radio-list" data-error-container="#form_2_membership_error">
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="1"></div>
-															準</label>
-															<label>
-															<div class="radio"><input type="radio" name="membership" value="2"></div>
-															不准 </label>
-														</div>
-														<div id="form_2_membership_error">
-														</div> -->
-														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
+														
+														<!-- <div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
 														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
-														</div>
+														</div> -->
+														<select id="step4_status" class="form-control input-medium">
+															<option value="">請選擇</option>
+															<option value="1">准許</option>
+															<option value="0">不准許</option>
+														</select>
 													</div>
 												</div>
-												<div class="form-group">
+												<div class="form-group" style="display:none" id="step4_uploadfile">
 													<label class="control-label col-md-3">線上測試結果(附件) <span class="required" aria-required="true">
 													* </span>
 													</label>
@@ -1561,7 +1506,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="file" name="files[]" multiple="">
 													</div>
 												</div>
-													<div class="form-group">
+													<div class="form-group" style="display:none" id="step4_desc">
 													<label class="control-label col-md-3"> 結果分析改善說明
 													</label>
 												
@@ -1572,8 +1517,8 @@ License: You must have a valid license purchased only from themeforest(the above
 															</div>
 														</div>
 												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3"> 備註
+												<div class="form-group"style="display:none" id="step4_comment">
+													<label class="control-label col-md-3" > 備註
 													</label>
 												
 														<div class="col-md-4">
@@ -1584,48 +1529,14 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 												</div>
 											</div>
-										<!-- 	<div class="tab-pane" id="tab5">
-												<h3 class="block">結果分析簽核</h3>
-													
-												<div class="form-group">
-													<label class="control-label col-md-3">簽核狀態 <span class="required" aria-required="true">
-													* </span>
-													</label>
-													<div class="col-md-4">
-													
-														<div class="bootstrap-switch-container" style="width: 138px; margin-left: 0px;">
-														<input type="checkbox" class="make-switch" data-on-text="Yes" data-off-text="No">
-														</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">結果分析改善(附件) <span class="required" aria-required="true">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														
-														<input type="file" name="files[]" multiple="">
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3"> 備註
-													</label>
-												
-														<div class="col-md-4">
-															<div class="input-icon right">
-																<i class="fa"></i>
-																<textarea class="form-control" rows="3" ></textarea>
-															</div>
-														</div>
-												</div>
-											</div> -->
+									
 										</div>
 									</div>
 									<div class="form-actions">
 										<div class="row">
 											<div class="col-md-offset-3 col-md-9">
-												<a href="javascript:;" class="btn default button-previous">
-												<i class="m-icon-swapleft"></i> Back </a>
+												<a href="javascript:;" class="btn default button-previous" style="display:none">
+												<i class="m-icon-swapleft"></i> Back </a>	
 												<a href="javascript:;" class="btn blue button-next">
 												Continue <i class="m-icon-swapright m-icon-white"></i>
 												</a>
@@ -1687,16 +1598,64 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/form-wizard.js"></script>
+<script src="assets/admin/pages/scripts/tg_form-wizard.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
 jQuery(document).ready(function() {       
    // initiate layout and plugins
-   Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-Demo.init(); // init demo features
-   FormWizard.init();
-});
+    Metronic.init(); // init metronic core components
+	Layout.init(); // init current layout
+	Demo.init(); // init demo features
+    FormWizard.init();
+    $("select#step1_status").change(function(){ //事件發生
+												  
+			if($(this).val().length ==1){
+				$("#step1_comment").show();
+			}else{
+				$("#step1_comment").hide();
+			}
+
+		});
+
+        $("select#step2_status").change(function(){ //事件發生
+												  
+			if($(this).val().length ==1){
+				$("#step2_comment").show();
+			}else{
+				$("#step2_comment").hide();
+			}
+
+		});
+
+		$("select#step3_status").change(function(){ //事件發生
+												  
+			if($(this).val().length ==1){
+				$("#step3_uploadfile").show();
+				$("#step3_comment").show();
+			}else{
+				$("#step3_uploadfile").hide();
+				$("#step3_comment").hide();
+			}
+
+		});
+
+		$("select#step4_status").change(function(){ //事件發生
+												  
+			if($(this).val().length ==1){
+				$("#step4_uploadfile").show();
+				$("#step4_comment").show();
+				$("#step4_desc").show();
+			}else{
+				$("#step3_uploadfile").hide();
+				$("#step3_comment").hide();
+				$("#step4_desc").hide();
+			}
+
+		});
+
+	});
+
+
 </script>
 <!-- END JAVASCRIPTS -->
 </body>
