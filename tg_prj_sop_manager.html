@@ -1654,27 +1654,27 @@ License: You must have a valid license purchased only from themeforest(the above
 										<form class="form-horizontal form-bordered">
 											<div class="form-body">
 												<div class="form-group">
-													<label class="control-label col-md-1">SOP名稱</label>
+													<label class="control-label col-md-2">SOP名稱</label>
 													<div class="col-md-8">
 														<input type="text" class="form-control" name="name"/>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-1">SOP等級</label>
+													<label class="control-label col-md-2">SOP等級</label>
 													<div class="col-md-8">
 														<select class="layout-option form-control input-small input-sm">
-															<option value="fluid" selected="selected">SOP 等級 1 副總</option>
-															<option value="boxed">SOP 等級 2 各產品負責人</option>
-															<option value="boxed">SOP 等級 3 各產品負責人 + 工程師</option>
-														</select>
+															<option value="fluid" selected="selected">1等級  </option>
+															<option value="boxed">2等級</option>
+															<option value="boxed">3dsdseq4sxxcxcse3eefvbs等級</option>
+														</select> 
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-1">檔案
+													<label class="control-label col-md-2">檔案
 													<span class="required">
 													* </span>
 													</label>
-													<div class="col-md-11">
+													<div class="col-md-8">
 														<!-- <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
 															<input type="text" class="form-control" readonly>
 															<span class="input-group-btn">
@@ -1689,21 +1689,263 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 												</div> 
 												<div class="form-group">
-													<label class="control-label col-md-1">編輯內容</label>
-													<div class="col-md-11">
+													<!-- <label class="control-label col-md-1">製程參數 </label> -->
+													
+													<label class="control-label col-md-2">製程參數
+													<span class="required">
+													* </span>
+													</label>
+												<div class="col-md-10">
+												<!-- 	<div class="col-md-11">
 														<div name="summernote" id="summernote_1">
 														</div>
+													</div> -->
+													<div class="portlet-body">
+														<div class="table-scrollable">
+															<table class="table table-bordered table-hover">
+															<thead>
+															<tr>
+																<th>
+																	items
+																</th>
+																<th>
+																	 Condition	
+																</th>
+																<th>
+																	 手法
+																</th>
+																
+															</tr>
+															</thead>
+															<tbody>
+														
+															<tr bgcolor="#EBEBFF">
+																<td>
+																	Substrate
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																
+															</tr>
+															<tr bgcolor="#EBEBFF">
+																<td>
+																	Spin rate
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#EBEBFF">
+																<td>
+																	Vacuum Dry	
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFDEA1">
+																<td>
+																	Exposure  Equipment		
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFDEA1">
+																<td>
+																	Exposure  Intensity				
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFDEA1">
+																<td >
+																	Exposure  Gap (um)				
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFDEA1">
+																<td>
+																	Exposure  Dose (mJ)				
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFFFA1">
+																<td>
+																	Development KOH : DI Water (ml)			
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFFFA1">
+																<td>
+																	Development Auto Spray (23.5℃)		
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<textarea class="form-control" rows="3"></textarea>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<textarea class="form-control" rows="3"></textarea>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#FFFFA1">
+																<td>
+																	Development DI water, Spray		
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#A1FFA1">
+																<td>
+																	Post-baking		
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#A1FFFF">
+																<td>
+																	量測	 
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															<tr bgcolor="#A1FFFF">
+																<td>
+																	量測	 
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control" name="name"/>
+																	</div>
+																</td>
+															</tr>
+															</tbody>
+															</table>
+														</div>
+
+													</div>
+													</div>
+												</div>
+													<div class="form-group">
+													<label class="control-label col-md-2">測試數據輸入樣本<span class="required">
+													* </span></label>
+													<div class="col-md-8">
+														<select class="layout-option form-control input-small input-sm">
+															<option value="fluid" selected="selected">趨勢圖輸入格式  </option>
+															<option value="boxed">曝光前後輸入格式</option>
+															<option value="boxed">Viscosity輸入格式</option>
+															<option value="boxed">固含量輸入格式</option>
+															<option value="boxed">殘膜率,縮膜率輸入格式</option>
+															<option value="boxed">表面阻抗輸入格式</option>
+														</select> 
 													</div>
 												</div>
 											</div>
+
 											<div class="form-actions">
-									<div class="row">
-										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">確認</button>
-											<button type="button" class="btn default">取消</button>
-										</div>
-									</div>
-								</div>
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<button type="submit" class="btn green">確認</button>
+														<button type="button" class="btn default">取消</button>
+													</div>
+												</div>
+											</div>
 										</form>
 									</div>
 								</div>
