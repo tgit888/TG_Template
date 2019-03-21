@@ -1297,7 +1297,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="form-group">
 										<label class="control-label col-md-3">Extra Large</label>
 										<div class="col-md-4">
-											<select class="form-control input-xlarge select2me" data-placeholder="Select...">
+											<select class="form-control input-xlarge select2me" id ="testSelect" data-placeholder="Select...">
 												<option value=""></option>
 												<option value="AL">Alabama</option>
 												<option value="WY">Wyoming</option>
@@ -2820,10 +2820,12 @@ License: You must have a valid license purchased only from themeforest(the above
 <script>
         jQuery(document).ready(function() {       
            // initiate layout and plugins
-           Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-Demo.init(); // init demo features
-           ComponentsDropdowns.init();
+           	Metronic.init(); // init metronic core components
+			Layout.init(); // init current layout
+			Demo.init(); // init demo features
+           	ComponentsDropdowns.init();
+           	//$("#testSelect").val('WY');
+           	$('#testSelect').val('WY').trigger('change'); 
         });   
     </script>
 <!-- END GOOGLE RECAPTCHA -->

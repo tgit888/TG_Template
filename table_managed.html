@@ -1956,8 +1956,21 @@ jQuery(document).ready(function() {
    Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 Demo.init(); // init demo features
-   TableManaged.init();
+  // TableManaged.init();
 });
+
+// $('#sample_1').on( 'keyup', function () {
+//     table.search( this.value ).draw();
+//     alert(this.value);
+// } );
+
+$('#sample_1').dataTable( {
+	
+  // "search": {
+  //   "search": "Fred"
+  // }
+});
+table.destroy();
 </script>
 </body>
 <!-- END BODY -->

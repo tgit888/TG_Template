@@ -1340,7 +1340,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="portlet-body form">
 							
-							<form action="#" id="form_sample_2" class="form-horizontal">
+							<form id="form_sample_2" class="form-horizontal">
 								<div class="form-body">
 									<div class="alert alert-danger display-hide">
 										<button class="close" data-close="alert"></button>
@@ -1394,8 +1394,8 @@ License: You must have a valid license purchased only from themeforest(the above
 										* </span>
 										</label>
 										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="startDateTime" name="startDateTime" >
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
@@ -1408,8 +1408,8 @@ License: You must have a valid license purchased only from themeforest(the above
 										* </span>
 										</label>
 										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="expEndDatetime" name="expEndDatetime" >
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
@@ -1422,8 +1422,8 @@ License: You must have a valid license purchased only from themeforest(the above
 										* </span>
 										</label>
 										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly>
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="endDatetime" name="endDatetime">
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
@@ -1524,7 +1524,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="form-actions">
 									<div class="row">
 										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">確認</button>
+											<button type="submit" class="btn green" onClick="editProject();">確認</button>
 											<button type="button" class="btn default">取消</button>
 										</div>
 									</div>
@@ -1774,12 +1774,24 @@ License: You must have a valid license purchased only from themeforest(the above
         jQuery(document).ready(function() {       
            // initiate layout and plugins
            Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-Demo.init(); // init demo features
+			Layout.init(); // init current layout
+			Demo.init(); // init demo features
            ComponentsPickers.init();
             TableAdvanced.init();
           
-        });   
+        });  
+
+
+
+
+        	function editProject(){
+        	alert($('#startDateTime').val());
+        	
+        	alert($('#expEndDatetime').val());
+        	
+        	alert($('#endDatetime').val());
+        	
+        }; 
     </script>
 <!-- END JAVASCRIPTS -->
 </body>
