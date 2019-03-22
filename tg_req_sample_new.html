@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>RD-SYSTEM | 專案管理 - 專案基本資料</title>
+<title>RD-SYSTEM | 送樣資料編輯 </title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -540,7 +540,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</li>
 					</ul>
 				</li>
-				<li class="active open">
+				<li >
 					<a href="javascript:;">
 					<i class="icon-wallet"></i>
 					<span class="title">專案管理</span>
@@ -551,7 +551,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="tg_prj_product.html">
 							產品基本資料</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="tg_prj_project.html">
 							專案基本資料</a>
 						</li>
@@ -570,7 +570,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</li>
 					</ul>
 				</li> 
-				<li>
+				<li class="active open">
 					<a href="javascript:;">
 					<i class="icon-wallet"></i>
 					<span class="title">送樣管理</span>
@@ -578,7 +578,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						
-						<li >
+						<li class="active">
 							<a href="tg_req_sample.html">
 							送樣資料</a>
 						</li>
@@ -621,7 +621,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>專案基本資料 </h1>
+					<h1>送樣管理 </h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -715,6 +715,72 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- END PAGE TOOLBAR -->
 			</div>
 			<!-- END PAGE HEAD -->
+			<!-- dialog  送樣資訊start-->
+			<div id="displayModal" class="modal fade" tabindex="-1" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">索樣單號資料</h4>
+										</div>
+										<div class="modal-body">
+											<div class="scroller" style="height:250px" data-always-visible="1" data-rail-visible1="1">
+												<div class="row">
+													<div class="col-md-6">
+														<h5>索樣單號</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="HSD1060927001" disabled="disabled">
+														</p>
+														<h5>索樣次數</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="3" disabled="disabled">
+														</p>
+														<h5>客戶名稱</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="HSD" disabled="disabled">
+														</p>
+														<h5>專案名稱</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="HSD---xxxx" disabled="disabled">
+														</p>
+													
+													</div>
+													<div class="col-md-6">
+														<!-- <h5>索樣日期</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="2019-03-18" disabled="disabled">
+														</p> -->
+														<h5>索樣品名</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="BM" disabled="disabled">
+														</p>
+														<h5>對應人</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="jacky" disabled="disabled">
+														</p>
+														
+														<h5>專案負責人</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="tony" disabled="disabled">
+														</p>
+														<h5>專案名稱</h5>
+														<p>
+															<input type="text" class="col-md-12 form-control" value="HSD---xxxx" disabled="disabled">
+														</p>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" data-dismiss="modal" class="btn default">關閉</button>
+											<button type="button" class="btn green" onclick="confirmFun()">確認帶入值</button> 
+										</div>
+									</div>
+								</div>
+							</div>			
+						
+			<!-- dialog  新增送樣資訊 end-->
 			<!-- BEGIN PAGE BREADCRUMB -->
 			<ul class="page-breadcrumb breadcrumb">
 				<li>
@@ -722,50 +788,22 @@ License: You must have a valid license purchased only from themeforest(the above
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="#">專案管理</a>
+					<a href="tg_req_sample.html">送樣管理</a>
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="#">專案基本資料</a>
+					<a href="#">送樣資料</a>
 				</li>
 			</ul>
 			<div class="table-toolbar">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="btn-group">
-											 <button id="sample_editable_1_new" class="btn green">
-											新增專案 <i class="fa fa-plus"></i>
-											</button> 
-										</div>
-									</div>
-<!--  									<div class="col-md-6">
-										<div class="btn-group pull-right">
-											<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-											</button>
-											<ul class="dropdown-menu pull-right">
-												<li>
-													<a href="javascript:;">
-													Print </a>
-												</li>
-												<li>
-													<a href="javascript:;">
-													Save as PDF </a>
-												</li>
-												<li>
-													<a href="javascript:;">
-													Export to Excel </a>
-												</li>
-											</ul>
-										</div>
-									</div>  -->
-								</div>
+								
 							</div>
 
 			<!-- BEGIN VALIDATION STATES-->
 					 <div class="portlet box yellow">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-gift"></i>專案基本資料表單
+								<i class="fa fa-gift"></i>送樣資料表單
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -782,7 +820,147 @@ License: You must have a valid license purchased only from themeforest(the above
 										You have some form errors. Please check below.
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">專案代碼<span class="required">
+										<label class="control-label col-md-3">索樣單號<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<!-- <div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="email" value=""/>
+											</div> -->
+											<input  class="form-control" type="text" name="text id="singleNum">	
+											<!-- <span class="badge badge-roundless badge-danger">new</span>  btn btn-sm yellow filter-submit margin-bottom-->
+											<!-- <a  class="btn btn-xs grey-cascade" id="demo_3"> -->
+											<a class="btn btn-xs grey-cascade"  href="javascript:callsearch();">
+															 search<i class="fa fa-search"></i>
+															</a>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">索樣日期
+										<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-3">
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="startDateTime" name="startDateTime"  value="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">索樣次數<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="freq" id ="freq" value=""/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">客戶名稱<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<select class="form-control select2me" name="select" id="customer">
+												<option value="">請選擇</option>
+												<option value="1" >昆山東旭</option>
+												<option value="2" >深圳萊寶</option>
+												<option value="3">HSD</option>
+											</select>
+										</div>
+									</div>
+										<div class="form-group">
+										<label class="control-label col-md-3">索樣人員<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<select class="form-control select2me" name="select">
+												<option value="">請選擇</option>
+												<option value="Category 1" >nick</option>
+												<option value="Category 2">jacky</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">索樣品名<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" id="prjName" value=""/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">要求送樣日期
+										<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-3">
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="startDateTime" name="startDateTime"  value="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+																				</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">型號<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="email" value=""/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">批號<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="email" value=""/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">實際送樣日期
+										<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-3">
+											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+												<input type="text" class="form-control" readonly id="startDateTime" name="startDateTime" value="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">數量<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="text" class="form-control" name="email" value=""/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">製程與規格要求<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
@@ -792,151 +970,36 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</div>
 									</div>
-									<div class="alert alert-success display-hide">
-										<button class="close" data-close="alert"></button>
-										Your form validation is successful!
-									</div>
-								
+									
+									
 									<div class="form-group">
-										<label class="control-label col-md-3"> 專案名稱<span class="required">
+										<label class="control-label col-md-3">專案業務窗口<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<input type="text" class="form-control" name="name"/>
-											</div>
+											<select class="form-control select2me" name="select">
+												<option value="">請選擇</option>
+												<option value="Category 1">nick</option>
+												<option value="Category 2">jacky</option>
+											</select>
 										</div>
-									</div>
-										<div class="form-group">
-										<label class="control-label col-md-3"> 專案等級<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<select class="layout-option form-control input-small input-sm">
-															<option value="fluid" selected="selected">專案 等級 1 副總</option>
-															<option value="boxed">專案 等級 2 各產品負責人</option>
-															<option value="boxed">專案 等級 3 各產品負責人 + 工程師</option>
-														</select>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案開始時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly id="startDateTime" name="startDateTime" >
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案預計結束時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly id="expEndDatetime" name="expEndDatetime" >
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案結束時間
-										<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-3">
-											<div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
-												<input type="text" class="form-control" readonly id="endDatetime" name="endDatetime">
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-											</div>
-																				</div>
 									</div>
 									<div class="form-group">
 										<label class="control-label col-md-3">專案負責人<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
-											<select class="form-control" name="select">
+											<select class="form-control select2me" name="select" id="prjLeader">
 												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案協助人<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">專案提出人<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">nick</option>
-												<option value="Category 2">jacky</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">狀態<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">PENDING</option>
-												<option value="Category 2">WORKING</option>
-												<option value="Category 2">COMPELETED</option>
+												<option value="1">nick</option>
+												<option value="2">jacky</option>
+												<option value="3">tony</option>
 											</select>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="control-label col-md-3">廠商客戶<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">請選擇</option>
-												<option value="Category 1">中華映管股份有限公司</option>
-												<option value="Category 2">和鑫光電股份有限公司</option>
-											</select>
-										</div>
-									</div>
-								<!-- 	<div class="form-group">
-										<label class="control-label col-md-3">產品檢查表<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<label class="btn gray">BM</label>
-										</div>
-									</div> -->
-									<div class="form-group">
-										<label class="control-label col-md-3">開發進度規劃
+										<label class="control-label col-md-3">測試結果
 										</label>
 										<div class="col-md-4">
 											<div class="input-icon right">
@@ -955,12 +1018,22 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</div>
 									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">附件
+										</label>
+										<div class="col-md-4">
+											<div class="input-icon right">
+												<i class="fa"></i>
+												<input type="file" name="files[]" multiple="">
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="form-actions">
 									<div class="row">
 										<div class="col-md-offset-3 col-md-9">
 											<button type="submit" class="btn green" onClick="editProject();">確認</button>
-											<button type="button" class="btn default">取消</button>
+											<button type="button" class="btn default" onClick="clean();">取消</button>
 										</div>
 									</div>
 								</div>
@@ -973,180 +1046,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 			<!-- END PAGE BREADCRUMB -->
 			<!-- END PAGE HEADER-->
-			<!-- BEGIN PAGE CONTENT-->
-			<div class="row">
-				<div class="col-md-12">
-					<!-- BEGIN EXAMPLE TABLE PORTLET-->
-					<div class="portlet box blue-hoki">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-globe"></i>專案基本資料列表
-							</div>
-							
-						</div>
-						<div class="portlet-body">
-							<table class="table table-striped table-bordered table-hover" id="sample_1">
-							<thead>
-							<tr>
-								<th>
-									 序號
-								</th>
-								<th>
-									 專案代碼
-								</th>
-								<th>
-									 廠商客戶
-								</th>
-								<th>
-									 專案名稱
-								</th>
-								<th>
-									 專案等級
-								</th>
-								<th>
-									 專案負責人/協助人/提出人
-								</th>
-								<th>
-									 專案時間
-								</th>
-								<th>
-									 狀態
-								</th>
-								<th>
-									 簽核階段狀態
-								</th>
-								<th>
-									 備註
-								</th>
-								<th>
-									 建立日期
-								</th>
-								<th>
-									 修改日期
-								</th>
-								<th>
-									 操作
-								</th>
-								
-							</tr>
-							</thead>
-							<tbody>
-								
-							<tr>
-								<td>
-									 1
-								</td>
-								<td>
-									 1CU03
-								</td>
-								<td>
-									 中華映管專案
-								</td>
-								
-								<td>
-									 中華映管
-								</td>
-								<td>
-									 等級一
-								</td>
-								<td>
-									 負責人:Tony<br>
-									 協助人:Jacky<br>
-									 提出人:Nick
-								</td>
-								
-								 <td>
-									 開始時間:2018-09-18<br>
-									 預計結束時間:2018-10-18<br>
-									 結束時間:2018-10-30 
-								</td>
-								<td>
-									COMPELETED
-								</td>	
-								<td>
-									 
-								</td>
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<button type="button" class="btn btn-primary">檢視</button>
-									<button type="button" class="btn yellow">修改</button>
-									<button type="button" class="btn red">封存</button>
-									<a type="button" class="btn purple" href="tg_project_form.html">簽核</a>
-									<a type="button" class="btn green" href="tg_prj_project_manager_usr.html">管理人員</a>
-									<a type="button" class="btn blue" href="tg_prj_project_checklist.html">編輯產品檢查列表</a>
-								</td>
-								
-							</tr>
-						</a>
-							<tr>
-								<td>
-									2 
-								</td>
-								<td>
-									 1CV01
-								</td>
-								<td>
-									 和鑫光電專案
-								</td>
-								<td>
-									 和鑫光電
-								</td>
-								<td>
-									 等級一
-								</td>
-								<td>
-									 負責人:Tony<br>
-									 協助人:Jacky<br>
-									 提出人:Nick
-								</td>
-								 <td>
-									 開始時間:2018-09-18<br>
-									 預計結束時間:2018-10-18<br>
-									 結束時間:2018-10-30 
-								</td>
-								<td>
-									COMPELETED
-								</td>	
-								<td>
-									 
-								</td>
-								<td>
-									 
-								</td>
-							   <td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									 2018-09-18 10:00
-								</td>
-								<td>
-									<button type="button" class="btn btn-primary">檢視</button>
-									<button type="button" class="btn yellow">修改</button>
-									<button type="button" class="btn red">封存</button>
-									<a type="button" class="btn purple" href="tg_project_form.html">簽核</a>
-									<a type="button" class="btn green" href="tg_prj_project_manager_usr.html">管理人員</a>
-									<a type="button" class="btn blue" href="tg_prj_project_checklist.html">編輯產品檢查列表</a>
-								</td>
-							</tr>
-							</tbody>
-							</table>
-						</div>
-					</div>
-					<!-- END EXAMPLE TABLE PORTLET-->
-					
-					
-				
-				</div>
-			</div>
-			<!-- END PAGE CONTENT-->
+		
 		</div>
 	</div>
 	<!-- END CONTENT -->
@@ -1199,11 +1099,13 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/components-pickers.js"></script>
 <script src="assets/admin/pages/scripts/table-advanced.js"></script>
+<script src="assets/admin/pages/scripts/components-dropdowns.js"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
         jQuery(document).ready(function() {       
@@ -1211,9 +1113,9 @@ License: You must have a valid license purchased only from themeforest(the above
            Metronic.init(); // init metronic core components
 			Layout.init(); // init current layout
 			Demo.init(); // init demo features
-           ComponentsPickers.init();
+            ComponentsPickers.init();
             TableAdvanced.init();
-          
+          	ComponentsDropdowns.init();
         });  
 
 
@@ -1227,6 +1129,32 @@ License: You must have a valid license purchased only from themeforest(the above
         	alert($('#endDatetime').val());
         	
         }; 
+
+        
+        function callsearch(){
+
+        $('#displayModal').modal('show');
+       }
+
+       //確認帶入值
+       function confirmFun(){
+       	$('#singleNum').val('HSD1060927001');
+		$('#freq').val('1');
+		$('#prjName').val('BM');
+		$('#prjLeader').val('3').trigger('change'); 
+		$('#customer').val('3').trigger('change'); 
+ 		$('#displayModal').modal('hide');
+     }
+
+     function clean(){
+		$('#singleNum').val('');
+		$('#freq').val('');
+		$('#prjName').val('');
+		$('#prjLeader').val('').trigger('change'); 
+		$('#customer').val('').trigger('change'); 
+
+ 	}
+
     </script>
 <!-- END JAVASCRIPTS -->
 </body>
