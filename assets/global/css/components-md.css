@@ -4336,6 +4336,11 @@ Notes
   border-color: #f02651;
   color: white;
 }
+.note.note-danger.title {
+  background-color: #8e5fa2;
+  border-color: #f02651;
+  color: white;
+}
 .note.note-danger.note-bordered {
   background-color: #f35158;
   border-color: #ec113f;
