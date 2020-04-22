@@ -58,7 +58,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body class="page-md page-header-fixed page-sidebar-closed-hide-logo ">
+<body class="page-md page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed">
 <!-- BEGIN HEADER -->
 <div class="page-header md-shadow-z-1-i navbar navbar-fixed-top">
 	<!-- BEGIN HEADER INNER -->
@@ -500,7 +500,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
 			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-			<ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<ul class="page-sidebar-menu page-sidebar-menu-closed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
 				<li class="start ">
 					<a href="">
 					<i class="icon-home"></i>
@@ -784,93 +784,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</ul> -->
 								</div>
 							</div>
-							<div class="caption">
-								<!-- <i class="icon-basket font-green-sharp"></i>
-								<span class="caption-subject font-green-sharp bold uppercase">
-								Order #12313232 </span>
-								<span class="caption-helper">Dec 27, 2013 7:16:25</span> -->
-								<table class="table table-striped table-bordered table-hover">
-								<thead>
-								<tr role="row" class="heading">
-									
-								
-									<th width="10%">
-										 公司類別
-									</th>  
-									
-								 	<th width="10%">
-										 產品
-									</th>
-								 	<th width="10%">
-										 項目類別
-									</th> 
-								 
-								 	<th width="15%">
-										 SOP Template名稱(編號)
-									</th> 
-									<!-- <th width="10%">
-										
-									</th> -->
-								</tr>
-								
-								<tr>
-									<td>
-										<select class="layout-option form-control select2me " id="customerId" name="customerId" >
-											<option value="" >請選擇</option>
-											
-											<option value="1" >日月光半導體製造股份有限公司中壢分公司 </option>
-											<option value="2" >友達光電股份有限公司  </option>	
-											<option value="2" >深圳萊寶高科技股份有限公司  </option>								
-										</select> 
-									</td>
-									<td>
-										<select class="layout-option form-control input-small input-sm" id="sopExpNo" name="sopExpNo">
-												<option value="">請選擇</option>
-													<option value="317dd23f-be9c-4a9e-b42e-82bb1509aea2">BM</option>
-													<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">PS</option>
-													<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">RGB</option>
-										</select>
-									</td> 
-									<td>
-										<select class="layout-option form-control input-small input-sm" id="sopExpNo" name="sopExpNo">
-												<option value="">請選擇</option>
-													<option value="317dd23f-be9c-4a9e-b42e-82bb1509aea2">基本特性</option>
-													<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">塗布特性</option>
-													<option value="9e6f8d16-f1fc-4d1c-b481-aade03b6cebd">黃光特性</option>
-													<option value="261d2726-0210-4797-ad76-7c277cbf5708">Process Window</option>
-													<option value="b6c47517-4d79-414c-97d4-91c9f5dbcf5f">其他特性</option>
-													<option value="a86447cf-141a-434e-9b9e-4de5292ccf53">MURA check</option>
-													<option value="dbeafeb4-7dca-4e7e-8d48-5cbf8b566241">耐化特性</option>
-													<option value="dde2b07c-14fb-4371-81bc-5ce8eac49d6d">線寬</option>
-													<option value="551d44ae-6881-41c7-bc27-f9191d5f8dd1">生產製造</option>
-													<option value="6f5712b6-7f0b-4aa3-b86e-8d9fa6daea90">文件製作</option>
-													<option value="66ef9d52-fc2a-4abc-ae44-b087f0e109da">設備機台維護或維修</option>
-													<option value="87906060-9007-4001-a319-7292a166bb63">會議</option>
-										</select>
-									</td> 
-									<!--  <td>
-										<select class="layout-option form-control input-small input-sm" id="sopMethodNo" name="sopMethodNo"><option value="">請選擇</option><option value="e229eac7-f074-4a72-9411-c7fc37032f55">穩定性測試</option><option value="bb6f0f29-7196-408c-9416-b5286161fa34">黏度, 固含量</option><option value="c3e6d00d-c744-4d15-9ca0-4ecb83ea539f">UV Abs</option><option value="ce6d26dd-9882-4078-adfb-cbd20972d97d">黏度</option><option value="151ecdcb-7920-45ec-b7b2-d88f6ecfe0bc">粒徑分析</option></select> 
-									</td> -->
-									
-								
-								
-									 <td>
-										<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
-										<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
-										<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
-										<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">
-									</td> 
-									
-								<!-- 	
-									<td>
-										
-									</td> -->
-								</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								</table>
-							</div>
+							
 							
 						</div>
 						<div class="portlet-body">
@@ -903,6 +817,400 @@ License: You must have a valid license purchased only from themeforest(the above
 								</ul> -->
 							<!-- 	<div class="tab-content">
 									<div class="tab-pane active" id="tab_1"> -->
+										<div class="row">
+												<div class="col-sm-12">
+													<div class="portlet blue-hoki box">
+														<div class="portlet-title">
+															<div class="caption">
+																<i class="fa fa-cogs"></i>SOP編號
+															</div>
+															<div class="actions">
+																<a href="javascript:;" class="btn btn-default btn-sm">
+																<i class="fa fa-pencil"></i> Edit </a>
+															</div>
+														</div>
+														<div class="portlet-body">
+															<table class="table table-striped table-bordered table-hover">
+																<thead>
+																<tr role="row" class="heading">
+																	
+																
+																	<th width="10%">
+																		 公司類別
+																	</th>  
+																	
+																 	<th width="10%">
+																		 產品
+																	</th>
+																 	<th width="10%">
+																		 項目類別
+																	</th> 
+																 
+																 	<th width="15%">
+																		 SOP 名稱(編號)
+																	</th> 
+																	<!-- <th width="10%">
+																		
+																	</th> -->
+																</tr>
+																
+																<tr>
+																	<td>
+																		<select class="layout-option form-control select2me " id="customerId" name="customerId" >
+																			<option value="" >請選擇</option>
+																			
+																			<option value="1" >日月光半導體製造股份有限公司中壢分公司 </option>
+																			<option value="2" >友達光電股份有限公司  </option>	
+																			<option value="2" >深圳萊寶高科技股份有限公司  </option>								
+																		</select> 
+																	</td>
+																	<td>
+																		<select class="layout-option form-control input-small input-sm" id="sopExpNo" name="sopExpNo">
+																				<option value="">請選擇</option>
+																					<option value="317dd23f-be9c-4a9e-b42e-82bb1509aea2">BM</option>
+																					<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">PS</option>
+																					<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">RGB</option>
+																		</select>
+																	</td> 
+																	<td>
+																		<select class="layout-option form-control input-small input-sm" id="sopExpNo" name="sopExpNo">
+																				<option value="">請選擇</option>
+																					<option value="317dd23f-be9c-4a9e-b42e-82bb1509aea2">基本特性</option>
+																					<option value="6678df52-39ac-43bc-b8e4-dba2e5ef85c0">塗布特性</option>
+																					<option value="9e6f8d16-f1fc-4d1c-b481-aade03b6cebd">黃光特性</option>
+																					<option value="261d2726-0210-4797-ad76-7c277cbf5708">Process Window</option>
+																					<option value="b6c47517-4d79-414c-97d4-91c9f5dbcf5f">其他特性</option>
+																					<option value="a86447cf-141a-434e-9b9e-4de5292ccf53">MURA check</option>
+																					<option value="dbeafeb4-7dca-4e7e-8d48-5cbf8b566241">耐化特性</option>
+																					<option value="dde2b07c-14fb-4371-81bc-5ce8eac49d6d">線寬</option>
+																					<option value="551d44ae-6881-41c7-bc27-f9191d5f8dd1">生產製造</option>
+																					<option value="6f5712b6-7f0b-4aa3-b86e-8d9fa6daea90">文件製作</option>
+																					<option value="66ef9d52-fc2a-4abc-ae44-b087f0e109da">設備機台維護或維修</option>
+																					<option value="87906060-9007-4001-a319-7292a166bb63">會議</option>
+																		</select>
+																	</td> 
+																	<!--  <td>
+																		<select class="layout-option form-control input-small input-sm" id="sopMethodNo" name="sopMethodNo"><option value="">請選擇</option><option value="e229eac7-f074-4a72-9411-c7fc37032f55">穩定性測試</option><option value="bb6f0f29-7196-408c-9416-b5286161fa34">黏度, 固含量</option><option value="c3e6d00d-c744-4d15-9ca0-4ecb83ea539f">UV Abs</option><option value="ce6d26dd-9882-4078-adfb-cbd20972d97d">黏度</option><option value="151ecdcb-7920-45ec-b7b2-d88f6ecfe0bc">粒徑分析</option></select> 
+																	</td> -->
+																	
+																
+																
+																	 <td>
+																		<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
+																		<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
+																		<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">_
+																		<input type="text" style="width: 50px;height: 34px" name="sopName" id="sopName" value="">
+																	</td> 
+																	
+																<!-- 	
+																	<td>
+																		
+																	</td> -->
+																</tr>
+																</thead>
+																<tbody>
+																</tbody>
+																</table>
+														</div>	
+													</div>
+
+												</div>	
+										</div>	
+							<div class="row">
+											
+											<div class="col-md-6">
+												<div class="portlet grey-cascade box">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="fa fa-cogs"></i>準備項目
+														</div>
+														<div class="actions">
+															<a href="javascript:;" class="btn btn-default btn-sm">
+															<i class="fa fa-pencil"></i> Edit </a>
+														</div>
+													</div>
+													<div class="portlet-body">
+
+														<div class="table-scrollable">
+															<table class="table table-bordered table-hover">
+															<thead>
+															<tr>
+																<!-- <th>
+																	items
+																</th>
+																<th>
+																	 Condition	
+																</th> -->
+																
+																
+															</tr>
+															</thead>
+															<tbody>
+														
+															<tr >
+																<td>
+																	Substrate	
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<!-- <input type="text" class="form-control" name="name" placeholder="N/A"/> -->
+																		<!-- <select class="layout-option form-control select2me " id="customerId" name="customerId" style="width: 40%;height: 34px">
+																			<option value="" >請選擇</option>
+																			
+																			<option value="1" > sss</option>
+																			<option value="2" > xxx</option>	
+																			<option value="2" > dddd </option>								
+																		</select>  -->
+																		<input type="text" class="form-control-30" name="name" placeholder="N/A" style="width: 80%;height: 34px"/>
+																	</div>
+																</td>
+																
+																
+															</tr>
+															<tr >
+																<td>
+																	THK
+																</td>
+																<td>
+																	<div class="col-md-11">
+																		<input type="text" class="form-control-30" name="name" placeholder="N/A" style="width: 80%;height: 34px"/>
+																	</div>
+																</td>
+																
+															</tr>
+															
+															
+															
+															</tbody>
+															</table>
+														</div>	
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="portlet grey-cascade box">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="fa fa-cogs"></i>使用設備與工具
+														</div>
+														<div class="actions">
+															<a href="javascript:;" class="btn btn-default btn-sm">
+															<i class="fa fa-pencil"></i> Edit </a>
+														</div>
+													</div>
+													<div class="portlet-body">
+
+														<div class="table-scrollable">
+								<table class="table table-bordered ">
+								<!-- <thead>
+								<tr>
+									<th>
+										 #
+									</th>
+									<th>
+										 First Name
+									</th>
+									<th>
+										 Last Name
+									</th>
+									<th>
+										 Username
+									</th>
+									<th>
+										 Status
+									</th>
+								</tr>
+								</thead> -->
+								<tbody>
+								<tr>
+									<td >
+										<label>
+											<!-- <div class="checker" id="uniform-inlineCheckbox1"> -->
+											<span>
+												<input type="checkbox" id="inlineCheckbox1" value="option1"></span>
+											<!-- </div> --> 
+											Coater
+										</label>
+									</td>
+
+									<td>
+										 <label>
+											<!-- <div class="checker" id="uniform-inlineCheckbox1"> -->
+												<span>
+												<input type="checkbox" id="inlineCheckbox1" value="option2">
+											</span>
+									<!-- 	</div>  -->
+											VCD
+										</label>
+									</td>
+									<td>
+										 <label>
+											<!-- <div class="checker" id="uniform-inlineCheckbox1"> -->
+												<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option3">
+												</span>
+										<!-- 	</div>  -->
+											CSOT 雙環Pin
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option4">
+												</span>
+											HP
+										</label>
+									</td>
+									<td>
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option5">
+												</span>
+											鈉燈
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<tr>
+									<td >
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option6">
+												</span>
+											尖頭PEEKPin
+										</label>
+									</td>
+
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option7">
+												</span>
+											三角柱Pin
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option8">
+												</span>
+											顯影液
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option9">
+												</span>
+											白色日光燈
+										</label>
+									</td>
+									<td>
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option10">
+												</span>
+											ZYGO
+										</label>
+									</td>
+								</tr>
+								</tr>
+								<tr>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										 <label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+									<td>
+										<label>
+											<span>
+													<input type="checkbox" id="inlineCheckbox1" value="option11">
+												</span>
+												xxx
+										</label>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+													</div>
+											</div>
+										</div>
+
+
+								
+										</div>
+
+
 										<div class="row">
 											<div class="col-md-3																																										 col-sm-12">
 												<div class="portlet blue-hoki box">
@@ -1431,7 +1739,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet grey-cascade box">
 													<div class="portlet-title">
 														<div class="caption">
-															<i class="fa fa-cogs"></i>試片製作
+															<i class="fa fa-cogs"></i>SOP-實驗步驟
 														</div>
 														<div class="actions">
 															<a href="javascript:;" class="btn btn-default btn-sm">
@@ -1477,10 +1785,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									</div>
 								</div>
-
-
-								
-										</div>
+							</div>
 										<div class="row">
 											
 
