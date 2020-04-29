@@ -767,8 +767,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!-- <i class="fa fa-angle-down"></i> -->
 									<!-- </a> -->
 
-									<a type="button"  class="btn btn-xs  green btn-circle " href="tg_sop_template_edit.html">
-										新增SOP Template<i class="fa fa-angle-down"></i>
+									<a type="button"  class="btn btn-xs  green btn-circle " href="tg_sop_template_edit_fileupload.html">
+										新增SOP <i class="fa fa-angle-down"></i>
 									</a>
 									
 								</div>
@@ -792,11 +792,12 @@ License: You must have a valid license purchased only from themeforest(the above
 								<thead>
 								<tr role="row" class="heading">
 									
-								  <th width="10%">
-										 產品別
-									</th> 
+								  	
 									<th width="10%">
 										 公司類別
+									</th> 
+									<th width="10%">
+										 產品別
 									</th>  
 									
 								 	<th width="10%">
@@ -814,6 +815,16 @@ License: You must have a valid license purchased only from themeforest(the above
 								
 								<tr>
 									
+									
+									<td>
+										<select class="layout-option form-control select2me " id="customerId" name="customerId" >
+											<option value="" >請選擇</option>
+											
+											<option value="1" >日月光半導體製造股份有限公司中壢分公司 </option>
+											<option value="2" >友達光電股份有限公司  </option>	
+											<option value="2" >深圳萊寶高科技股份有限公司  </option>								
+										</select> 
+									</td>
 									<td>
 										
 										<select class="layout-option form-control input-small input-sm" id="productNo" name="productNo">
@@ -833,16 +844,6 @@ License: You must have a valid license purchased only from themeforest(the above
 												
 										</select>
 									</td> 
-									<td>
-										<select class="layout-option form-control select2me " id="customerId" name="customerId" >
-											<option value="" >請選擇</option>
-											
-											<option value="1" >日月光半導體製造股份有限公司中壢分公司 </option>
-											<option value="2" >友達光電股份有限公司  </option>	
-											<option value="2" >深圳萊寶高科技股份有限公司  </option>								
-										</select> 
-									</td>
-
 
 									
 									<td>
@@ -1638,7 +1639,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									 2018-03-13 10:00
 								</td>
 								<td>
-									<a type="button"  class="btn yellow"   href="tg_sop_template_edit.html" >修改</a>
+									<a type="button"  class="btn yellow"   href="tg_sop_template_edit_fileupload.html" >修改</a>
 									<button type="button" class="btn red"       data-target="#ReviewModal" data-toggle="modal">審核</button>
 									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal" onClick="hideItemInfoBtn();">預覽</button>
 									<button type="button" class="btn purple">複製</button>
@@ -1681,7 +1682,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 								<td>
 									<!-- <button type="button" class="btn yellow">修改</button> -->
-									<a type="button"  class="btn yellow"   href="tg_sop_template_edit.html" >修改</a>
+									<a type="button"  class="btn yellow"   href="tg_sop_template_edit_fileupload.html" >修改</a>
 									<button type="button" class="btn red"       data-target="#ReviewModal"   data-toggle="modal">審核</button>
 									
 									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal" onClick="hideItemInfoBtn();">預覽</button>
