@@ -1,0 +1,361 @@
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sortable,
+#sortableLayout,
+#sortable720,
+#sortableRelated {
+    clear: both;
+}
+
+#sortable>.sort-card,
+#sortableLayout>.sort-card,
+#sortable720>.sort-card,
+#sortableRelated>.sort-card {
+    margin: 0.5% 0.4%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+    float: left;
+    width: 24%;
+    min-height: 200px;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    background: #f2efef;
+    cursor: -webkit-grab;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.edit-photo-block input {
+    margin-bottom: 10px;
+}
+
+.input-edit {
+    border: 2px solid white;
+    background: #fff;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 3px #d7c8c8;
+    margin-bottom: 10px;
+    cursor: text;
+    position: relative;
+}
+
+.input-edit:hover {
+    opacity: 0.7;
+}
+
+.edit_block {
+    position: relative;
+}
+
+.edit_icon {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 15%;
+}
+
+.edit_input {
+    text-align: center;
+    width: 80%;
+    border: 1px solid #ffffff;
+}
+
+.edit_input:hover {
+    opacity: 0.8;
+}
+
+.photo-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.photo-remove:hover {
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.img-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hover-block {
+    position: absolute;
+    display: inline-block;
+}
+
+.hover-block .hover-hint {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    width: 75px;
+    padding: 0px 0px;
+    left: 0;
+    top: -20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.hover-block:hover {
+    opacity: 0.7;
+}
+
+.hover-block:hover .hover-hint {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*720 view start*/
+
+.list-detail-section .bg-h2 {
+    background: linear-gradient(#F3F3F3, #F5F5F5);
+    background: -webkit-linear-gradient(#F3F3F3, #F5F5F5);
+    background: -o-linear-gradient(#F3F3F3, #F5F5F5);
+    background: -moz-linear-gradient(#F3F3F3, #F5F5F5);
+    text-align: center;
+    border: none;
+}
+
+
+/*text behind h2*/
+
+.list-detail-section .h2-text {
+    font-size: 15px;
+    margin-left: 10px;
+    color: #787474;
+    position: absolute;
+}
+
+.list-detail .col-xs-4 {
+    float: left;
+}
+
+.certificate {
+    min-height: 150px;
+}
+
+.certificate a {
+    cursor: pointer;
+}
+
+.list-align {
+    margin-bottom: 10px;
+    text-indent: 0;
+    margin-left: 0;
+}
+
+
+/*720 view start*/
+
+a[href^="http://maps.google.com/maps"] {
+    display: none !important
+}
+
+a[href^="https://maps.google.com/maps"] {
+    display: none !important
+}
+
+.wrapper-720 {
+    position: relative;
+    border: 1px;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    cursor: pointer;
+}
+
+.wrapper-720:hover .hover-720 {
+    background: rgba(78, 74, 74, 0.3);
+}
+
+.cover-720 {
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hover-720 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(78, 74, 74, 0.5);
+}
+
+.image720 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.view720 {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+}
+
+#street-view {
+    height: 100%;
+}
+
+.lSAction>a {
+    opacity: 1;
+}
+
+.street-title h4 {
+    color: #fff;
+}
+
+.gmnoprint.gm-style-cc+div {
+    transform: translateX(-110%);
+}
+
+#close-720 {
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: #231815;
+    color: #b9b9b9;
+    margin: 10px 15px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.tab-content {
+    padding: 0;
+}
+
+.street-title {
+    bottom: -5px;
+    position: absolute;
+    left: -15px;
+}
+
+.view720 .demo {
+    bottom: 0;
+    position: absolute;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.item .content-slider li {
+    position: relative;
+    overflow: hidden;
+}
+
+.item .content-slider h3 {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.item .bw {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.item .bw.active {
+    background: none;
+}
+
+.item .content-slider li:hover,
+.item .content-slider li:active,
+.item .content-slider li:focus,
+.item .bw:hover,
+.item .bw:active {
+    background: none;
+}
+
+.item .content-slider li {
+    background: transparent;
+    border: none;
+}
+
+.gm-iv-container {
+    display: none;
+}
+
+
+/*720 view end*/
+
+.img-slide {
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.view-editor h4 {
+    position: absolute;
+    bottom: 10px;
+    z-index: 100000;
+    color: white;
+}
+
+.btn.no-hover:hover {
+	color:inherit;
+	background:inherit;
+}
+.btn.btn-edit {
+    width: 25px;
+    padding: 3px 0px;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.edit-remove {
+    color: #000;
+    font-size: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.edit-remove:hover {
+	opacity:0.7;
+}
+.edit-save {
+    color: #938e8e;
+}
