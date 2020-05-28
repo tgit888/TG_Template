@@ -3225,9 +3225,11 @@ License: You must have a valid license purchased only from themeforest(the above
 															<i class="fa"></i>
 																	<select class="form-control  select2me" id="categoryNo" name="categoryNo" required="required">
 																		<option value="">請選擇</option>
-																		<c:forEach var="item" items="${prjMaterialCategorys}" varStatus="idx">
-																	 	<option value="${item.categoryNo }">${item.categoryName }</option>
-																		</c:forEach>
+																		
+																	 	<option value="Solvent">Solvent</option>
+																		<option value="Solvent">Binder</option>
+																		<option value="Solvent">Initiator</option>
+																		<option value="Solvent">Additives</option>
 																	</select>
 														</div>
 													</div>
@@ -3243,7 +3245,11 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<option value="">請選擇</option>
 																	</select> -->
 																	<select class="form-control  select2me"   id="modelNo" name="modelNo" required="required">
-																	 
+																	 	<option value="">請選擇</option>
+																	 	<option value="">AEFA357</option>
+																	 	<option value="">AEFK359</option>
+																	 	<option value="">AEJK159</option>
+																	 	<option value="">BID616</option>
 																	</select>
 														</div>
 													</div>
@@ -3280,7 +3286,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
-<!-- 比較原料項目 dialog -->
+<!-- 比較配方原料項目 dialog -->
 							<div class="modal fade bs-modal-lg" id="compareItem" tabindex="-1" role="dialog" aria-hidden="true">
 							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
 							<input type="hidden" id="itemNo" name="itemNo" />
@@ -3288,7 +3294,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="modal-content">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">比較原料項目</h4>
+											<h4 class="modal-title" id="formulaItemDialogTitleId">比較配方原料項目</h4>
 										</div>
 										<div class="modal-body">
 										<div class="portlet-body">
