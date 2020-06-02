@@ -46,6 +46,14 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
+<style type="text/css">
+
+#compareItemModal .modal-dialog {
+  width: 70%;
+  padding: 0;
+  margin:10px auto;
+}
+</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -1452,7 +1460,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 								</div> 
 								<div class="actions">
-									<a class="btn green-haze btn-circle btn-sm"  href="#compareItem"  data-toggle="modal">
+									<a class="btn green-haze btn-circle btn-sm"  href="#compareItemModal"  data-toggle="modal">
 										比較 <i class="fa fa-angle-down"></i>
 									</a>
 									<a class="btn blue btn-circle btn-sm"  href="#editCategory" data-toggle="modal">
@@ -1515,6 +1523,8 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
 														</div>
 														<div class="tools">
+														<a href="#summaryItem" data-toggle="modal" class="fa fa-info-circle" title="摘要">
+														</a>
 														<a href="#editItem" data-toggle="modal" class="fa fa-plus-square" title="新增原料">
 														</a>
 														<a href="#copyItem"   data-toggle="modal" class="fa fa-clipboard" title="複製配方">
@@ -1538,6 +1548,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																添加重量
 																</th>
 																<th>
+																 S.C
+																</th>
+																<th>
+																	縮放倍率
+																</th>
+																<th>
 																</th>
 																
 																</tr>
@@ -1549,6 +1565,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																RUH036
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																0.03
@@ -1572,6 +1594,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																45
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
 																</a>
 																</td>
@@ -1589,6 +1617,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																0.45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
@@ -1610,6 +1644,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																0.0034
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -1626,6 +1666,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -1646,6 +1692,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																1.2
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -1662,6 +1714,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																3.5
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -1682,13 +1740,42 @@ License: You must have a valid license purchased only from themeforest(the above
 																33
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																</td>
+																<td>
+															
+																</a>
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -1727,23 +1814,35 @@ License: You must have a valid license purchased only from themeforest(the above
 																添加重量
 																</th>
 																<th>
-																
+																 S.C
 																</th>
+																<th>
+																	縮放倍率
+																</th>
+																<th>
+																</th>
+																
 																</tr>
 																</thead>
 																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
-																QTE785
+																RUH036
 																</td>
 																<td>
 																0.03
 																</td>
 																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="#modifyItem" data-toggle="modal" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
@@ -1759,6 +1858,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
@@ -1780,6 +1885,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																0.45
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
 																</a>
 																</td>
@@ -1797,6 +1908,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -1817,6 +1934,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																2
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -1833,6 +1956,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -1853,6 +1982,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																3.5
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -1860,7 +1995,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
@@ -1871,13 +2006,42 @@ License: You must have a valid license purchased only from themeforest(the above
 																33
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																</td>
+																<td>
+															
+																</a>
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -1916,23 +2080,35 @@ License: You must have a valid license purchased only from themeforest(the above
 																添加重量
 																</th>
 																<th>
-																
+																 S.C
 																</th>
-														</tr>
-														</thead>
-														<tbody>
+																<th>
+																	縮放倍率
+																</th>
+																<th>
+																</th>
+																
+																</tr>
+																</thead>
+																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
-																JIN634
+																RUH036
 																</td>
 																<td>
 																0.03
 																</td>
 																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="#modifyItem" data-toggle="modal" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
@@ -1948,6 +2124,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
@@ -1969,6 +2151,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																0.45
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
 																</a>
 																</td>
@@ -1986,6 +2174,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2006,6 +2200,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																2
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -2013,7 +2213,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D6D6AD">
+															<tr bgcolor="#D6D6AD">
 																<td>
 																Monomer
 																</td>
@@ -2022,6 +2222,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2042,6 +2248,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																3.5
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
@@ -2049,7 +2261,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
@@ -2060,13 +2272,42 @@ License: You must have a valid license purchased only from themeforest(the above
 																33
 																</td>
 																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																</td>
+																<td>
+															
+																</a>
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -2116,14 +2357,20 @@ License: You must have a valid license purchased only from themeforest(the above
 																添加重量
 																</th>
 																<th>
-																
+																 S.C
 																</th>
+																<th>
+																	縮放倍率
+																</th>
+																<th>
+																</th>
+																
 																</tr>
 																</thead>
 																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
 																RUH036
@@ -2132,14 +2379,20 @@ License: You must have a valid license purchased only from themeforest(the above
 																0.03
 																</td>
 																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="#modifyItem" data-toggle="modal" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
 																</tr>
-																	<tr bgcolor="#FFDCB9">
+																<tr bgcolor="#FFDCB9">
 																<td>
 																Solvent
 																</td>
@@ -2148,6 +2401,37 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-edit" title="編輯">
+																</a>
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
+																</a>
+																</td>
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																<td>
+																0.45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
@@ -2163,10 +2447,16 @@ License: You must have a valid license purchased only from themeforest(the above
 																Additive
 																</td>
 																<td>
-																222
+																QRO145
 																</td>
 																<td>
-																333
+																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2176,15 +2466,45 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D6D6AD">
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																<td>
+																2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
+																</a>
+																</td>
+																</tr>
+															<tr bgcolor="#D6D6AD">
 																<td>
 																Monomer
 																</td>
 																<td>
-																222
+																VSX010
 																</td>
 																<td>
-																333
+																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2199,10 +2519,16 @@ License: You must have a valid license purchased only from themeforest(the above
 																Binder
 																</td>
 																<td>
-																222
+																FOD054
 																</td>
 																<td>
-																333
+																3.5
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2212,15 +2538,21 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
 																<td>
-																222
+																CBN930
 																</td>
 																<td>
-																333
+																33
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2229,7 +2561,30 @@ License: You must have a valid license purchased only from themeforest(the above
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																</td>
+																<td>
+															
+																</a>
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -2268,14 +2623,20 @@ License: You must have a valid license purchased only from themeforest(the above
 																添加重量
 																</th>
 																<th>
-																
+																 S.C
 																</th>
+																<th>
+																	縮放倍率
+																</th>
+																<th>
+																</th>
+																
 																</tr>
 																</thead>
 																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
 																RUH036
@@ -2284,14 +2645,20 @@ License: You must have a valid license purchased only from themeforest(the above
 																0.03
 																</td>
 																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="#modifyItem" data-toggle="modal" class="fa fa-pencil-square-o" title="編輯原料">
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
 																</tr>
-																	<tr bgcolor="#FFDCB9">
+																<tr bgcolor="#FFDCB9">
 																<td>
 																Solvent
 																</td>
@@ -2300,6 +2667,37 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-edit" title="編輯">
+																</a>
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
+																</a>
+																</td>
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																<td>
+																0.45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-edit" title="編輯">
@@ -2315,10 +2713,16 @@ License: You must have a valid license purchased only from themeforest(the above
 																Additive
 																</td>
 																<td>
-																222
+																QRO145
 																</td>
 																<td>
-																333
+																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2328,15 +2732,45 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D6D6AD">
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																<td>
+																2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
+																</td>
+																<td>
+																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
+																</a>
+																</td>
+																</tr>
+															<tr bgcolor="#D6D6AD">
 																<td>
 																Monomer
 																</td>
 																<td>
-																222
+																VSX010
 																</td>
 																<td>
-																333
+																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2351,10 +2785,16 @@ License: You must have a valid license purchased only from themeforest(the above
 																Binder
 																</td>
 																<td>
-																222
+																FOD054
 																</td>
 																<td>
-																333
+																3.5
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2364,15 +2804,21 @@ License: You must have a valid license purchased only from themeforest(the above
 																</a>
 																</td>
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
 																<td>
-																222
+																CBN930
 																</td>
 																<td>
-																333
+																33
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																<td>
 																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
@@ -2381,7 +2827,30 @@ License: You must have a valid license purchased only from themeforest(the above
 																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
 																</a>
 																</td>
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																</td>
+																<td>
+															
+																</a>
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -3396,7 +3865,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 <!-- 比較配方原料項目 dialog -->
-							<div class="modal fade bs-modal-lg" id="compareItem" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal fade bs-modal-lg in" id="compareItemModal" tabindex="-1" role="dialog" aria-hidden="true">
 							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
 							<input type="hidden" id="itemNo" name="itemNo" />
 								<div class="modal-dialog modal-lg">
@@ -3434,7 +3903,14 @@ License: You must have a valid license purchased only from themeforest(the above
 																<th>
 																添加重量
 																</th>
-																</tr>
+																<th>
+																 S.C
+																</th>
+																<th>
+																	縮放倍率
+																</th>
+															
+																
 																</thead>
 																<tbody>
 															<tr bgcolor="#F1E1FF">
@@ -3447,7 +3923,13 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																0.03
 																</td>
-																
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+															
 																</tr>
 																<tr bgcolor="#FFDCB9">
 																<td>
@@ -3458,6 +3940,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3471,6 +3959,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																0.45
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
 																<tr bgcolor="#D2A2CC">
@@ -3483,8 +3977,13 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																0.0034
 																</td>
-																
+																<td>
+																0.03
 																</td>
+																<td>
+																0.03
+																</td>
+																
 																</tr>
 																<tr bgcolor="#D2A2CC">
 																<td>
@@ -3495,6 +3994,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3508,6 +4013,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																1.2
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
 																<tr bgcolor="#ACD6FF">
@@ -3519,6 +4030,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																3.5
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3532,8 +4049,34 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																33
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																
+																
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -3541,7 +4084,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</div>
 																<!-- END SAMPLE TABLE PORTLET-->
 												</div>
-												<div class="col-md-4">
+												<div class="col-md-4" >
 															<!-- BEGIN SAMPLE TABLE PORTLET-->
 												<div class="portlet box blue">
 													<div class="portlet-title">
@@ -3564,21 +4107,31 @@ License: You must have a valid license purchased only from themeforest(the above
 																<th>
 																添加重量
 																</th>
-																
-																</tr>
-																</thead>
+																<th>
+																 S.C
+																</th>
+																<th>
+																	縮放倍率
+																</th>
+															</thead>
 																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
-																QTE785
+																RUH036
 																</td>
 																<td>
 																0.03
 																</td>
-																
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+															
 																</tr>
 																<tr bgcolor="#FFDCB9">
 																<td>
@@ -3589,6 +4142,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3602,6 +4161,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																0.45
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
 																<tr bgcolor="#D2A2CC">
@@ -3613,6 +4178,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3626,6 +4197,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																2
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
 															<tr bgcolor="#D6D6AD">
@@ -3637,6 +4214,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3650,9 +4233,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																3.5
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
@@ -3662,8 +4251,34 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																33
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																
+																
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -3671,7 +4286,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</div>
 																	<!-- END SAMPLE TABLE PORTLET-->
 																</div>	
-													<div class="col-md-4">
+													<div class="col-md-4" >
 																	<!-- BEGIN SAMPLE TABLE PORTLET-->
 												<div class="portlet box blue" =>
 													<div class="portlet-title">
@@ -3694,21 +4309,33 @@ License: You must have a valid license purchased only from themeforest(the above
 																<th>
 																添加重量
 																</th>
+																<th>
+																 S.C
+																</th>
+																<th>
+																	縮放倍率
+																</th>
+															
 																
-														</tr>
-														</thead>
-														<tbody>
+																</thead>
+																<tbody>
 															<tr bgcolor="#F1E1FF">
 																<td>
-																	Initiator
+																Initiator
 																</td>
 																<td>
-																JIN634
+																RUH036
 																</td>
 																<td>
 																0.03
 																</td>
-																
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
+															
 																</tr>
 																<tr bgcolor="#FFDCB9">
 																<td>
@@ -3719,6 +4346,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																45
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3732,6 +4365,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																0.45
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
 																<tr bgcolor="#D2A2CC">
@@ -3743,6 +4382,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																0.0034
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3756,9 +4401,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																2
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
-																<tr bgcolor="#D6D6AD">
+															<tr bgcolor="#D6D6AD">
 																<td>
 																Monomer
 																</td>
@@ -3767,6 +4418,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</td>
 																<td>
 																1.2
+																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
 																</td>
 																
 																</tr>
@@ -3780,9 +4437,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																3.5
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
 																</tr>
-																<tr bgcolor="#D0D0D0">
+															<tr bgcolor="#D0D0D0">
 																<td>
 																	Paste
 																</td>
@@ -3792,8 +4455,34 @@ License: You must have a valid license purchased only from themeforest(the above
 																<td>
 																33
 																</td>
+																<td>
+																0.03
+																</td>
+																<td>
+																0.03
+																</td>
 																
-																</tr>
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																<td>
+																85.1834
+																</td>
+																<td>
+																0.24
+																</td>
+																<td>
+																0.24
+																</td>
+																
+																
+																</td>
+															</tr>
 																</tbody>
 																</table>
 																</div>
@@ -3812,462 +4501,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!-- <div class="col-md-5 col-sm-4">
 									
 									</div> -->
-										<div class="col-md-4" style='display: none;'>
-											<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK004
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-plus-square" title="新增原料">
-														</a>
-														<a href="javascript:;" class="fa fa-clipboard" title="複製配方">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除配方">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																<th>
-																
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																	<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-edit" title="編輯">
-																</a>
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-												</div>
-												<div class="col-md-4" style='display: none;'>
-															<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK005
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-plus-square" title="新增原料">
-														</a>
-														<a href="javascript:;" class="fa fa-clipboard" title="複製配方">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除配方">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																<th>
-																
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																	<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-edit" title="編輯">
-																</a>
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																	<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
-											<div class="col-md-4"  style='display: none;'>
-												<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK006
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-plus-square" title="新增原料">
-														</a>
-														<a href="javascript:;" class="fa fa-clipboard" title="複製配方">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除配方">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																<th>
-																
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																	<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-edit" title="編輯">
-																</a>
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-pencil-square-o" title="編輯原料">
-																</td>
-																<td>
-																<a href="javascript:;" class="fa fa-trash-o" title="刪除原料">
-																</a>
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																	<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
+										
+												
+											
 
 															<div class="todo-tasklist-devider">
 
@@ -4288,7 +4524,208 @@ License: You must have a valid license purchased only from themeforest(the above
 								<!-- /.modal-dialog -->
 							</div>
 			
-			<!-- 原料項目 dialog end -->
+			<!-- 比較原料項目 dialog end -->
+
+
+
+
+<!-- 原料項目 Summary dialog -->
+							<div class="bootbox modal fade in  bs-modal-s" id="summaryItem" tabindex="-1" role="dialog" aria-hidden="true">
+
+							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
+							<input type="hidden" id="itemNo" name="itemNo" />
+								<div class="modal-dialog ">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title" id="formulaItemDialogTitleId">原料項目摘要</h4>
+										</div>
+										<div class="modal-body">
+										<div class="portlet-body">
+								<div class="row">
+									<!-- <div class="col-md-5 col-sm-4">
+									
+									</div> -->
+										<div class="col-md-6">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														NO:HSK001
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														
+																<tbody>
+																	<tr>
+																	<td>
+																	Total SC%	
+																	</td>
+																	<td>
+																	0.1411
+																	</td>
+																	</tr>
+
+																	<tr>
+																	<td>
+																	CB佔Paste添加量(g)		
+																	</td>
+																	<td>
+																	9.0000
+																	</td>
+																	</tr>
+
+																	<tr>
+																	<td>
+																	CB佔總固體	
+																	</td>
+																	<td>
+																	0.5525
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	Binder固體總量(含Paste)		
+																	</td>
+																	<td>
+																	4.4900
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	Binder固體總量(含Paste)			
+																	</td>
+																	<td>
+																	4.4900
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	In.固體佔總固體				
+																	</td>
+																	<td>
+																	0.0510
+																	</td>
+																	</tr>
+
+																	<tr>
+																	<td>
+																	M.固體佔總固體					
+																	</td>
+																	<td>
+																	0.1105
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	B.固體佔總固體						
+																	</td>
+																	<td>
+																	0.0491
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	QRO145佔總光阻溶液						
+																	</td>
+																	<td>
+																	0.0005
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	XIX490固體佔總光阻溶液						
+																	</td>
+																	<td>
+																	0.0104
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	高沸(次要)溶劑佔TG總溶劑							
+																	</td>
+																	<td>
+																	0.0880
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	TG solvent總量								
+																	</td>
+																	<td>
+																	62.5000
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	Bin.A/(Bin.A+Bin.B)									
+																	</td>
+																	<td>
+																	0.5000
+																	</td>
+																	</tr>
+																	<tr>
+																	<td>
+																	Bin.B/(Bin.A+Bin.B)									
+																	</td>
+																	<td>
+																	0.5000
+																	</td>
+																	</tr>
+															
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+												</div>
+												
+													
+
+													<div class="todo-tasklist-devider">
+
+													</div>
+															<!-- <div class="col-md-7 col-sm-8">
+															</div> -->
+											</div>
+											<div class="row">
+									<!-- <div class="col-md-5 col-sm-4">
+									
+									</div> -->
+										
+												
+											
+
+															<div class="todo-tasklist-devider">
+
+																</div>
+															<div class="col-md-7 col-sm-8">
+															</div>
+											</div>
+							</div>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
+											<button type="button" class="btn default" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+			
+			<!-- 原料項目 Summary dialog end -->
+
+
+
+
+
 
 
 <!-- BEGIN FOOTER -->
