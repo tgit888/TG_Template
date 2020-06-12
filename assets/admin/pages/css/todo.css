@@ -11,6 +11,12 @@ TODO Page
   margin-right: 20px;
 }
 
+.todo-sidebar-175 {
+  float: left;
+  width: 175px;
+  margin-right: 10px;
+}
+
 .todo-content {
   overflow: hidden;
 }
