@@ -1624,6 +1624,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 	<!-- END CONTENT -->
+	<script type="text/javascript">
+
+
+
+	</script>
 	<!-- dialog  簽核start-->
 									<div id="ReviewModal" class="modal fade" role="dialog" aria-hidden="true">
 										<div class="modal-dialog">
@@ -1644,7 +1649,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<label class="col-sm-4 control-label">簽核狀態</label>
 													<div class="col-sm-8">
 													<div class="input-group">        
-													<select class="form-control" id="status${idx.index }" name="status${idx.index }">
+													<select class="form-control" id="statusId" name="statusId">
 														<option value="">請選擇</option>
 														<option value="1">通過</option>
 														<option value="0">不通過</option>
@@ -1653,7 +1658,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 											</div>
 											
-											<div class="form-group">
+											<div class="form-group" id="assignfg" style="display: none;"> 
 												<label class="col-sm-4 control-label">派工</label>
 												 	<div class="col-sm-8">
 														<div class="input-group">
@@ -1742,6 +1747,16 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 													</div>
 											</div>
+											<div class="form-group" id="remarkfg" style="display: none;" >
+												<label class="col-sm-4 control-label">備註</label>
+												 	<div class="col-sm-8">
+														<div class="input-group">
+														<i class="fa"></i>
+														<textarea class="form-control" rows="4" name="remark${idx.index }"
+															id="remark${idx.index }"></textarea>
+														</div>
+													</div>
+											</div>
 											</form>
 												</div>
 											<div class="modal-footer">
@@ -1808,6 +1823,21 @@ $('#sample_1').dataTable( {
   // "search": {
   //   "search": "Fred"
   // }
+});
+
+$('#statusId').change(function(){ 
+//alert($(this).children('option:selected').val()); 
+
+if($(this).children('option:selected').val() == '1'){
+$("#remarkfg").hide();
+$("#assignfg").show();
+}else{
+$("#remarkfg").show();
+$("#assignfg").hide();
+
+}
+
+
 });
 });
 
