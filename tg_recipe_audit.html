@@ -1532,7 +1532,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 								
 								<td>
-									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+									<button type="button" class="btn blue"     data-target="#displayItem"  data-toggle="modal"  o>預覽<i class="fa fa-search"></i></button>
 									<a  type="button"  class="btn green"     data-target="#ReviewModal"  data-toggle="modal"   >審核<i class="fa fa-check-circle-o"></i></a>
 								</td>
 							</tr>
@@ -1770,6 +1770,721 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 											</div>
 											<!-- dialog  簽核end-->	
+
+
+
+
+
+<!-- dialog 檢視  start -->
+<div class="modal fade" id="displayItem" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-full">	
+			 	  <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">預覽</h4>
+				</div>	
+				 </div> 
+		<!-- BEGIN PAGE CONTENT-->
+			
+
+			<!-- BEGIN TODO CONTENT -->
+					<div class="todo-content">
+						<div class="portlet light">
+							<!-- PROJECT HEAD -->
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="icon-bar-chart font-green-sharp hide"></i>
+									<span class="caption-subject font-sharp bold uppercase">專案名稱:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">信利仁壽廠array </span><br>
+									<i class="icon-bar-chart font-green-sharp hide"></i>
+									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">組別_日期(yyyymmddmmss) </span>
+								</div> 
+								
+								<div class="actions">
+								<!-- 	<a href="tg_recipe_ex_edit_setup2.html" class="btn btn-default btn-circle">
+										<i class="fa fa-angle-left"></i>
+										<span class="hidden-480">
+										上一步 </span>
+										</a>
+									 -->
+									<div class="btn-group">
+										<!-- <a class="btn green-haze btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> -->
+										
+										<button        class="btn btn-default btn-circle" onClick="nextSetup();">
+									
+										<span class="hidden-480">列印
+										 </span>
+										</button>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end PROJECT HEAD -->
+								
+								
+
+							<div class="portlet-title">
+								<div class="caption">
+									
+									<span class="caption-subject font-yellow-sharp bold uppercase">1.配方 </span>
+
+								</div> 
+								
+							</div>
+							<div class="portlet-body">
+								<div class="row">
+									<!-- <div class="col-md-5 col-sm-4">
+									
+									</div> -->
+										<div class="col-md-6">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														<tr>
+																<th>
+																#
+																</th>
+																<th>
+																原料型號
+																</th>
+																
+																<th>
+																  	縮放倍率<br>(1.2%)
+																</th>
+																
+																
+																</tr>
+																</thead>
+																<tbody>
+															<tr bgcolor="#F1E1FF">
+																<td>
+																Initiator
+																</td>
+																<td>
+																RUH036
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																ZOT854
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																QRO145
+																</td>
+																<td>
+																0.03
+																</td>
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D6D6AD">
+																<td>
+																Monomer
+																</td>
+																<td>
+																VSX010
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#ACD6FF">
+																<td>
+																Binder
+																</td>
+																<td>
+																FOD054
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D0D0D0">
+																<td>
+																	Paste
+																</td>
+																<td>
+																CBN930
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																
+																<td>
+																0.24
+																</td>
+																
+															</tr>
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+													</div>
+
+
+												<div class="col-md-6">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK002
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														<tr>
+																<th>
+																#
+																</th>
+																<th>
+																原料型號
+																</th>
+																
+																<th>
+																  	縮放倍率<br>(1.2%)
+																</th>
+																
+																
+																</tr>
+																</thead>
+																<tbody>
+															<tr bgcolor="#F1E1FF">
+																<td>
+																Initiator
+																</td>
+																<td>
+																RUH036
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																ZOT854
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																QRO145
+																</td>
+																<td>
+																0.03
+																</td>
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D6D6AD">
+																<td>
+																Monomer
+																</td>
+																<td>
+																VSX010
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#ACD6FF">
+																<td>
+																Binder
+																</td>
+																<td>
+																FOD054
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D0D0D0">
+																<td>
+																	Paste
+																</td>
+																<td>
+																CBN930
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																
+																<td>
+																0.24
+																</td>
+																
+															</tr>
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+													</div>
+												</div>		
+													
+											<div class="row">
+									<!-- <div class="col-md-5 col-sm-4">
+									
+									</div> -->
+										<div class="col-md-6">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK003
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														<tr>
+																<th>
+																#
+																</th>
+																<th>
+																原料型號
+																</th>
+																
+																<th>
+																  	縮放倍率<br>(1.2%)
+																</th>
+																
+																
+																</tr>
+																</thead>
+																<tbody>
+															<tr bgcolor="#F1E1FF">
+																<td>
+																Initiator
+																</td>
+																<td>
+																RUH036
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																ZOT854
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																QRO145
+																</td>
+																<td>
+																0.03
+																</td>
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D6D6AD">
+																<td>
+																Monomer
+																</td>
+																<td>
+																VSX010
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#ACD6FF">
+																<td>
+																Binder
+																</td>
+																<td>
+																FOD054
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D0D0D0">
+																<td>
+																	Paste
+																</td>
+																<td>
+																CBN930
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																
+																<td>
+																0.24
+																</td>
+																
+															</tr>
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+													</div>
+
+
+												<div class="col-md-6" style="display: none;">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK004
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														<tr>
+																<th>
+																#
+																</th>
+																<th>
+																原料型號
+																</th>
+																
+																<th>
+																  	縮放倍率<br>(1.2%)
+																</th>
+																
+																
+																</tr>
+																</thead>
+																<tbody>
+															<tr bgcolor="#F1E1FF">
+																<td>
+																Initiator
+																</td>
+																<td>
+																RUH036
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																ZOT854
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																QRO145
+																</td>
+																<td>
+																0.03
+																</td>
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D6D6AD">
+																<td>
+																Monomer
+																</td>
+																<td>
+																VSX010
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#ACD6FF">
+																<td>
+																Binder
+																</td>
+																<td>
+																FOD054
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D0D0D0">
+																<td>
+																	Paste
+																</td>
+																<td>
+																CBN930
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																
+																<td>
+																0.24
+																</td>
+																
+															</tr>
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+													</div>
+												</div>	
+						</div>
+
+							<div class="portlet-title">
+								<div class="caption">
+									
+									<span class="caption-subject font-yellow-sharp bold uppercase">2.SOP名稱: <a>友達光電(昆山)有限公司_BM_塗布特性 </a></span>
+
+								</div> 
+								
+							</div>
+							<div class="portlet-title">
+								<div class="caption">
+									
+									<span class="caption-subject font-yellow-sharp bold uppercase">3.預估開始結束時間: </span>
+									&nbsp; <span class="caption-subject font-green-sharp bold uppercase">20200610~20200611</span>
+								</div> 
+								
+							</div>
+
+
+
+					</div>
+					<!-- END TODO CONTENT -->
+
+
+
+			<!-- END PAGE CONTENT-->
+		
+	</div>
+	
+								<!-- /.modal-dialog -->
+</div>	
+		
+	<!-- dialog 檢視 end -->	
+
 </div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
