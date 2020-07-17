@@ -1282,6 +1282,69 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
+					<!-- test start -->
+					<div class="portlet box blue" id="form_wizard_1">
+						<div class="portlet-title">
+								<div class="caption">
+									<i class="fa fa-gift"></i> 工單設定 - <span class="step-title">
+									Step 1 of 3 </span>
+								</div>
+								<div class="tools hidden-xs">
+								<!-- 	<a href="javascript:;" class="collapse">
+									</a>
+									<a href="#portlet-config" data-toggle="modal" class="config">
+									</a>
+									<a href="javascript:;" class="reload">
+									</a>
+									<a href="javascript:;" class="remove">
+									</a> -->
+								</div>
+						</div>
+					<div class="portlet-body form">
+							<form action="#" class="form-horizontal" id="submit_form" method="POST">
+								<div class="form-wizard">
+									<div class="form-body">
+										<ul class="nav nav-pills nav-justified steps">
+											<li class="active">
+												<a href="#tab1" data-toggle="tab" class="step">
+												<span class="number">
+												1 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> 選擇配方 </span>
+												</a>
+											</li>
+											<li >
+												<a href="#tab2" data-toggle="tab" class="step ">
+												<span class="number">
+												2 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> 選擇SOP </span>
+												</a>
+											</li>
+											<!-- <li>
+												<a href="#tab3" data-toggle="tab" class="step active">
+												<span class="number">
+												3 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> 派工 </span>
+
+												</a>
+											</li> -->
+											
+											<li>
+												<a href="#tab4" data-toggle="tab" class="step">
+												<span class="number">
+												3 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> 確定 </span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
 
 
 					<!-- test end-->
@@ -1299,16 +1362,21 @@ License: You must have a valid license purchased only from themeforest(the above
 									<i class="icon-bar-chart font-green-sharp hide"></i>
 									<span class="caption-helper">PROJECT:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">Tune Website</span>
 								</div> -->
-							<!-- 	<div class="actions">
+								<div class="actions">
 									<div class="actions">
 								
 										<a href="tg_recipe_ex_edit_setup.html" class="btn btn-default btn-circle">
-										
+										<!-- <i class="fa fa-angle-left"></i> -->
 										<span class="hidden-480">
 										上一步 </span>
 										</a>
 										<div class="btn-group">
+											<!-- <a class="btn green btn-circle" href="tg_recipe_ex_edit_setup3.html" >
 											
+											<span class="hidden-480">
+											確認 </span>
+											<i class="fa fa-angle-down"></i>
+											</a> -->
 											<button        class="btn btn-default btn-circle" onClick="nextSetup();">
 									
 										<span class="hidden-480">
@@ -1317,7 +1385,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											
 										</div>
 									</div>
-								</div> -->
+								</div>
 							<!-- end PROJECT HEAD -->
 							<div class="portlet-body">
 
@@ -1334,7 +1402,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-gift font-green-sharp"></i>
-								<span class="caption-subject font-green-sharp bold uppercase">工單 搜尋</span>
+								<span class="caption-subject font-green-sharp bold uppercase">專案配方 搜尋</span>
 								<span class="caption-helper"></span>
 							</div>
 							
@@ -1357,72 +1425,22 @@ License: You must have a valid license purchased only from themeforest(the above
 								<table class="table table-striped table-bordered table-hover" >
 								<thead>
 								<tr role="row" class="heading">
-									
-								  	
 									<th width="10%">
-										專案
+										專案名稱
 									</th> 
-									<th width="10%">
-										 產品別
-									</th> 
-									<th width="10%">
-										 狀態
-									</th>  
 									
-								 	<th width="10%">
-										 工單號碼
-									</th>
-								
-								  <!-- 
-								 	<th width="15%">
-										 SOP Template名稱(編號)
-									</th>  -->
-									<th width="10%">
-										
-									</th>
+									
 								</tr>
 								
 								<tr>
 									<td>
-										<select class="form-control input-small select2me" id ="testSelect" data-placeholder="Select...">
-												<option value=""></option>
-												<option value="AL"> 信利仁壽廠array 
-												</option>
-												<option value="WY">錼創厚膜BM</option>
-										</select>
-									</td>
-									<td>
-										<select class="layout-option form-control input-small input-sm" id="productNo" name="productNo">
+										<select class="layout-option form-control select2me " id="customerNo" name="customerNo" >
 										<option value="">請選擇</option>
-											<option value="">請選擇</option>
-										    <option value="${item.product_id}" >BM</option>
-									  		<option value="${item.product_id}" >PS</option>	
-									  		<option value="${item.product_id}" >OC</option>
-										</select>
-									</td> 
-									<td>
-										<select class="layout-option form-control input-small input-sm" id="productNo" name="productNo">
-										<option value="">請選擇</option>
-											<option value="">請選擇</option>
-										    <option value="${item.product_id}" >未審核</option>
-									  		<option value="${item.product_id}" >已審核</option>	
-									  		<option value="${item.product_id}" >已完成作業</option>
-										</select>
-									</td> 
-									
-									<td>
-										
-									<input type="text" class="form-control" name="formulaName" id="formulaName" required="required"/>
-									
-									</td> 
-									
-									<td>
-										<div class="margin-bottom-5">
-											<button class="btn btn-sm yellow filter-submit margin-bottom" onclick="search();"><i class="fa fa-search"></i>搜尋</button>
-										    
-										</div>
-										<button class="btn btn-sm red filter-cancel" onclick="callAction();"><i class="fa fa-times"></i>取消</button>
+										 <option value="${item.customerNo}" >友達光電</option>
+									    <option value="${item.customerNo}" >群創</option>					
+										</select> 
 									</td>
+									
 								</tr>
 								</thead>
 								<tbody>
@@ -1438,7 +1456,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="portlet box grey-cascade">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-globe"></i>工單 List
+								<i class="fa fa-globe"></i>配方 List
 							</div>
 <!-- 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -1464,21 +1482,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"/>
 								</th>
 								<th>
-									    專案
+									    配方名稱
 								</th>
-								<th>
-									    產品別
-								</th>
-								 <th>
-									 	類別
-								</th> 
-								
-								<th>
-									    工單編號
-								</th>
-								<!-- <th>
-									    SOP等級
-								</th> -->
 								<th>
 									 備註
 								</th>
@@ -1491,7 +1496,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									    建立者/修改者
 								</th>
 								<th>
-									 建立日期/修改日期
+									  建立日期/修改日期
 								</th>
 								
 								<th>
@@ -1505,35 +1510,55 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									信利仁壽廠array 
-								</td>
-								<td>
-									BM
-								</td>
-								<td>
-									基本特性
-								</td>
-								<td class="center">
-									BM_202005111313
+									D1B233-1
 								</td>
 								
-								<td>
+								<td >
 									
 								</td>
+								
+								
 								<td>
-									未審核
+									進行中
 								</td>
 								<td>
-									建立者:andy(xxx)<br>
-									修改者:andy(sss)
+									建立者:admin(管理者)<br>
+									修改者:admin(管理者)
 								</td>
 								<td>
 									2020-05-14 17:33:39<br>2020-05-14 17:48:39
 								</td>
 								
 								<td>
-									<button type="button" class="btn blue"     data-target="#displayItem"  data-toggle="modal"  o>預覽<i class="fa fa-search"></i></button>
-									<a  type="button"  class="btn green"     data-target="#ReviewModal"  data-toggle="modal"   >審核<i class="fa fa-check-circle-o"></i></a>
+									<button type="button" class="btn blue"     data-target="#prevItemModal"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+								</td>
+							</tr>
+							 <tr class="odd gradeX">
+								<td>
+									<input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									D1B239
+								</td>
+								
+								<td >
+									
+								</td>
+								
+								
+								<td>
+									進行中
+								</td>
+								<td>
+									建立者:admin(管理者)<br>
+									修改者:admin(管理者)
+								</td>
+								<td>
+									2020-05-14 17:33:39<br>2020-05-14 17:48:39
+								</td>
+								
+								<td>
+									<button type="button" class="btn blue"     data-target="#prevItemModal"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -1541,36 +1566,27 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									信利仁壽廠array 
-								</td>
-								<td>
-									BM
-								</td>
-								<td>
-									基本特性
-								</td>
-								<td class="center">
-									BM_202006121313
+									D1B240
 								</td>
 								
-								<td>
+								<td >
 									
 								</td>
+								
+								
 								<td>
-									未審核
+									進行中
 								</td>
 								<td>
-									建立者:andy(xxx)<br>
-									修改者:andy(sss)
+									建立者:admin(管理者)<br>
+									修改者:admin(管理者)
 								</td>
 								<td>
 									2020-05-14 17:33:39<br>2020-05-14 17:48:39
 								</td>
 								
 								<td>
-									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
-									<button type="button" class="btn green"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >審核<i class="fa fa-check-circle-o"></i></button>
-
+									<button type="button" class="btn blue"     data-target="#prevItemModal"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -1578,35 +1594,55 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									信利仁壽廠array 
-								</td>
-								<td>
-									BM
-								</td>
-								<td>
-									基本特性
-								</td>
-								<td class="center">
-									BM_202006111312
+									D1B241
 								</td>
 								
-								<td>
+								<td >
 									
 								</td>
+								
+								
 								<td>
-									未審核
+									進行中
 								</td>
 								<td>
-									建立者:andy(xxx)<br>
-									修改者:andy(sss)
+									建立者:admin(管理者)<br>
+									修改者:admin(管理者)
 								</td>
 								<td>
 									2020-05-14 17:33:39<br>2020-05-14 17:48:39
 								</td>
 								
 								<td>
-									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
-									<button type="button" class="btn green"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >審核<i class="fa fa-check-circle-o"></i></button>
+									<button type="button" class="btn blue"     data-target="#prevItemModal"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+								</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>
+									<input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									D1B242
+								</td>
+								
+								<td >
+									
+								</td>
+								
+								
+								<td>
+									進行中
+								</td>
+								<td>
+									建立者:admin(管理者)<br>
+									修改者:admin(管理者)
+								</td>
+								<td>
+									2020-05-14 17:33:39<br>2020-05-14 17:48:39
+								</td>
+								
+								<td>
+									<button type="button" class="btn blue"     data-target="#prevItemModal"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
 								</td>
 							</tr>
 							
@@ -1624,880 +1660,211 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 	<!-- END CONTENT -->
-	<script type="text/javascript">
-
-
-
-	</script>
-	<!-- dialog  簽核start-->
-									<div id="ReviewModal" class="modal fade" role="dialog" aria-hidden="true">
-										<div class="modal-dialog">
-										<div class="modal-content">
-										<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal"
-										aria-hidden="true"></button>
-										<h4 class="modal-title">工單審核</h4>
-										</div>
-										<div class="modal-body form">
-											<form id="confirmPrjTypeForm"
-											class="form-horizontal form-row-seperated">
-											<input type="hidden" id="sopId${idx.index }" name="sopId${idx.index }"value="${item.sop_id }" />
-											<input type="hidden" name="signingNo${idx.index }" id="signingNo${idx.index }" value="${item.signing_no}">
-											
-																											
-											<div class="form-group">
-												<label class="col-sm-4 control-label">簽核狀態</label>
-													<div class="col-sm-8">
-													<div class="input-group">        
-													<select class="form-control" id="statusId" name="statusId">
-														<option value="">請選擇</option>
-														<option value="1">通過</option>
-														<option value="0">不通過</option>
-														</select>
-													</div>
-													</div>
-											</div>
-											
-											<div class="form-group" id="assignfg" style="display: none;"> 
-												<label class="col-sm-4 control-label">派工</label>
-												 	<div class="col-sm-8">
-														<div class="input-group">
-														<table class="table table-striped table-bordered table-hover" id="sample_1">
-												<thead>
-												<tr>
-													<th class="table-checkbox">
-														<!-- <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"/> -->
-													</th>
-													<th>
-														 Name
-													</th>
-													<th>
-														 組別
-													</th>
-													<td>
-														 職稱
-													</td>
-													
-												</tr>
-												</thead>
-															<tbody>
-															<tr class="odd gradeX">
-																<td>
-																	<input type="checkbox" class="checkboxes" value="1"/>
-																</td>
-																<td>
-																	ANDY
-																</td>
-																<td>
-																	 BM
-																</td>
-																<td>
-																	工程師
-																</td>
-																
-															</tr>
-															<tr class="odd gradeX">
-																<td>
-																	<input type="checkbox" class="checkboxes" value="1"/>
-																</td>
-																<td>
-																	Jacky
-																</td>
-																<td>
-																	 BM
-																</td>
-																<td>
-																	 工程師
-																</td>
-																
-															</tr>
-															<tr class="odd gradeX">
-																<td>
-																	<input type="checkbox" class="checkboxes" value="1"/>
-																</td>
-																<td>
-																	 David
-																</td>
-																<td>
-																	BM
-																</td>
-																<td>
-																	 工程師
-																</td>
-															</tr>
-															<tr class="odd gradeX">
-																<td>
-																	<input type="checkbox" class="checkboxes" value="1"/>
-																</td>
-																<td>
-																	Ken
-																</td>
-																<td>
-																	BM
-																</td>
-																<td>
-																	 工程師
-																</td>
-															</tr>
-															
-															</tbody>
-															</table>
-
-
-														</div>
-													</div>
-											</div>
-											<div class="form-group" id="remarkfg" style="display: none;" >
-												<label class="col-sm-4 control-label">備註</label>
-												 	<div class="col-sm-8">
-														<div class="input-group">
-														<i class="fa"></i>
-														<textarea class="form-control" rows="4" name="remark${idx.index }"
-															id="remark${idx.index }"></textarea>
-														</div>
-													</div>
-											</div>
-											</form>
-												</div>
-											<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-											<button type="button" class="btn btn-primary"
-											onClick="confirmReview(${idx.index });">
-											<i class="fa fa-check"></i> 確認
-											</button>
-											</div>
-											</div>
-											</div>
-											</div>
-											<!-- dialog  簽核end-->	
-
-
-
-
-
-<!-- dialog 檢視  start -->
-<div class="modal fade" id="displayItem" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-full">	
-			 	  <div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-					<h4 class="modal-title">預覽</h4>
-				</div>	
-				 </div> 
-		<!-- BEGIN PAGE CONTENT-->
-			
-
-			<!-- BEGIN TODO CONTENT -->
-					<div class="todo-content">
-						<div class="portlet light">
-							<!-- PROJECT HEAD -->
-							<div class="portlet-title">
-								<div class="caption">
-									<i class="icon-bar-chart font-green-sharp hide"></i>
-									<span class="caption-subject font-sharp bold uppercase">專案名稱:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">信利仁壽廠array </span><br>
-									<i class="icon-bar-chart font-green-sharp hide"></i>
-									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">組別_日期(yyyymmddmmss) </span>
-								</div> 
-								
-								<div class="actions">
-								<!-- 	<a href="tg_recipe_ex_edit_setup2.html" class="btn btn-default btn-circle">
-										<i class="fa fa-angle-left"></i>
-										<span class="hidden-480">
-										上一步 </span>
-										</a>
-									 -->
-									<div class="btn-group">
-										<!-- <a class="btn green-haze btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> -->
-										
-										<button        class="btn btn-default btn-circle" onClick="nextSetup();">
-									
-										<span class="hidden-480">列印
-										 </span>
-										</button>
-										
-									</div>
-								</div>
-							</div>
-							<!-- end PROJECT HEAD -->
-								
-								
-
-							<div class="portlet-title">
-								<div class="caption">
-									
-									<span class="caption-subject font-yellow-sharp bold uppercase">1.配方 </span>
-
-								</div> 
-								
-							</div>
-							<div class="portlet-body">
-								<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										<div class="col-md-6">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
-														</div>
-														
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																
-																<td>
-																0.24
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-
-
-												<div class="col-md-6">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK002
-														</div>
-														
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																
-																<td>
-																0.24
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-												</div>		
-													
-											<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										<div class="col-md-6" style="display:none">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK003
-														</div>
-														
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																
-																<td>
-																0.24
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-
-
-												<div class="col-md-6" style="display: none;">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK004
-														</div>
-														
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																
-																<td>
-																0.24
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-												</div>	
-						</div>
-
-							<div class="portlet-title">
-								<div class="caption">
-									
-									<span class="caption-subject font-yellow-sharp bold uppercase">2.SOP名稱: <a>友達光電(昆山)有限公司_BM_塗布特性 </a></span>
-
-								</div> 
-								
-							</div>
-							<div class="portlet-title">
-								<div class="caption">
-									
-									<span class="caption-subject font-yellow-sharp bold uppercase">3.開始結束時間: </span>
-									&nbsp; <span class="caption-subject font-green-sharp bold uppercase">20200610~20200611</span>
-								</div> 
-								
-								
-							</div>
-							<div class="portlet-title">
-								
-								<div class="caption">
-									
-									<span class="caption-subject font-yellow-sharp bold uppercase">4.實驗結果: </span>
-									&nbsp; <a><span class="caption-subject font-green-sharp bold uppercase">BM_塗布特性結果20200709.excel</span></a>
-								</div> 
-								
-							</div>
-
-
-
-
-					</div>
-					<!-- END TODO CONTENT -->
-
-
-
-			<!-- END PAGE CONTENT-->
-		
-	</div>
-	
-								<!-- /.modal-dialog -->
-</div>	
-		
-	<!-- dialog 檢視 end -->	
-
 </div>
 <!-- END CONTAINER -->
+
+
+
+
+
+
+<!-- 預覽配方 dialog -->
+							<div class="bootbox modal fade in" id="prevItemModal" tabindex="-1" role="dialog" aria-hidden="true">
+							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
+							<input type="hidden" id="itemNo" name="itemNo" />
+								<div class="modal-dialog modal-medium">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title" id="formulaItemDialogTitleId">預覽配方 </h4>
+										</div>
+										<div class="modal-body">
+										<div class="portlet-body">
+											<div class="row">
+										<!-- col-md-5 start -->
+										<div class="col-md-8">
+																										<!-- BEGIN SAMPLE TABLE PORTLET-->
+												<div class="portlet box blue">
+													<div class="portlet-title">
+														<div class="caption">
+														D1B233-1
+														</div>
+														
+														</div>
+														<div class="portlet-body">
+														<div class="table-scrollable">
+														<table class="table table-bordered table-hover">
+														<thead>
+														<tr>
+																<th>
+																#
+																</th>
+																<th>
+																原料型號
+																</th>
+																
+																<th>
+																  	縮放倍率<br>(1.2%)
+																</th>
+																
+																
+																</tr>
+																</thead>
+																<tbody>
+															<tr bgcolor="#F1E1FF">
+																<td>
+																Initiator
+																</td>
+																<td>
+																RUH036
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																ZOT854
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#FFDCB9">
+																<td>
+																Solvent
+																</td>
+																<td>
+																RYB630
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																QRO145
+																</td>
+																<td>
+																0.03
+																</td>
+																</tr>
+																<tr bgcolor="#D2A2CC">
+																<td>
+																Additive
+																</td>
+																<td>
+																XIX490
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D6D6AD">
+																<td>
+																Monomer
+																</td>
+																<td>
+																VSX010
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+																<tr bgcolor="#ACD6FF">
+																<td>
+																Binder
+																</td>
+																<td>
+																FOD054
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+																</tr>
+															<tr bgcolor="#D0D0D0">
+																<td>
+																	Paste
+																</td>
+																<td>
+																CBN930
+																</td>
+																
+																<td>
+																0.03
+																</td>
+																
+															</tr>
+															<tr bgcolor="#FFF033">
+																<td>
+																	光組總量
+																</td>
+																<td>
+																
+																</td>
+																
+																<td>
+																0.24
+																</td>
+																
+															</tr>
+																</tbody>
+																</table>
+																</div>
+																</div>
+																</div>
+																<!-- END SAMPLE TABLE PORTLET-->
+													</div>
+												<!-- col-md-5 end -->
+											
+									
+												
+											</div>
+											<div class="row">
+											<!-- <div class="col-md-5 col-sm-4">
+											
+											</div> -->
+										
+											<div class="todo-tasklist-devider">
+
+											</div>
+											<div class="col-md-7 col-sm-8">
+											</div>
+											</div>
+							</div>
+
+										</div>
+										<div class="modal-footer">
+											
+											<button type="button" class="btn default" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+			
+			<!-- 預覽配方 dialog end -->
+
+
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 <!-- 	<div class="page-footer-inner">
@@ -2550,32 +1917,17 @@ $('#sample_1').dataTable( {
   //   "search": "Fred"
   // }
 });
-
-$('#statusId').change(function(){ 
-//alert($(this).children('option:selected').val()); 
-
-if($(this).children('option:selected').val() == '1'){
-$("#remarkfg").hide();
-//$("#assignfg").show();
-}else{
-$("#remarkfg").show();
-//$("#assignfg").hide();
-
-}
-
-
-});
 });
 
 
 function nextSetup(){
 
-bootbox.confirm("SOP 確定  <br>友達光電(昆山)有限公司_BM_塗布特性_2, 加入工單", function(result) {
+bootbox.confirm("配方 確定  <br>D1B233-1, D1B239, 加入工單", function(result) {
                    //alert("Confirm result: "+result);
 
                    if(result == true){
 
-                   	var url= 'tg_recipe_ex_edit_setup_confirm.html'; 
+                   	var url= 'file:///Users/kimi/Documents/Topgiga/TG_Template/tg_recipe_ex_edit_setup2.html'; 
 					window.location = url; 
                    }
 

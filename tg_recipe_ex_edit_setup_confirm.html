@@ -36,6 +36,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
 <link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-multi-select/css/multi-select.css"/>
+<link href="assets/global/plugins/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css" rel="stylesheet"/>
+<link href="assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
+<link href="assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -1295,7 +1298,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 								<div class="caption">
 									<i class="fa fa-gift"></i> 工單設定 - <span class="step-title">
-									Step 1 of 4 </span>
+									Step 1 of 3 </span>
 								</div>
 								<div class="tools hidden-xs">
 								<!-- 	<a href="javascript:;" class="collapse">
@@ -1318,7 +1321,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<span class="number">
 												1 </span>
 												<span class="desc">
-												<i class="fa fa-check"></i> 配方設計 </span>
+												<i class="fa fa-check"></i> 選擇配方 </span>
 												</a>
 											</li>
 											<li >
@@ -1326,7 +1329,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<span class="number">
 												2 </span>
 												<span class="desc">
-												<i class="fa fa-check"></i> 選SOP </span>
+												<i class="fa fa-check"></i> 選擇SOP </span>
 												</a>
 											</li>
 											<!-- <li>
@@ -1360,94 +1363,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 					<!-- BEGIN TODO SIDEBAR -->
-					<div class="todo-sidebar-175">
-						<div class="portlet light">
-							<div class="portlet-title">
-								<div class="caption" data-toggle="collapse" data-target=".todo-project-list-content">
-									<span class="caption-subject font-green-sharp bold uppercase">專案配方表 </span>
-									<!-- <span class="caption-helper visible-sm-inline-block visible-xs-inline-block">click to view project list</span> -->
-								</div>
-								<select class="form-control input-small select2me" id ="testSelect" data-placeholder="Select...">
-												<option value=""></option>
-												<option value="AL"> 信利仁壽廠array 
-												</option>
-												<option value="WY">錼創厚膜BM</option>
-								</select>
-								<!-- <div class="actions">
-									<div class="btn-group">
-										<a class="btn green-haze btn-circle btn-sm todo-projects-config" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-										<i class="icon-settings"></i> &nbsp; <i class="fa fa-angle-down"></i>
-										</a>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="javascript:;">
-												<i class="i"></i> New Project </a>
-											</li>
-											<li class="divider">
-											</li>
-											<li>
-												<a href="javascript:;">
-												Pending <span class="badge badge-danger">
-												4 </span>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:;">
-												Completed <span class="badge badge-success">
-												12 </span>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:;">
-												Overdue <span class="badge badge-warning">
-												9 </span>
-												</a>
-											</li>
-											<li class="divider">
-											</li>
-											<li>
-												<a href="javascript:;">
-												<i class="i"></i> Archived Projects </a>
-											</li>
-										</ul>
-									</div>
-								</div> -->
-							</div>
-							
-						<!-- 	<div class="portlet-body todo-project-list-content">
-								<div class="todo-project-list">
-									<ul class="nav nav-pills nav-stacked" style="overflow: auto"">
-										<li class="active">
-											<a href="javascript:;">
-											<span class="badge badge-success badge-active"> 6 </span> 信利仁壽廠array </a> 
-											
-										</li>
-										<li>
-											<a href="javascript:;">
-											<span class="badge badge-success"> 2 </span> 錼創厚膜BM</a> 
-											
-										</li>
-										<li >
-											 <a href="javascript:;">
-											<span class="badge badge-success "> 3 </span> BOE B3 PS</a> 
-											
-										</li>
-										<li>
-											 <a href="javascript:;">
-											<span class="badge badge-default"> 14 </span> 欣興電子BM </a>
-											
-										</li>
-										<li>
-											<a href="javascript:;">
-											<span class="badge badge-success"> 6 </span> 綿陽惠科 </a> 
-											
-										</li>
-										
-									</ul>
-								</div>
-							</div>
- -->						</div>
-					</div>
+				
 					<!-- END TODO SIDEBAR -->
 					<!-- BEGIN TODO CONTENT -->
 					<div class="todo-content">
@@ -1458,7 +1374,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<i class="icon-bar-chart font-green-sharp hide"></i>
 									<span class="caption-subject font-sharp bold uppercase">專案名稱:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">信利仁壽廠array </span><br>
 									<i class="icon-bar-chart font-green-sharp hide"></i>
-									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">組別_日期(yyyymmddmmss) </span>
+									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">專案_代碼組別_日期(yyyymmddmmss) </span>
 								</div> 
 								
 								<div class="actions">
@@ -1502,7 +1418,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet box blue">
 													<div class="portlet-title">
 														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
+														D1B233-1
 														</div>
 														
 														</div>
@@ -1655,7 +1571,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet box blue">
 													<div class="portlet-title">
 														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK002
+														D1B239
 														</div>
 														
 														</div>
@@ -1803,7 +1719,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 												</div>		
 													
-											<div class="row">
+											<div class="row" style="display:none">
 									<!-- <div class="col-md-5 col-sm-4">
 									
 									</div> -->
@@ -2125,7 +2041,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="portlet-title">
 								<div class="caption">
 									
-									<span class="caption-subject font-yellow-sharp bold uppercase">3.預估開始結束時間: </span>
+									<span class="caption-subject font-yellow-sharp bold uppercase">3.開始結束時間: </span>
 
 								</div> 
 								<div class="col-md-10">
@@ -2138,7 +2054,22 @@ License: You must have a valid license purchased only from themeforest(the above
 														
 								</div>
 							</div>
+							<div class="portlet-title">
+								<div class="caption">
+									
+									<span class="caption-subject font-yellow-sharp bold uppercase">4.上傳實驗結果: </span>
 
+								</div> 
+								<div class="col-md-10">
+								<span class="btn green fileinput-button">
+										<i class="fa fa-plus"></i>
+										<span>
+										Add files... </span>
+										<input type="file" name="files[]" multiple="">
+										</span>
+														
+								</div>
+							</div>
 
 
 					</div>
