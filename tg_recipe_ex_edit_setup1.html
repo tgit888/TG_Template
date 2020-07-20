@@ -1436,8 +1436,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									<td>
 										<select class="layout-option form-control select2me " id="customerNo" name="customerNo" >
 										<option value="">請選擇</option>
+										 <option value="${item.customerNo}" >信利仁壽廠array</option>	
 										 <option value="${item.customerNo}" >友達光電</option>
-									    <option value="${item.customerNo}" >群創</option>					
+									     <option value="${item.customerNo}" >群創</option>		
 										</select> 
 									</td>
 									
@@ -1927,7 +1928,7 @@ bootbox.confirm("配方 確定  <br>D1B233-1, D1B239, 加入工單", function(re
 
                    if(result == true){
 
-                   	var url= 'file:///Users/kimi/Documents/Topgiga/TG_Template/tg_recipe_ex_edit_setup2.html'; 
+                   	var url= 'tg_recipe_ex_edit_setup2.html'; 
 					window.location = url; 
                    }
 

@@ -1287,7 +1287,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 								<div class="caption">
 									<i class="fa fa-gift"></i> 工單設定 - <span class="step-title">
-									Step 2 of 4 </span>
+									Step 2 of 3 </span>
 								</div>
 								<div class="tools hidden-xs">
 								<!-- 	<a href="javascript:;" class="collapse">
@@ -1451,18 +1451,19 @@ License: You must have a valid license purchased only from themeforest(the above
 									<td>
 										<select class="layout-option form-control select2me " id="customerNo" name="customerNo" >
 										<option value="">請選擇</option>
-										
-										 <option value="${item.customerNo}" >友達光電</option>
+										<option value="${item.customerNo}" >信利仁壽廠array</option>
+										<option value="${item.customerNo}" >友達光電</option>
 									    <option value="${item.customerNo}" >群創</option>					
 										</select> 
 									</td>
 									<td>
 										<select class="layout-option form-control input-small input-sm" id="productNo" name="productNo">
 										<option value="">請選擇</option>
-											<option value="">請選擇</option>
-										    <option value="${item.product_id}" >BM</option>
+											<option value="${item.product_id}" >BM</option>
 									  		<option value="${item.product_id}" >PS</option>	
 									  		<option value="${item.product_id}" >OC</option>
+									  		<option value="${item.product_id}" >正型</option>
+									  		<option value="${item.product_id}" >RGB</option>
 										</select>
 									</td> 
 
@@ -1470,11 +1471,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									<td>
 										<select class="layout-option form-control input-small input-sm" id="sopExpNo" name="sopExpNo">
 											<option value="">請選擇</option>
-											<c:forEach var="item" items="${sopExpCategorys}" varStatus="idx">
-											 	<c:if test="${item.status eq '1' }">
-												<option value="${item.category_name }" <c:if test="${sopExpNo eq item.category_name }">selected</c:if>>${item.category_name }</option>
-												</c:if>
-											</c:forEach>
+											<option value="">基本特性</option>
+											<option value="">MURA check</option>
+											<option value="">塗布特性</option>
 										</select>
 									</td> 
 									<!--  <td>
@@ -1571,7 +1570,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									友達光電(昆山)有限公司
+									信利仁壽廠array
 								</td>
 								<td>
 									BM
@@ -1580,7 +1579,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									基本特性
 								</td>
 								<td class="center">
-									友達光電(昆山)有限公司_BM_塗布特性_2
+									信利仁壽廠array_BM_塗布特性_1
 								</td>
 								
 								<td>
@@ -1606,7 +1605,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									友達光電股份有限公司
+									信利仁壽廠array
 								</td>
 								<td>
 									BM
@@ -1615,7 +1614,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										MURA check
 								</td>
 								<td class="center">
-									友達光電股份有限公司_BM_MURA check_7
+									信利仁壽廠array_BM_MURA check_2
 								</td>
 								
 								<td>
@@ -1641,7 +1640,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<input type="checkbox" class="checkboxes" value="1"/>
 								</td>
 								<td>
-									友達光電股份有限公司
+									信利仁壽廠array
 								</td>
 								<td>
 									BM
@@ -1650,7 +1649,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										塗布特性
 								</td>
 								<td class="center">
-									友達光電(昆山)有限公司_BM_塗布特性_2
+									信利仁壽廠array_BM_塗布特性_2
 								</td>
 								
 								<td>
@@ -1750,7 +1749,7 @@ $('#sample_1').dataTable( {
 
 function nextSetup(){
 
-bootbox.confirm("SOP 確定  <br>友達光電(昆山)有限公司_BM_塗布特性_2, 加入工單", function(result) {
+bootbox.confirm("SOP 確定  <br>信利仁壽廠arra_BM_塗布特性_1, 加入工單", function(result) {
                    //alert("Confirm result: "+result);
 
                    if(result == true){

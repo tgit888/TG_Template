@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Pages - Todo</title>
+<title>Metronic | eCommerce - Dashboard</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -26,37 +26,23 @@ License: You must have a valid license purchased only from themeforest(the above
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
-<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
-<link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
-<link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-multi-select/css/multi-select.css"/>
-<link href="assets/global/plugins/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css" rel="stylesheet"/>
-<link href="assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
-<link href="assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
+<link href="../../assets/admin/pages/css/pricing-table.css" rel="stylesheet" type="text/css"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
-<link href="assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
-<link href="assets/global/css/plugins-md.css" rel="stylesheet" type="text/css"/>
-<link href="assets/admin/pages/css/todo.css" rel="stylesheet" type="text/css"/>
-<link href="assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css"/>
-<link id="style_color" href="assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css"/>
-<link href="assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/css/plugins-md.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="../../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-<style type="text/css">
-
-#compareItemModal .modal-dialog {
-  width: 80%;
-  padding: 0;
-  margin:10px auto;
-}
-</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -69,7 +55,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body class="page-md page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed">
+<body class="page-md page-header-fixed page-sidebar-closed-hide-logo ">
 <!-- BEGIN HEADER -->
 <div class="page-header md-shadow-z-1-i navbar navbar-fixed-top">
 	<!-- BEGIN HEADER INNER -->
@@ -77,7 +63,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="index.html">
-			<img src="assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default"/>
+			<img src="../../assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default"/>
 			</a>
 			<div class="menu-toggler sidebar-toggler">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -511,21 +497,21 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
 			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-			<ul class="page-sidebar-menu page-sidebar-menu-closed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
 				<li class="start ">
 					<a href="index.html">
 					<i class="icon-home"></i>
 					<span class="title">Dashboard</span>
 					</a>
 				</li>
-				<li>
+				<li class="active open">
 					<a href="javascript:;">
 					<i class="icon-basket"></i>
 					<span class="title">eCommerce</span>
-					<span class="arrow "></span>
+					<span class="arrow open"></span>
 					</a>
 					<ul class="sub-menu">
-						<li>
+						<li class="active">
 							<a href="ecommerce_index.html">
 							<i class="icon-home"></i>
 							Dashboard</a>
@@ -862,11 +848,11 @@ License: You must have a valid license purchased only from themeforest(the above
 						</li>
 					</ul>
 				</li>
-				<li class="active open">
+				<li>
 					<a href="javascript:;">
 					<i class="icon-docs"></i>
 					<span class="title">Pages</span>
-					<span class="arrow open"></span>
+					<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
 						<li>
@@ -879,7 +865,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<i class="icon-user-following"></i>
 							<span class="badge badge-success badge-roundless">new</span>New User Profile</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="page_todo.html">
 							<i class="icon-hourglass"></i>
 							<span class="badge badge-danger">4</span>Todo</a>
@@ -1177,7 +1163,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="page-head">
 				<!-- BEGIN PAGE TITLE -->
 				<div class="page-title">
-					<h1>Todo <small>todo & task management</small></h1>
+					<h1>Dashboard <small>dashboard & statistics</small></h1>
 				</div>
 				<!-- END PAGE TITLE -->
 				<!-- BEGIN PAGE TOOLBAR -->
@@ -1277,95 +1263,1000 @@ License: You must have a valid license purchased only from themeforest(the above
 					<a href="index.html">Home</a>
 					<i class="fa fa-circle"></i>
 				</li>
-				<li>
-					<a href="#">Pages</a>
+				<!-- <li>
+					<a href="#">eCommerce</a>
 					<i class="fa fa-circle"></i>
-				</li>
+				</li> -->
 				<li>
-					<a href="#">Todo</a>
+					<a href="#">Dashboard</a>
 				</li>
 			</ul>
 			<!-- END PAGE BREADCRUMB -->
 			<!-- END PAGE HEADER-->
+
+
+
+
 			<!-- BEGIN PAGE CONTENT-->
 			<div class="row">
+
 				<div class="col-md-12">
-
-
-
-					<!-- test start -->
-					<div class="portlet box blue" id="form_wizard_1">
+					<!-- BEGIN INLINE NOTIFICATIONS PORTLET-->
+					<div class="portlet light">
 						<div class="portlet-title">
-								<div class="caption">
-									<i class="fa fa-gift"></i> 工單設定 - <span class="step-title">
-									Step 1 of 3 </span>
-								</div>
-								<div class="tools hidden-xs">
-								<!-- 	<a href="javascript:;" class="collapse">
-									</a>
-									<a href="#portlet-config" data-toggle="modal" class="config">
-									</a>
-									<a href="javascript:;" class="reload">
-									</a>
-									<a href="javascript:;" class="remove">
-									</a> -->
-								</div>
+							<div class="caption" style="display:none">
+								<i class="fa fa-cogs"></i>Pricing Tables
+							</div>
+							<div class="tools" style="display:none">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
 						</div>
-					<div class="portlet-body form">
-							<form action="#" class="form-horizontal" id="submit_form" method="POST">
-								<div class="form-wizard">
-									<div class="form-body">
-										<ul class="nav nav-pills nav-justified steps">
-											<li >
-												<a href="#tab1" data-toggle="tab" class="step">
-												<span class="number">
-												1 </span>
-												<span class="desc">
-												<i class="fa fa-check"></i> 選擇配方 </span>
-												</a>
-											</li>
-											<li >
-												<a href="#tab2" data-toggle="tab" class="step">
-												<span class="number">
-												2 </span>
-												<span class="desc">
-												<i class="fa fa-check"></i> 選擇SOP </span>
-												</a>
-											</li>
-											<!-- <li>
-												<a href="#tab3" data-toggle="tab" class="step active">
-												<span class="number">
-												3 </span>
-												<span class="desc">
-												<i class="fa fa-check"></i> 派工 </span>
+						<div class="portlet-body">
+							<div class="row margin-bottom-0">
 
-												</a>
-											</li> -->
-											<li class="active">
-												<a href="#tab4" data-toggle="tab" class="step">
-												<span class="number">
-												3 </span>
-												<span class="desc">
-												<i class="fa fa-check"></i> 確定送出審核 </span>
-												</a>
-											</li>
-										</ul>
+								<div class="col-md-1" style="visibility:hidden">
+							    </div>
+								<!-- Pricing -->
+								<a href="tg_recipe_ex_edit_setup1.html" class="reload">
+								
+								<div class="col-md-4">
+									<div class="pricing hover-effect">
+										<div class="pricing-head">
+											<h3>新增工單 <span>
+											Create Task </span>
+											</h3>
+											<!-- <h4><i>$</i>5<i>.49</i>
+											<span>
+											Per Month </span>
+											</h4> -->
+										</div>
 									</div>
 								</div>
-							</form>
+								</a>
+								<div class="col-md-2" style="visibility:hidden">
+							    </div>
+							    <a href="tg_recipe_work.html" class="reload">
+								<div class="col-md-4">
+									<div class="pricing hover-effect">
+										<div class="pricing-head">
+											<h3>查詢工單 <span>
+											Search Task </span>
+											</h3>
+											<!-- <h4><i>$</i>8<i>.69</i>
+											<span>
+											Per Month </span>
+											</h4> -->
+										</div>
+									</div>
+								</div>
+								</a>
+								
+							
+								<!--//End Pricing -->
+							</div>
+						</div>
+						<br>
+						
+						<div class="portlet box grey-cascade">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-globe"></i>待辦事項
+							</div>
+<!-- 							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div> -->
+						</div>
+						<div class="portlet-body">
+							<div class="table-toolbar">
+								<div class="row">
+
+								</div>
+							</div>
+							<table class="table table-striped table-bordered table-hover" id="sample_1">
+							<thead>
+							<tr>
+								<th>
+									    工單編號
+								</th>
+								
+								<th>
+									    專案
+								</th>
+								<th>
+									    產品別
+								</th>
+								 <th>
+									 	項目別
+								</th> 
+								
+								<th>
+									 備註
+								</th>
+								
+								<th>
+									 狀態
+								</th>
+								
+								<th>
+									    建立者/修改者
+								</th>
+								<th>
+									 建立日期/修改日期
+								</th>
+								
+								<th>
+									 
+								</th> 
+							</tr>
+							</thead>
+							<tbody>
+							 <tr class="odd gradeX">
+								<td class="center">
+									BM_202005111313
+								</td>
+								<td>
+									信利仁壽廠array 
+								</td>
+								<td>
+									BM
+								</td>
+								<td>
+									基本特性 
+								</td>
+								
+								
+								<td>
+									
+								</td>
+								<td>
+									草稿
+								</td>
+								<td>
+									建立者:andy(xxx)<br>
+									修改者:andy(sss)
+								</td>
+								<td>
+									2020-05-14 17:33:39<br>2020-05-14 17:48:39
+								</td>
+								
+							 	<td>
+									<button type="button" class="btn blue"     data-target="#displayItem"  data-toggle="modal"   onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+									<a  type="button"  class="btn yellow"     href="tg_recipe_ex_edit_setup1.html" >編輯<i class="fa fa-pencil-square-o"></i></a>
+									<button type="button" class="btn green"      >審請審核<i class="fa fa-check-circle-o"></i></button>
+								</td> 
+							</tr>
+							<tr class="odd gradeX">
+								
+								<td class="center">
+									BM_202006121313
+								</td>
+								<td>
+									信利仁壽廠array 
+								</td>
+								<td>
+									BM
+								</td>
+								<td>
+										MURA check
+								</td>
+								
+								
+								<td>
+									
+								</td>
+								<td>
+									審核中
+								</td>
+								<td>
+									建立者:andy(xxx)<br>
+									修改者:andy(sss)
+								</td>
+								<td>
+									2020-05-14 17:33:39<br>2020-05-14 17:48:39
+								</td>
+								
+								 <td>
+									<button type="button" class="btn blue"      data-target="#displayItem"  data-toggle="modal"   onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+								</td> 
+							</tr>
+							<tr class="odd gradeX">
+								
+								<td class="center">
+									BM_202006111312
+								</td>
+								<td>
+									信利仁壽廠array 
+								</td>
+								<td>
+									BM
+								</td>
+								<td>
+									塗布特性
+								</td>
+								<td>
+								</td>
+								<td>
+									審核中
+								</td>
+								<td>
+									建立者:andy(xxx)<br>
+									修改者:andy(sss)
+								</td>
+								<td>
+									2020-05-14 17:33:39<br>2020-05-14 17:48:39
+								</td>
+								
+								<td>
+									<button type="button" class="btn blue"     data-target="#TemplateEdite"  data-toggle="modal"  onClick="displayItemInfo('${item.sop_id }');" >預覽<i class="fa fa-search"></i></button>
+									
+								</td> 
+							</tr>
+							
+							
+							</tbody>
+							</table>
 						</div>
 					</div>
 
-
-					<!-- test end-->
-
+						
 
 
+					</div>
 
-					<!-- BEGIN TODO SIDEBAR -->
+					<!-- END INLINE NOTIFICATIONS PORTLET-->
+
+
+
+				</div>
+
+
 				
-					<!-- END TODO SIDEBAR -->
-					<!-- BEGIN TODO CONTENT -->
+			</div>
+			<div class="row" style="display:none">
+				<div class="col-md-6">
+					<!-- Begin: life time stats -->
+					<div class="portlet light">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="icon-bar-chart font-green-sharp"></i>
+								<span class="caption-subject font-green-sharp bold uppercase">Overview</span>
+								<span class="caption-helper">weekly stats...</span>
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="fullscreen">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="tabbable-line">
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#overview_1" data-toggle="tab">
+										Top Selling </a>
+									</li>
+									<li>
+										<a href="#overview_2" data-toggle="tab">
+										Most Viewed </a>
+									</li>
+									<li>
+										<a href="#overview_3" data-toggle="tab">
+										Customers </a>
+									</li>
+									<li class="dropdown">
+										<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+										Orders <i class="fa fa-angle-down"></i>
+										</a>
+										<ul class="dropdown-menu" role="menu">
+											<li>
+												<a href="#overview_4" tabindex="-1" data-toggle="tab">
+												Latest 10 Orders </a>
+											</li>
+											<li>
+												<a href="#overview_4" tabindex="-1" data-toggle="tab">
+												Pending Orders </a>
+											</li>
+											<li>
+												<a href="#overview_4" tabindex="-1" data-toggle="tab">
+												Completed Orders </a>
+											</li>
+											<li>
+												<a href="#overview_4" tabindex="-1" data-toggle="tab">
+												Rejected Orders </a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="overview_1">
+										<div class="table-responsive">
+											<table class="table table-striped table-hover table-bordered">
+											<thead>
+											<tr>
+												<th>
+													 Product Name
+												</th>
+												<th>
+													 Price
+												</th>
+												<th>
+													 Sold
+												</th>
+												<th>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Apple iPhone 4s - 16GB - Black </a>
+												</td>
+												<td>
+													 $625.50
+												</td>
+												<td>
+													 809
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Samsung Galaxy S III SGH-I747 - 16GB </a>
+												</td>
+												<td>
+													 $915.50
+												</td>
+												<td>
+													 6709
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Motorola Droid 4 XT894 - 16GB - Black </a>
+												</td>
+												<td>
+													 $878.50
+												</td>
+												<td>
+													 784
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Regatta Luca 3 in 1 Jacket </a>
+												</td>
+												<td>
+													 $25.50
+												</td>
+												<td>
+													 1245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Samsung Galaxy Note 3 </a>
+												</td>
+												<td>
+													 $925.50
+												</td>
+												<td>
+													 21245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Inoval Digital Pen </a>
+												</td>
+												<td>
+													 $125.50
+												</td>
+												<td>
+													 1245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Metronic - Responsive Admin + Frontend Theme </a>
+												</td>
+												<td>
+													 $20.00
+												</td>
+												<td>
+													 11190
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane" id="overview_2">
+										<div class="table-responsive">
+											<table class="table table-striped table-hover table-bordered">
+											<thead>
+											<tr>
+												<th>
+													 Product Name
+												</th>
+												<th>
+													 Price
+												</th>
+												<th>
+													 Views
+												</th>
+												<th>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Metronic - Responsive Admin + Frontend Theme </a>
+												</td>
+												<td>
+													 $20.00
+												</td>
+												<td>
+													 11190
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Regatta Luca 3 in 1 Jacket </a>
+												</td>
+												<td>
+													 $25.50
+												</td>
+												<td>
+													 1245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Apple iPhone 4s - 16GB - Black </a>
+												</td>
+												<td>
+													 $625.50
+												</td>
+												<td>
+													 809
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Samsung Galaxy S III SGH-I747 - 16GB </a>
+												</td>
+												<td>
+													 $915.50
+												</td>
+												<td>
+													 6709
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Motorola Droid 4 XT894 - 16GB - Black </a>
+												</td>
+												<td>
+													 $878.50
+												</td>
+												<td>
+													 784
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Samsung Galaxy Note 3 </a>
+												</td>
+												<td>
+													 $925.50
+												</td>
+												<td>
+													 21245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Inoval Digital Pen </a>
+												</td>
+												<td>
+													 $125.50
+												</td>
+												<td>
+													 1245
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane" id="overview_3">
+										<div class="table-responsive">
+											<table class="table table-striped table-hover table-bordered">
+											<thead>
+											<tr>
+												<th>
+													 Customer Name
+												</th>
+												<th>
+													 Total Orders
+												</th>
+												<th>
+													 Total Amount
+												</th>
+												<th>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													David Wilson </a>
+												</td>
+												<td>
+													 3
+												</td>
+												<td>
+													 $625.50
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Amanda Nilson </a>
+												</td>
+												<td>
+													 4
+												</td>
+												<td>
+													 $12625.50
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Jhon Doe </a>
+												</td>
+												<td>
+													 2
+												</td>
+												<td>
+													 $125.00
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Bill Chang </a>
+												</td>
+												<td>
+													 45
+												</td>
+												<td>
+													 $12,125.70
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Paul Strong </a>
+												</td>
+												<td>
+													 1
+												</td>
+												<td>
+													 $890.85
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Jane Hilson </a>
+												</td>
+												<td>
+													 5
+												</td>
+												<td>
+													 $239.85
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Patrick Walker </a>
+												</td>
+												<td>
+													 2
+												</td>
+												<td>
+													 $1239.85
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane" id="overview_4">
+										<div class="table-responsive">
+											<table class="table table-striped table-hover table-bordered">
+											<thead>
+											<tr>
+												<th>
+													 Customer Name
+												</th>
+												<th>
+													 Date
+												</th>
+												<th>
+													 Amount
+												</th>
+												<th>
+													 Status
+												</th>
+												<th>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													David Wilson </a>
+												</td>
+												<td>
+													 3 Jan, 2013
+												</td>
+												<td>
+													 $625.50
+												</td>
+												<td>
+													<span class="label label-sm label-warning">
+													Pending </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Amanda Nilson </a>
+												</td>
+												<td>
+													 13 Feb, 2013
+												</td>
+												<td>
+													 $12625.50
+												</td>
+												<td>
+													<span class="label label-sm label-warning">
+													Pending </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Jhon Doe </a>
+												</td>
+												<td>
+													 20 Mar, 2013
+												</td>
+												<td>
+													 $125.00
+												</td>
+												<td>
+													<span class="label label-sm label-success">
+													Success </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Bill Chang </a>
+												</td>
+												<td>
+													 29 May, 2013
+												</td>
+												<td>
+													 $12,125.70
+												</td>
+												<td>
+													<span class="label label-sm label-info">
+													In Process </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Paul Strong </a>
+												</td>
+												<td>
+													 1 Jun, 2013
+												</td>
+												<td>
+													 $890.85
+												</td>
+												<td>
+													<span class="label label-sm label-success">
+													Success </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Jane Hilson </a>
+												</td>
+												<td>
+													 5 Aug, 2013
+												</td>
+												<td>
+													 $239.85
+												</td>
+												<td>
+													<span class="label label-sm label-danger">
+													Canceled </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="javascript:;">
+													Patrick Walker </a>
+												</td>
+												<td>
+													 6 Aug, 2013
+												</td>
+												<td>
+													 $1239.85
+												</td>
+												<td>
+													<span class="label label-sm label-success">
+													Success </span>
+												</td>
+												<td>
+													<a href="javascript:;" class="btn default btn-xs green-stripe">
+													View </a>
+												</td>
+											</tr>
+											</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End: life time stats -->
+				</div>
+				<div class="col-md-6">
+					<!-- Begin: life time stats -->
+					<div class="portlet light">
+						<div class="portlet-title tabbable-line">
+							<div class="caption">
+								<i class="icon-share font-red-sunglo"></i>
+								<span class="caption-subject font-red-sunglo bold uppercase">Revenue</span>
+								<span class="caption-helper">weekly stats...</span>
+							</div>
+							<ul class="nav nav-tabs">
+								<li>
+									<a href="#portlet_tab2" data-toggle="tab" id="statistics_amounts_tab">
+									Amounts </a>
+								</li>
+								<li class="active">
+									<a href="#portlet_tab1" data-toggle="tab">
+									Orders </a>
+								</li>
+							</ul>
+						</div>
+						<div class="portlet-body">
+							<div class="tab-content">
+								<div class="tab-pane active" id="portlet_tab1">
+									<div id="statistics_1" class="chart">
+									</div>
+								</div>
+								<div class="tab-pane" id="portlet_tab2">
+									<div id="statistics_2" class="chart">
+									</div>
+								</div>
+							</div>
+							<div class="well margin-top-10 no-margin no-border">
+								<div class="row">
+									<div class="col-md-3 col-sm-3 col-xs-6 text-stat">
+										<span class="label label-success">
+										Revenue: </span>
+										<h3>$111K</h3>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6 text-stat">
+										<span class="label label-info">
+										Tax: </span>
+										<h3>$14K</h3>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6 text-stat">
+										<span class="label label-danger">
+										Shipment: </span>
+										<h3>$10K</h3>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6 text-stat">
+										<span class="label label-warning">
+										Orders: </span>
+										<h3>2350</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End: life time stats -->
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="page-footer-inner">
+		 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
+</div>
+<!-- END FOOTER -->
+
+
+<!-- dialog 檢視  start -->
+<div class="modal fade" id="displayItem" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-full">	
+			 	  <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">預覽</h4>
+				</div>	
+				 </div> 
+		<!-- BEGIN PAGE CONTENT-->
+			
+
+			<!-- BEGIN TODO CONTENT -->
 					<div class="todo-content">
 						<div class="portlet light">
 							<!-- PROJECT HEAD -->
@@ -1374,22 +2265,22 @@ License: You must have a valid license purchased only from themeforest(the above
 									<i class="icon-bar-chart font-green-sharp hide"></i>
 									<span class="caption-subject font-sharp bold uppercase">專案名稱:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">信利仁壽廠array </span><br>
 									<i class="icon-bar-chart font-green-sharp hide"></i>
-									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">專案_代碼組別_日期(yyyymmddmmss) </span>
+									<span class="caption-subject font-sharp bold uppercase">工單號碼:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">組別_日期(yyyymmddmmss) </span>
 								</div> 
 								
 								<div class="actions">
-									<a href="tg_recipe_ex_edit_setup2.html" class="btn btn-default btn-circle">
-										<!-- <i class="fa fa-angle-left"></i> -->
+								<!-- 	<a href="tg_recipe_ex_edit_setup2.html" class="btn btn-default btn-circle">
+										<i class="fa fa-angle-left"></i>
 										<span class="hidden-480">
 										上一步 </span>
 										</a>
-									
+									 -->
 									<div class="btn-group">
 										<!-- <a class="btn green-haze btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> -->
 										
 										<button        class="btn btn-default btn-circle" onClick="nextSetup();">
 									
-										<span class="hidden-480">確定
+										<span class="hidden-480">列印
 										 </span>
 										</button>
 										
@@ -1418,7 +2309,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet box blue">
 													<div class="portlet-title">
 														<div class="caption">
-														D1B233-1
+														NO:HSK001
 														</div>
 														
 														</div>
@@ -1571,7 +2462,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet box blue">
 													<div class="portlet-title">
 														<div class="caption">
-														D1B239
+														NO:HSK002
 														</div>
 														
 														</div>
@@ -1719,7 +2610,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 												</div>		
 													
-											<div class="row" style="display:none">
+											<div class="row">
 									<!-- <div class="col-md-5 col-sm-4">
 									
 									</div> -->
@@ -1728,7 +2619,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="portlet box blue">
 													<div class="portlet-title">
 														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK003
+														NO:HSK003
 														</div>
 														
 														</div>
@@ -2033,7 +2924,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="portlet-title">
 								<div class="caption">
 									
-									<span class="caption-subject font-yellow-sharp bold uppercase">2.SOP名稱: <a>信利仁壽廠arra_BM_塗布特性_1 </a></span>
+									<span class="caption-subject font-yellow-sharp bold uppercase">2.SOP名稱: <a>信利仁壽廠ARRAY_BM_塗布特性 </a></span>
 
 								</div> 
 								
@@ -2042,1745 +2933,76 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="caption">
 									
 									<span class="caption-subject font-yellow-sharp bold uppercase">3.開始結束時間: </span>
-
+									&nbsp; <span class="caption-subject font-green-sharp bold uppercase">20200610~20200611</span>
 								</div> 
-								<div class="col-md-10">
-								<div class="input-group input-large date-picker input-daterange"  data-date-format="yyyy/mm/dd">
-									<input type="text" class="form-control" name="product[available_from]">
-										<span class="input-group-addon">
-											to </span>
-										<input type="text" class="form-control" name="product[available_to]">
-								</div>
-														
-								</div>
+								
 							</div>
-							<div class="portlet-title">
+								<div class="portlet-title">
 								<div class="caption">
 									
-									<span class="caption-subject font-yellow-sharp bold uppercase">4.上傳實驗結果: </span>
-
+									<span class="caption-subject font-yellow-sharp bold uppercase">4.實驗結果: </span>
+									&nbsp; <a><span class="caption-subject font-green-sharp bold uppercase">實驗結果報表</span></a>
 								</div> 
-								<div class="col-md-10">
-								<span class="btn green fileinput-button">
-										<i class="fa fa-plus"></i>
-										<span>
-										Add files... </span>
-										<input type="file" name="files[]" multiple="">
-										</span>
-														
-								</div>
+								
 							</div>
 
 
 					</div>
 					<!-- END TODO CONTENT -->
-				</div>
-			</div>
+
+
+
 			<!-- END PAGE CONTENT-->
-		</div>
-	</div>
-	<!-- END CONTENT -->
-</div>
-<!-- END CONTAINER -->
-
-
-
-
-
-<!-- dialog  配方設計start-->
-<div class="modal fade" id="displayModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-	<div class="modal-dialog modal-full">	
-			 	 <div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-					<h4 class="modal-title">配方設計</h4>
-					<!-- <h4 class="modal-title">Modal Title</h4> -->
-				
-				</div>	
-				 </div>
-		    <div class="row">
-		
-			<div class="col-md-12" id="displaySopForm" style="">
-								<!-- BEGIN EXTRAS PORTLET-->
-					<div class="portlet box blue-hoki">
-									
-					<!-- BEGIN TODO CONTENT -->
-					<div class="todo-content-175">
-						<div class="portlet light">
-							<!-- PROJECT HEAD -->
-							<div class="portlet-title">
-								<!-- <div class="caption">
-									<i class="icon-bar-chart font-green-sharp hide"></i>
-									<span class="caption-helper">PROJECT:</span> &nbsp; <span class="caption-subject font-green-sharp bold uppercase">Tune Website</span>
-								</div>
-								<div class="actions">
-									<a class="btn green-haze btn-circle btn-sm"  href="#displayModal"  data-toggle="modal">
-										確認	 <i class="fa fa-angle-down"></i>
-									</a>
-
-									<div class="btn-group">
-										<a href="tg_recipe_ex_edit_setup.html" class="btn btn-default btn-circle">
-											<span class="hidden-480">下一步 </span>
-										</a>
-									</div>
-								</div>
-							</div>
-							<!-- end PROJECT HEAD -->
-							<div class="portlet-body">
-								<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										<div class="col-md-2">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-clipboard" title="複製">
-														</a>
-														<a href="javascript:;" class="fa fa-edit" title="編輯">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-														<th>
-														#
-														</th>
-														<th>
-														原料型號
-														</th>
-														<th>
-														添加重量
-														</th>
-														</tr>
-														</thead>
-														<tbody>
-														<tr bgcolor="#F1E1FF">
-														<td>
-														Initiator
-														</td>
-														<td>
-														RUH036
-														</td>
-														<td>
-														0.03
-														</td>
-														</tr>
-														<tr bgcolor="#FFDCB9">
-															<td>
-															Solvent
-															</td>
-															<td>
-															ZOT854
-															</td>
-															<td>
-															45
-															</td>
-														</tr>
-														<tr bgcolor="#D2A2CC">
-															<td>
-															Additive
-															</td>
-															<td>
-															222
-															</td>
-															<td>
-															333
-															</td>
-															</tr>
-														<tr bgcolor="#D6D6AD">
-															<td>
-															Monomer
-															</td>
-															<td>
-															222
-															</td>
-															<td>
-															333
-															</td>
-														</tr>
-														<tr bgcolor="#ACD6FF">
-															<td>
-															Binder
-															</td>
-															<td>
-															222
-															</td>
-															<td>
-															333
-															</td>
-															</tr>
-															<tr bgcolor="#D0D0D0">
-															<td>
-														Paste
-															</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-															</td>
-														</tr>
-														</tbody>
-														</table>
-														</div>
-														</div>
-														</div>
-														<!-- END SAMPLE TABLE PORTLET-->
-														</div>
-												<div class="col-md-2">
-													<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">								NO:HSK002
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-clipboard" title="複製">
-														</a>
-														<a href="javascript:;" class="fa fa-edit" title="編輯">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-																<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																	Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
-																<div class="col-md-2">
-																<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">								NO:HSK003
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-clipboard" title="複製">
-														</a>
-														<a href="javascript:;" class="fa fa-edit" title="編輯">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-																<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																		
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																	Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
-
-													<div class="todo-tasklist-devider">
-
-													</div>
-												<div class="col-md-4">
-															<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">								NO:HSK004
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-clipboard" title="複製">
-														</a>
-														<a href="javascript:;" class="fa fa-edit" title="編輯">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																</tr>
-																</thead>
-																<tbody>
-																<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																		
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																	</tr>
-																	<tr bgcolor="#ACD6FF">
-																<td>
-																	Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																	</tr>
-																	<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																										<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
-																<div class="col-md-4">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">								NO:HSK005
-														</div>
-														<div class="tools">
-														<a href="javascript:;" class="fa fa-clipboard" title="複製">
-														</a>
-														<a href="javascript:;" class="fa fa-edit" title="編輯">
-														</a>
-														<a href="javascript:;" class="fa fa-times" title="刪除">
-														</a> 
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																	</tr>
-																	</thead>
-																	<tbody>
-																	<tr bgcolor="#F1E1FF">
-																<td>
-																	Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																</tr>
-																	<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																	</tr>
-																	<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																	<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																	</tr>
-																	<tr bgcolor="#ACD6FF">
-																<td>
-																	Binder
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																	</tr>
-																	<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																222
-																</td>
-																<td>
-																333
-																</td>
-																</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																	<!-- END SAMPLE TABLE PORTLET-->
-																</div>	
-																
-												
-																
-									<!-- <div class="col-md-7 col-sm-8">
-									
-									</div> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END TODO CONTENT -->
-									</div>
-								</div>
-							</div>
-							
-		
-		</div>
 		
 	</div>
 	
 								<!-- /.modal-dialog -->
-</div>
-			
-<!-- dialog  配方設計 end-->
-
-
-<!-- 配方 dialog -->
-			<div class="modal fade bs-modal-lg" id="editCategory" tabindex="-1" role="dialog" aria-hidden="true">
-			<input type="hidden" id="formulaNo" name="formulaNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaDialogTitleId">新增配方</h4>
-										</div>
-										<div class="modal-body">
-											<div class="form-group">
-										<label class="control-label col-md-3"> 配方名稱<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<input type="text" class="form-control" name="formulaName" id="formulaName" required="required"/>
-											</div>
-										</div>
-									</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-											<button type="button" class="btn blue" onClick="confirmFormula('${prjProject.prjNo}');">確認</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-					</div>
-					<!-- 配方 dialog  end-->		
-
-
-					<!-- 配方 dialog -->
-			<div class="modal fade bs-modal-lg" id="copyItem" tabindex="-1" role="dialog" aria-hidden="true">
-			<input type="hidden" id="formulaNo" name="formulaNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaDialogTitleId">複製配方</h4>
-										</div>
-										<div class="modal-body">
-											<div class="form-group">
-										<label class="control-label col-md-3"> 配方名稱<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<div class="input-icon right">
-												<i class="fa"></i>
-												<input type="text" class="form-control" name="formulaName" id="formulaName" required="required"/>
-											</div>
-										</div>
-									</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-											<button type="button" class="btn blue" onClick="confirmFormula('${prjProject.prjNo}');">確認</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-					</div>
-					<!-- 配方 dialog  end-->	
-
-					<!-- 原料項目 dialog -->
-							<div class="modal fade bs-modal-lg" id="editItem" tabindex="-1" role="dialog" aria-hidden="true">
-							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
-							<input type="hidden" id="itemNo" name="itemNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">新增原料項目</h4>
-										</div>
-										<div class="modal-body">
-										<form  id="projectForm" class="form-horizontal">
-											
-											 <div class="form-group">
-													<label class="control-label col-md-3"> 原料類別<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-																	<select class="form-control  select2me" id="categoryNo" name="categoryNo" required="required">
-																		<option value="">請選擇</option>
-																		<option value="Solvent">Initiator</option>
-																	 	<option value="Solvent">Solvent</option>
-																	 	<option value="Solvent">Additives</option>
-																	 	<option value="Solvent">Monomer</option>
-																	 	<option value="Solvent">Binder</option>
-																	 	<option value="Solvent">Paste</option>
-																	</select>
-														</div>
-													</div>
-												</div> 
-												<div class="form-group">
-													<label class="control-label col-md-3"> 原料型號<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-																	<!-- <select class="form-control  select2me" id="modelNo" name="modelNo" required="required">
-																		<option value="">請選擇</option>
-																	</select> -->
-																	<select class="form-control  select2me"   id="modelNo" name="modelNo" required="required">
-																	 	<option value="">請選擇</option>
-																	 	<option value="">AEFA357</option>
-																	 	<option value="">AEFK359</option>
-																	 	<option value="">AEJK159</option>
-																	 	<option value="">BID616</option>
-																	</select>
-														</div>
-													</div>
-												</div> 
-												<div class="form-group">
-													<label class="control-label col-md-3"> 添加重量<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-															<input type="text" class="form-control" name="weight" id="weight" required="required"/>
-														</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3"> 材料固含量(SC%)<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-															<input type="text" class="form-control" name="weight" id="weight" required="required"/>
-														</div>
-													</div>
-												</div>
-											</form>	
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-			
-			<!-- 原料項目 dialog end -->
-
-
-<!-- 原料項目 dialog -->
-							<div class="modal fade bs-modal-lg" id="modifyItem" tabindex="-1" role="dialog" aria-hidden="true">
-							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
-							<input type="hidden" id="itemNo" name="itemNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">修改原料項目</h4>
-										</div>
-										<div class="modal-body">
-										<form  id="projectForm" class="form-horizontal">
-											
-											 <div class="form-group">
-													<label class="control-label col-md-3"> 原料類別<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-																	<select class="form-control  select2me" id="categoryNo" name="categoryNo" required="required">
-																		<option value="">請選擇</option>
-																		
-																	 	<option value="Solvent">Solvent</option>
-																		<option value="Solvent">Binder</option>
-																		<option value="Solvent">Initiator</option>
-																		<option value="Solvent">Additives</option>
-																	</select>
-														</div>
-													</div>
-												</div> 
-												<div class="form-group">
-													<label class="control-label col-md-3"> 原料型號<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-																	<!-- <select class="form-control  select2me" id="modelNo" name="modelNo" required="required">
-																		<option value="">請選擇</option>
-																	</select> -->
-																	<select class="form-control  select2me"   id="modelNo" name="modelNo" required="required">
-																	 	<option value="">請選擇</option>
-																	 	<option value="">AEFA357</option>
-																	 	<option value="">AEFK359</option>
-																	 	<option value="">AEJK159</option>
-																	 	<option value="">BID616</option>
-																	</select>
-														</div>
-													</div>
-												</div> 
-												<div class="form-group">
-												<label class="control-label col-md-3"> 添加重量<span class="required">
-												* </span>
-												</label>
-												<div class="col-md-4">
-													<div class="input-icon right">
-														<i class="fa"></i>
-														<input type="text" class="form-control" name="weight" id="weight" required="required"/>
-													</div>
-												</div>
-											</div>
-											</form>	
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-			
-			<!-- 原料項目 dialog end -->
-
-
-
-
-			<!-- 原料項目 dialog -->
-							<div class="modal fade bs-modal-lg" id="dispensingＷeight" tabindex="-1" role="dialog" aria-hidden="true">
-							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
-							<input type="hidden" id="itemNo" name="itemNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">配藥總重</h4>
-										</div>
-										<div class="modal-body">
-										<form  id="projectForm" class="form-horizontal">
-											
-											 <div class="form-group">
-													<label class="control-label col-md-3"> 配方總重 <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-														<i class="fa"></i>
-														<input type="text" class="form-control" name="weight" id="weight"  value='85.1834' readonly='true' />
-													</div>
-													</div>
-												</div> 
-												<div class="form-group">
-													<label class="control-label col-md-3"> 配藥總重量<span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="input-icon right">
-															<i class="fa"></i>
-														<input type="text" class="form-control" name="weight" id="weight" required="required"/>
-														</div>
-													</div>
-												</div> 
-												<div class="form-group">
-												<label class="control-label col-md-3"> 縮放倍率(%)<span class="required">
-												* </span>
-												</label>
-												<div class="col-md-4">
-													<div class="input-icon right">
-														<i class="fa"></i>
-														<input type="text" class="form-control" name="weight" id="weight"  value="1.2" required="required"/>
-													</div>
-												</div>
-											</div>
-											</form>	
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-			
-			<!-- 原料項目 dialog end -->
+</div>	
+		
+	<!-- dialog 檢視 end -->	
 
 
 
 
 
-<!-- 比較配方原料項目 dialog -->
-							<div class="modal fade bs-modal-lg in" id="compareItemModal" tabindex="-1" role="dialog" aria-hidden="true">
-							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
-							<input type="hidden" id="itemNo" name="itemNo" />
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">比較配方原料項目</h4>
-										</div>
-										<div class="modal-body">
-										<div class="portlet-body">
-								<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										<div class="col-md-5">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK001
-														</div>
-														<div class="tools">
-														
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																<th>
-																 材料固含量<br>(S.C%)
-																</th>
-																<th>
-																  	固含量重
-																</th>
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-															
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																<td>
-																0.45
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.0034
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																<td>
-																2
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-															
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																<td>
-																1.2
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																<td>
-																3.5
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																<td>
-																33
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																<td>
-																85.1834
-																</td>
-																<td>
-																0.24
-																</td>
-																<td>
-																0.24
-																</td>
-																<td>
-																配藥總重量：<br>0.24
-																
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-												<div class="col-md-5">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">NO:HSK003
-														</div>
-														<div class="tools">
-														
-														</div>
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														<tr>
-																<th>
-																#
-																</th>
-																<th>
-																原料型號
-																</th>
-																<th>
-																添加重量
-																</th>
-																<th>
-																 材料固含量<br>(S.C%)
-																</th>
-																<th>
-																  	固含量重
-																</th>
-																<th>
-																  	縮放倍率<br>(1.2%)
-																</th>
-																
-																
-																</tr>
-																</thead>
-																<tbody>
-															<tr bgcolor="#F1E1FF">
-																<td>
-																Initiator
-																</td>
-																<td>
-																RUH036
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-															
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																ZOT854
-																</td>
-																<td>
-																45
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#FFDCB9">
-																<td>
-																Solvent
-																</td>
-																<td>
-																RYB630
-																</td>
-																<td>
-																0.45
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																QRO145
-																</td>
-																<td>
-																0.0034
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#D2A2CC">
-																<td>
-																Additive
-																</td>
-																<td>
-																XIX490
-																</td>
-																<td>
-																2
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-															
-																</tr>
-															<tr bgcolor="#D6D6AD">
-																<td>
-																Monomer
-																</td>
-																<td>
-																VSX010
-																</td>
-																<td>
-																1.2
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-																<tr bgcolor="#ACD6FF">
-																<td>
-																Binder
-																</td>
-																<td>
-																FOD054
-																</td>
-																<td>
-																3.5
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-																</tr>
-															<tr bgcolor="#D0D0D0">
-																<td>
-																	Paste
-																</td>
-																<td>
-																CBN930
-																</td>
-																<td>
-																33
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																<td>
-																0.03
-																</td>
-																
-															</tr>
-															<tr bgcolor="#FFF033">
-																<td>
-																	光組總量
-																</td>
-																<td>
-																
-																</td>
-																<td>
-																85.1834
-																</td>
-																<td>
-																0.24
-																</td>
-																<td>
-																0.24
-																</td>
-																<td>
-																配藥總重量：<br>0.24
-																
-																</td>
-																
-															</tr>
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-													</div>
-												
-															<!-- <div class="col-md-7 col-sm-8">
-															</div> -->
-											</div>
-											<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										
-												
-											
-
-															<div class="todo-tasklist-devider">
-
-																</div>
-															<div class="col-md-7 col-sm-8">
-															</div>
-											</div>
-							</div>
-
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-			
-			<!-- 比較原料項目 dialog end -->
-
-
-
-
-<!-- 原料項目 Summary dialog -->
-							<div class="bootbox modal fade in  bs-modal-ｍ" id="summaryItem" tabindex="-1" role="dialog" aria-hidden="true">
-
-							<input type="hidden" id="formulaItemNo" name="formulaItemNo" />
-							<input type="hidden" id="itemNo" name="itemNo" />
-								<div class="modal-dialog modal-m">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title" id="formulaItemDialogTitleId">摘要</h4>
-										</div>
-										<div class="modal-body">
-										<div class="portlet-body">
-								<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										<div class="col-md-8">
-																										<!-- BEGIN SAMPLE TABLE PORTLET-->
-												<div class="portlet box blue">
-													<div class="portlet-title">
-														<div class="caption">
-														NO:HSK001
-														</div>
-														
-														</div>
-														<div class="portlet-body">
-														<div class="table-scrollable">
-														<table class="table table-bordered table-hover">
-														<thead>
-														
-																<tbody>
-																	<tr>
-																	<td>
-																	Total SC%	
-																	</td>
-																	<td>
-																	0.1411
-																	</td>
-																	</tr>
-
-																	<tr>
-																	<td>
-																	CB佔Paste添加量(g)		
-																	</td>
-																	<td>
-																	9.0000
-																	</td>
-																	</tr>
-
-																	<tr>
-																	<td>
-																	CB佔總固體	
-																	</td>
-																	<td>
-																	0.5525
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	Binder固體總量(含Paste)		
-																	</td>
-																	<td>
-																	4.4900
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	Binder固體總量(含Paste)			
-																	</td>
-																	<td>
-																	4.4900
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	In.固體佔總固體				
-																	</td>
-																	<td>
-																	0.0510
-																	</td>
-																	</tr>
-
-																	<tr>
-																	<td>
-																	M.固體佔總固體					
-																	</td>
-																	<td>
-																	0.1105
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	B.固體佔總固體						
-																	</td>
-																	<td>
-																	0.0491
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	QRO145佔總光阻溶液						
-																	</td>
-																	<td>
-																	0.0005
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	XIX490固體佔總光阻溶液						
-																	</td>
-																	<td>
-																	0.0104
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	高沸(次要)溶劑佔TG總溶劑							
-																	</td>
-																	<td>
-																	0.0880
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	TG solvent總量								
-																	</td>
-																	<td>
-																	62.5000
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	Bin.A/(Bin.A+Bin.B)									
-																	</td>
-																	<td>
-																	0.5000
-																	</td>
-																	</tr>
-																	<tr>
-																	<td>
-																	Bin.B/(Bin.A+Bin.B)									
-																	</td>
-																	<td>
-																	0.5000
-																	</td>
-																	</tr>
-															
-																</tbody>
-																</table>
-																</div>
-																</div>
-																</div>
-																<!-- END SAMPLE TABLE PORTLET-->
-												</div>
-												
-													
-
-													<div class="todo-tasklist-devider">
-
-													</div>
-															<!-- <div class="col-md-7 col-sm-8">
-															</div> -->
-											</div>
-											<div class="row">
-									<!-- <div class="col-md-5 col-sm-4">
-									
-									</div> -->
-										
-												
-											
-
-															<div class="todo-tasklist-devider">
-
-																</div>
-															<div class="col-md-7 col-sm-8">
-															</div>
-											</div>
-							</div>
-
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn blue" onClick="confirmFormulaItem('');">確認</button>
-											<button type="button" class="btn default" data-dismiss="modal">取消</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-			
-			<!-- 原料項目 Summary dialog end -->
-
-
-
-
-
-
-
-<!-- BEGIN FOOTER -->
-<div class="page-footer">
-<!-- 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
-	</div>
-	<div class="scroll-to-top">
-		<i class="icon-arrow-up"></i>
-	</div> -->
-</div>
-<!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
 <script src="../../assets/global/plugins/respond.min.js"></script>
 <script src="../../assets/global/plugins/excanvas.min.js"></script> 
 <![endif]-->
-<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
-<!-- BEGIN PAGE PLUGINS & SCRIPTS -->
-<script type="text/javascript" src="assets/global/plugins/bootbox/bootbox.min.js" ></script>
-<script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
-<script src="assets/admin/pages/scripts/todo.js" type="text/javascript"></script>
-<!-- END PAGE PLUGINS & SCRIPTS -->
-<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-<script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
-<script src="assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/global/scripts/datatable.js"></script>
-<script src="assets/admin/pages/scripts/ecommerce-products-edit.js"></script>
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="../../assets/global/plugins/flot/jquery.flot.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.categories.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+<script src="../../assets/admin/pages/scripts/ecommerce-index.js"></script>
+
+<!-- END PAGE LEVEL SCRIPTS -->
 <script>
-jQuery(document).ready(function() {    
-Metronic.init(); // init metronic core components
+        jQuery(document).ready(function() {    
+           Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 Demo.init(); // init demo features
-Todo.init(); // init todo page
- EcommerceProductsEdit.init();
-});
-
-function nextSetup(){
-
-bootbox.confirm("確定將此工單送出審核", function(result) {
-                   //alert("Confirm result: "+result);
-
-                   if(result == true){
-
-                   	var url= 'tg_recipe_ex_edit_setup2.html'; 
-					window.location = url; 
-                   }
-
-                }); 
-
-
-}
-
-
-</script>
+           EcommerceIndex.init();
+        });
+    </script>
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
