@@ -694,7 +694,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 								<div class="caption">
 									<i class="fa fa-gift"></i> 工單設定 - <span class="step-title">
-									Step 2 of 3 </span>
+									Step 2 of 4 </span>
 								</div>
 								<div class="tools hidden-xs">
 								<!-- 	<a href="javascript:;" class="collapse">
@@ -728,22 +728,22 @@ License: You must have a valid license purchased only from themeforest(the above
 												<i class="fa fa-check"></i> 選擇SOP </span>
 												</a>
 											</li>
-											<!-- <li>
+											 <li>
 												<a href="#tab3" data-toggle="tab" class="step active">
 												<span class="number">
 												3 </span>
 												<span class="desc">
-												<i class="fa fa-check"></i> 派工 </span>
+												<i class="fa fa-check"></i> 設定工單 </span>
 
 												</a>
-											</li> -->
+											</li> 
 											
 											<li>
 												<a href="#tab4" data-toggle="tab" class="step">
 												<span class="number">
 												3 </span>
 												<span class="desc">
-												<i class="fa fa-check"></i> 確定 </span>
+												<i class="fa fa-check"></i> 實驗結果上傳 </span>
 												</a>
 											</li>
 										</ul>
@@ -778,13 +778,8 @@ License: You must have a valid license purchased only from themeforest(the above
 										上一步 </span>
 										</a>
 										<div class="btn-group">
-											<!-- <a class="btn green btn-circle" href="tg_recipe_ex_edit_setup3.html" >
 											
-											<span class="hidden-480">
-											確認 </span>
-											<i class="fa fa-angle-down"></i>
-											</a> -->
-											<button        class="btn btn-default btn-circle" onClick="nextSetup();">
+											<button        class="btn green btn-circle" onClick="nextSetup();">
 									
 										<span class="hidden-480">
 										下一步 </span>
@@ -1087,7 +1082,36 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 			</div>
 								<!--  sop list enf-->
-							</div>
+
+			<div class="row">
+								<div class="col-md-12">
+									<!-- Begin: life time stats -->
+									<div class="portlet light">
+										<div class="portlet-title">						
+				
+										<div class="actions">
+								
+										<a href="tg_recipe_ex_edit_setup1.html" class="btn btn-default btn-circle">
+										<!-- <i class="fa fa-angle-left"></i> -->
+										<span class="hidden-480">
+										上一步 </span>
+										</a>
+										<div class="btn-group">
+											
+											<button        class="btn green btn-circle" onClick="nextSetup();">
+									
+										<span class="hidden-480">
+										下一步 </span>
+										</button>
+											
+										</div>
+									</div>
+											</div>
+										</div>	
+									</div>	
+			</div>	
+							</div>					
+			</div>
 			<!-- END PAGE CONTENT-->
 		</div>
 	</div>
@@ -1161,7 +1185,7 @@ bootbox.confirm("SOP 確定  <br>信利仁壽廠arra_BM_塗布特性_1, 加入�
 
                    if(result == true){
 
-                   	var url= 'tg_recipe_ex_edit_setup_confirm.html'; 
+                   	var url= 'tg_recipe_ex_edit_setup3.html'; 
 					window.location = url; 
                    }
 
