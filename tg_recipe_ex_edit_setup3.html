@@ -743,7 +743,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<li>
 												<a href="#tab4" data-toggle="tab" class="step">
 												<span class="number">
-												3 </span>
+												4 </span>
 												<span class="desc">
 												<i class="fa fa-check"></i> 實驗結果上傳 </span>
 												</a>
@@ -840,6 +840,40 @@ License: You must have a valid license purchased only from themeforest(the above
 																<label class="col-md-3 control-label">備註</label>
 																<div class="col-md-4">
 																	<textarea class="form-control" rows="4" name="remark${idx.index }" id="remark${idx.index }"></textarea>
+																</div>
+														</div>
+														<div class="form-group">
+																<label class="col-md-3 control-label">下發工作</label>
+																<div class="col-md-5">
+																	<div class="radio-list">
+																		<label class="radio-inline">否
+																		<input type="radio" name="assignRadio" id="assignRadio" value="0" checked>
+																		</label> 
+																		<label class="radio-inline">
+																		是<input type="radio" name="assignRadio" id="assignRadio" value="1">
+																		</label>
+																	</div>
+																</div>
+														</div>
+													
+															<div class="form-group"  id="mEmpGroup" style="display:none">
+																<label class="col-md-3 control-label">配方人員</label>
+																<div class="col-md-5">
+																	<select class="form-control input-small select2me"   id="mEmp" name="mEmp" =>
+												 						<option value="">請選擇</option>
+												 						<option value="andy">Andy</option>
+																		<option value="Ken">Ken</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group" id="eEmpGroup" style="display:none">
+																<label class="col-md-3 control-label">實驗人員</label>
+																<div class="col-md-5">
+																		<select class="form-control input-small select2me"   id="eEmp" name="eEmp" >
+												 						<option value="">請選擇</option>
+												 						<option value="andy">Andy</option>
+																		<option value="Ken">Ken</option>
+																		</select>
 																</div>
 															</div>
 															
@@ -946,6 +980,27 @@ $('#sample_1').dataTable( {
   //   "search": "Fred"
   // }
 });
+
+
+  //rblWorkType作業內容 onchange
+            var rblWorkType = $("input[name*=assignRadio]:radio");
+            rblWorkType.change(function () {
+
+            	var radioValue =$("input[name='assignRadio']:checked").val();
+                 if(radioValue ==1){
+                 	
+                 	$("#mEmpGroup").show();
+                 	$("#eEmpGroup").show();
+                 	
+                 }else{
+                 	$("#mEmpGroup").hide();
+                 	$("#eEmpGroup").hide();
+                 }
+            });
+
+
+
+
 });
 
 
