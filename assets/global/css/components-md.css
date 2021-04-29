@@ -4940,6 +4940,11 @@ Portlets
 .portlet.light > .portlet-title > .caption > .caption-subject {
   font-size: 16px;
 }
+.portlet.light > .portlet-title > .caption > .caption-subject-work20 {
+  font-size: 20px;
+   margin-bottom: 20px;
+}
+
 .portlet.light > .portlet-title > .caption > i {
   color: #777;
   font-size: 15px;
